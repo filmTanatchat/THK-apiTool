@@ -1,0 +1,7 @@
+endpoints-config:
+  - name: "Answer Question"
+    endpoint: "/question-taskpool/api/v1/answer-question"
+    method: "POST"
+  - name: "Submit Case"
+    endpoint: "/case-datasources/api/v1/cases/submit"
+    method: "POST"

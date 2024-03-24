@@ -1,0 +1,41 @@
+[
+    {
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "case_id": "89eaaf5f-55b7-4252-9ba5-a1435e747548",
+                "answer_token": "a4bad2e757f127b586da3141bc2030bd63341ea3df295891724751c8e77be136",
+                "field": {
+                    "field_name": "_customerInfo.nationalIdNumber",
+                    "data_type": "text",
+                    "current_value": "1101402053557",
+                    "label": {
+                        "en": {
+                            "text": "ID number",
+                            "image_url": ""
+                        },
+                        "th": {
+                            "text": "เลขบัตรประชาชน",
+                            "image_url": ""
+                        }
+                    },
+                    "choices": null,
+                    "triggering_modules": [],
+                    "parent_field_names": [],
+                    "choice_condition_field_names": [],
+                    "is_mandatory": false,
+                    "input_source": "",
+                    "is_multiple_values_allowed": false,
+                    "alias": "_customerInfo.nationalIdNumber"
+                },
+                "additional_fields": null,
+                "completed": false,
+                "working_in_module": false,
+                "is_first_question": true,
+                "field_errors": []
+            }
+        },
+        "Status": 200
+    }
+]

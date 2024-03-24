@@ -1,0 +1,55 @@
+{
+    "code": 100014,
+    "message": "invalid field value",
+    "data": [
+        {
+            "field_name": "_bankAccount.1.isValid",
+            "message": "value must be boolean",
+            "message_th": "value must be boolean",
+            "message_en": "value must be boolean",
+            "index": null
+        },
+        {
+            "field_name": "_customerInfo.residenceStatus",
+            "message": "cannot answer invalid choice",
+            "message_th": "",
+            "message_en": "",
+            "index": null
+        },
+        {
+            "field_name": "_occupation.type",
+            "message": "cannot answer invalid choice",
+            "message_th": "",
+            "message_en": "",
+            "index": null
+        },
+        {
+            "field_name": "_occupation.subType",
+            "message": "cannot answer invalid choice",
+            "message_th": "",
+            "message_en": "",
+            "index": null
+        },
+        {
+            "field_name": "_bankAccount.1.isDefault",
+            "message": "value must be boolean",
+            "message_th": "value must be boolean",
+            "message_en": "value must be boolean",
+            "index": null
+        },
+        {
+            "field_name": "_refPersons.1.relationship",
+            "message": "cannot answer invalid choice",
+            "message_th": "",
+            "message_en": "",
+            "index": null
+        },
+        {
+            "field_name": "_refPersons.2.relationship",
+            "message": "cannot answer invalid choice",
+            "message_th": "",
+            "message_en": "",
+            "index": null
+        }
+    ]
+}

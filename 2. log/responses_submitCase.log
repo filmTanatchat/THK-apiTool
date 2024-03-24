@@ -1,0 +1,132 @@
+{
+    "Case ID": "70fc72df-e08e-4c90-81b6-589d325e26f5",
+    "Status": 200,
+    "Response Time (s)": 0.14624299999559298,
+    "Response Body": {
+        "case_id": "70fc72df-e08e-4c90-81b6-589d325e26f5",
+        "case_submission_id": 67,
+        "message": "processing"
+    }
+}
+
+{
+    "Case ID": "378c4065-b487-4351-ab16-fa02d180dcfb",
+    "Status": 200,
+    "Response Time (s)": 0.2183085840079002,
+    "Response Body": {
+        "case_id": "378c4065-b487-4351-ab16-fa02d180dcfb",
+        "case_submission_id": 69,
+        "message": "processing"
+    }
+}
+
+{
+    "Case ID": "9b04a138-f983-47ad-a341-661103e2f495",
+    "Status": 200,
+    "Response Time (s)": 0.18278741699759848,
+    "Response Body": {
+        "case_id": "9b04a138-f983-47ad-a341-661103e2f495",
+        "case_submission_id": 68,
+        "message": "processing"
+    }
+}
+
+{
+    "Case ID": "b927c01e-e784-4ce0-9cfa-3d56544214bc",
+    "Status": 200,
+    "Response Time (s)": 0.36530870900605805,
+    "Response Body": {
+        "case_id": "b927c01e-e784-4ce0-9cfa-3d56544214bc",
+        "case_submission_id": 77,
+        "message": "processing"
+    }
+}
+
+{
+    "Case ID": "7a6b9796-1d6a-4031-820d-8c868e316b7a",
+    "Status": 200,
+    "Response Time (s)": 0.3538182080083061,
+    "Response Body": {
+        "case_id": "7a6b9796-1d6a-4031-820d-8c868e316b7a",
+        "case_submission_id": 75,
+        "message": "processing"
+    }
+}
+
+{
+    "Case ID": "a916ad91-0d90-4e5e-b506-4cf0e678c388",
+    "Status": 200,
+    "Response Time (s)": 0.3027245420089457,
+    "Response Body": {
+        "case_id": "a916ad91-0d90-4e5e-b506-4cf0e678c388",
+        "case_submission_id": 72,
+        "message": "processing"
+    }
+}
+
+{
+    "Case ID": "a0cf592f-9487-4203-8c34-2f95f8253c8f",
+    "Status": 200,
+    "Response Time (s)": 0.35056733299279585,
+    "Response Body": {
+        "case_id": "a0cf592f-9487-4203-8c34-2f95f8253c8f",
+        "case_submission_id": 73,
+        "message": "processing"
+    }
+}
+
+{
+    "Case ID": "56ccb4e3-d0e3-4532-973b-d1d619f1cf30",
+    "Status": 200,
+    "Response Time (s)": 0.2614297080144752,
+    "Response Body": {
+        "case_id": "56ccb4e3-d0e3-4532-973b-d1d619f1cf30",
+        "case_submission_id": 70,
+        "message": "processing"
+    }
+}
+
+{
+    "Case ID": "70c9f5ea-59b8-4599-ad02-0500f194c823",
+    "Status": 200,
+    "Response Time (s)": 0.3506877500039991,
+    "Response Body": {
+        "case_id": "70c9f5ea-59b8-4599-ad02-0500f194c823",
+        "case_submission_id": 74,
+        "message": "processing"
+    }
+}
+
+{
+    "Case ID": "ea93d55b-1888-4e5a-bcd5-bb543f92a1b7",
+    "Status": 200,
+    "Response Time (s)": 0.3739600840199273,
+    "Response Body": {
+        "case_id": "ea93d55b-1888-4e5a-bcd5-bb543f92a1b7",
+        "case_submission_id": 78,
+        "message": "processing"
+    }
+}
+
+{
+    "Case ID": "1f94992b-8899-4f40-8c4b-2b9b2e85bd11",
+    "Status": 200,
+    "Response Time (s)": 0.27934979199199006,
+    "Response Body": {
+        "case_id": "1f94992b-8899-4f40-8c4b-2b9b2e85bd11",
+        "case_submission_id": 71,
+        "message": "processing"
+    }
+}
+
+{
+    "Case ID": "1276386f-1f95-4f92-9dcb-f4ac153db65a",
+    "Status": 200,
+    "Response Time (s)": 0.3533469999965746,
+    "Response Body": {
+        "case_id": "1276386f-1f95-4f92-9dcb-f4ac153db65a",
+        "case_submission_id": 76,
+        "message": "processing"
+    }
+}
+

@@ -1,0 +1,1230 @@
+{
+    "Status Code": 200,
+    "Response Time (s)": 4.034643708990188,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "3800bc45-bf39-44cf-8faf-2cf332c246dc",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.874071083002491,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "a1f303e9-ba98-4596-a47e-61fb08451d16",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.48947895798483,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "501efe75-a18d-4794-9c02-8276d390e9f4",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 9.881421500002034,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "1fe7583b-1969-4a42-abf1-ac3500929c40",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 9.071179833990755,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "52ac4770-9d4e-4f2b-ac38-432033b83d28",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.338508832996013,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "8d73cd1c-315a-42ea-b660-1de40bde48c1",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 11.592469374998473,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "e32db0b0-bc56-41d3-81a9-5547b9e7602b",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 9.399769458977971,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "e2148cb1-dd27-4bc4-83a8-f68e34000a15",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.850470917008352,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "6dd0afee-7c62-4a7c-8ac5-1b95e12d71cc",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 8.71798766698339,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "4a8632f5-ba3a-408d-94fa-e79b8eecf104",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.268241917015985,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "7e572e52-7c43-4e1c-88b7-629c09f5076a",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.783142750005936,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "3eda3dc3-f9bd-41f6-a3b9-6baaca3922e9",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.322391667024931,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "5d97b435-ef1f-4178-b627-8bdce6ce3f9e",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.769425500009675,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "03c91ec0-f885-411c-9001-fd5cb8d94f19",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.126428708987078,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "3dc52eac-8a34-41da-b4ea-158965b062eb",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.65283616699162,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "0d35ac41-0184-42c0-9853-5eec77c19886",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.255488666996825,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "345e6a78-523e-4942-8f22-05296f861239",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.001658207998844,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "9f48746a-1cec-40bd-8bac-ced484c7fee6",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 9.377294499980053,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "36f409a3-693d-4ae3-9cdb-ad5809cc9618",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.778968625003472,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "b0bd65f0-f853-4d9f-9a8c-415d476c556b",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.10682379201171,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "38304abb-af05-4f9e-880d-742322dcf04b",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 9.632413290994009,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "e60b8b00-c6f8-4892-89bb-67618e832f97",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.824548875010805,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "c762ffae-7974-48f0-929a-3f60bdd80a04",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.765214457991533,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "63bd6884-0f84-4cfe-a6fb-4d658f3a182d",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.818641584017314,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "f2b57ea7-2147-4603-87e3-c45fad0a2b2d",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.817185499996413,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "25a43749-af61-4f66-886b-2213be684196",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.782301375002135,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "ade84482-8a50-483a-a4ed-b05d15a3326d",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 10.413437625014922,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "19c702f7-aa4f-4544-a234-1b92323f23bc",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 8.096347874990897,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "26f3afe9-7d89-437b-960e-1d210565ed3c",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+
+{
+    "Status Code": 200,
+    "Response Time (s)": 9.612746792001417,
+    "Response Body": {
+        "code": 0,
+        "message": "",
+        "data": {
+            "case_id": "c9e15028-1dcf-4e4f-90a8-9ffd5a9702f3",
+            "answer_token": "71730a3d421ea6ea053b82986df46534289e6efb0fb2b1fa3facf21fd3a6e2d3",
+            "field": {
+                "field_name": "_customerInfo.foundLoanRequestReject",
+                "data_type": "text",
+                "current_value": "",
+                "label": {
+                    "en": {
+                        "text": "Search result for reject loan request result",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "ผลการตรวจสอบว่าพบข้อมูลการขอสินเชื่อถูกปฏิเสธ",
+                        "image_url": ""
+                    }
+                },
+                "choices": null,
+                "triggering_modules": null,
+                "parent_field_names": [],
+                "choice_condition_field_names": [],
+                "is_mandatory": false,
+                "input_source": "",
+                "is_multiple_values_allowed": false,
+                "alias": "_customerInfo.foundLoanRequestReject"
+            },
+            "additional_fields": null,
+            "completed": false,
+            "working_in_module": false,
+            "is_first_question": false,
+            "field_errors": []
+        }
+    }
+}
+

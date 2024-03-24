@@ -1,0 +1,35 @@
+{
+    "case_id": "{{case_id}}",
+    "answers": [
+        {
+            "field_name": "loanAmount",
+            "field_value": "11000", //ส้งเมื่อเป็น TERM LOAN
+            "source": "customer"
+        },
+        {
+            "field_name": "scheduleSettings.repaymentInstallments",
+            "field_value": "24", //ส่งเมื่อเป็น TERM LOAN
+            "source": "customer"
+        },
+        // {
+        //     "field_name": "creditArrangement.amount",
+        //     "field_value": "30000", //ส่งของ Revolving
+        //     "source": "customer"
+        // },
+        {
+            "field_name": "_loan.repaymentType",
+            "field_value": "TERM", // Select TERM or REVOLVING
+            "source": "customer"
+        },
+        {
+            "field_name": "_loan.customerDecision",
+            "field_value": "ACCEPT", //Select ACCEPT, CANCEL, TIMEOUT
+            "source": "customer"
+        },
+        {
+            "field_name": "scheduleSettings.fixedDaysOfMonth",
+            "field_value": "17", //2,17,27
+            "source": "customer"
+        }
+    ]
+}

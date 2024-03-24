@@ -1,0 +1,1294 @@
+[
+    {
+        "Name": "tads.br.absoluteProtectionDate",
+        "FromRow": 1,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.absoluteProtectionDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "tads.br.absoluteProtectionDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.absoluteProtectionDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.absoluteProtectionDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.absoluteProtectionGazetteDate",
+        "FromRow": 2,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.absoluteProtectionGazetteDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "tads.br.absoluteProtectionGazetteDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.absoluteProtectionGazetteDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.absoluteProtectionGazetteDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.blackCaseNo",
+        "FromRow": 7,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.blackCaseNo",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "tads.br.blackCaseNo",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.blackCaseNo",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.blackCaseNo"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.bankruptcyCloseDate",
+        "FromRow": 3,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.bankruptcyCloseDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "tads.br.bankruptcyCloseDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.bankruptcyCloseDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.bankruptcyCloseDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.bankruptcyDischargeDate",
+        "FromRow": 4,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.bankruptcyDischargeDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "tads.br.bankruptcyDischargeDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.bankruptcyDischargeDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.bankruptcyDischargeDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.blackCaseYear",
+        "FromRow": 8,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.blackCaseYear",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "tads.br.blackCaseYear",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.blackCaseYear",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.blackCaseYear"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.defendantNo",
+        "FromRow": 12,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.defendantNo",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "tads.br.defendantNo",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.defendantNo",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.defendantNo"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.bankruptcyDischargeGazetteDate",
+        "FromRow": 5,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.bankruptcyDischargeGazetteDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "tads.br.bankruptcyDischargeGazetteDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.bankruptcyDischargeGazetteDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.bankruptcyDischargeGazetteDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.plaintiffNo1",
+        "FromRow": 13,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.plaintiffNo1",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "tads.br.plaintiffNo1",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.plaintiffNo1",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.plaintiffNo1"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.courtName",
+        "FromRow": 9,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.courtName",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "tads.br.courtName",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.courtName",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.courtName"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.bankruptcyProtectionDate",
+        "FromRow": 6,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.bankruptcyProtectionDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "tads.br.bankruptcyProtectionDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.bankruptcyProtectionDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.bankruptcyProtectionDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.defendantId",
+        "FromRow": 10,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.defendantId",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "tads.br.defendantId",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.defendantId",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.defendantId"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.defendantName",
+        "FromRow": 11,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.defendantName",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "tads.br.defendantName",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.defendantName",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585752,
+                "updated_at": 1708585752,
+                "last_inactive_at": 0,
+                "alias": "tads.br.defendantName"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.presentClaimInBankruptcyExamDate",
+        "FromRow": 15,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.presentClaimInBankruptcyExamDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "tads.br.presentClaimInBankruptcyExamDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.presentClaimInBankruptcyExamDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "tads.br.presentClaimInBankruptcyExamDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.presentClaimInBankruptcyDate",
+        "FromRow": 14,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.presentClaimInBankruptcyDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "tads.br.presentClaimInBankruptcyDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.presentClaimInBankruptcyDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "tads.br.presentClaimInBankruptcyDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.redCaseNo",
+        "FromRow": 16,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.redCaseNo",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "tads.br.redCaseNo",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.redCaseNo",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "tads.br.redCaseNo"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "tads.br.redCaseYear",
+        "FromRow": 17,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "tads.br.redCaseYear",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "tads.br.redCaseYear",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "tads.br.redCaseYear",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "tads.br.redCaseYear"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.absoluteProtectionDate",
+        "FromRow": 18,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.absoluteProtectionDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.absoluteProtectionDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.absoluteProtectionDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.absoluteProtectionDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.bankruptcyDischargeGazetteDate",
+        "FromRow": 22,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.bankruptcyDischargeGazetteDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.bankruptcyDischargeGazetteDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.bankruptcyDischargeGazetteDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.bankruptcyDischargeGazetteDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.bankruptcyProtectionDate",
+        "FromRow": 23,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.bankruptcyProtectionDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.bankruptcyProtectionDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.bankruptcyProtectionDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.bankruptcyProtectionDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.blackCaseYear",
+        "FromRow": 25,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.blackCaseYear",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.blackCaseYear",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.blackCaseYear",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.blackCaseYear"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.blackCaseNo",
+        "FromRow": 24,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.blackCaseNo",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.blackCaseNo",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.blackCaseNo",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.blackCaseNo"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.bankruptcyCloseDate",
+        "FromRow": 20,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.bankruptcyCloseDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.bankruptcyCloseDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.bankruptcyCloseDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.bankruptcyCloseDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.bankruptcyDischargeDate",
+        "FromRow": 21,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.bankruptcyDischargeDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.bankruptcyDischargeDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.bankruptcyDischargeDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.bankruptcyDischargeDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.defendantId",
+        "FromRow": 27,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.defendantId",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.defendantId",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.defendantId",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.defendantId"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.absoluteProtectionGazetteDate",
+        "FromRow": 19,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.absoluteProtectionGazetteDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.absoluteProtectionGazetteDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.absoluteProtectionGazetteDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.absoluteProtectionGazetteDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.redCaseNo",
+        "FromRow": 33,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.redCaseNo",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.redCaseNo",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.redCaseNo",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.redCaseNo"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.plaintiffNo1",
+        "FromRow": 30,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.plaintiffNo1",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.plaintiffNo1",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.plaintiffNo1",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.plaintiffNo1"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.defendantName",
+        "FromRow": 28,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.defendantName",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.defendantName",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.defendantName",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.defendantName"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.redCaseYear",
+        "FromRow": 34,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.redCaseYear",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.redCaseYear",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.redCaseYear",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.redCaseYear"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.presentClaimInBankruptcyExamDate",
+        "FromRow": 32,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.presentClaimInBankruptcyExamDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.presentClaimInBankruptcyExamDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.presentClaimInBankruptcyExamDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.presentClaimInBankruptcyExamDate"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.defendantNo",
+        "FromRow": 29,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.defendantNo",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.defendantNo",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.defendantNo",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.defendantNo"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.courtName",
+        "FromRow": 26,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.courtName",
+                "data_type": "text",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.courtName",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.courtName",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.courtName"
+            }
+        },
+        "Status": 200
+    },
+    {
+        "Name": "_credit.br.presentClaimInBankruptcyDate",
+        "FromRow": 31,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_credit.br.presentClaimInBankruptcyDate",
+                "data_type": "date",
+                "label": {
+                    "en": {
+                        "text": "_credit.br.presentClaimInBankruptcyDate",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "_credit.br.presentClaimInBankruptcyDate",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "filled_when_apply_product": false,
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": true,
+                "created_at": 1708585753,
+                "updated_at": 1708585753,
+                "last_inactive_at": 0,
+                "alias": "_credit.br.presentClaimInBankruptcyDate"
+            }
+        },
+        "Status": 200
+    }
+]

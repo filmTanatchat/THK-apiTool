@@ -1,0 +1,37 @@
+[
+    {
+        "Name": "_customerInfo.childNotWorkedAmount",
+        "FromRow": 1,
+        "Response": {
+            "code": 0,
+            "message": "",
+            "data": {
+                "name": "_customerInfo.childNotWorkedAmount",
+                "data_type": "number",
+                "label": {
+                    "en": {
+                        "text": "Child not worked amount",
+                        "image_url": ""
+                    },
+                    "th": {
+                        "text": "จำนวนบุตรทั้งหมดที่ยังไม่ทำงาน",
+                        "image_url": ""
+                    }
+                },
+                "formula": "",
+                "validation_name": "",
+                "parent_hierarchy_field_names": [],
+                "is_active": true,
+                "triggering_module_names": [],
+                "default_value": "",
+                "default_condition": "",
+                "choice_name": "",
+                "is_manual_allowed": true,
+                "is_multiple_values_allowed": false,
+                "created_at": 0,
+                "updated_at": 1696527848
+            }
+        },
+        "Status": 200
+    }
+]
