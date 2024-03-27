@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"MoneyDD/types"
+	"thinkerTools/types"
 )
 
 type Result struct {

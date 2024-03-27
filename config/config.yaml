@@ -1,0 +1,37 @@
+environments:
+  - name: SIT
+    BASE_URL: "https://moneydd-sit.thinkerfint.com"
+    EMAIL: "moneydd-sit@thinkerfint.com"
+    PASSWORD: "moneydd-sit"
+
+  - name: DEV
+    BASE_URL: "https://moneydd-dev.thinkerfint.com"
+    EMAIL: "moneydd-dev@thinkerfint.com"
+    PASSWORD: "moneydd-dev"
+
+  - name: UAT
+    BASE_URL: "https://moneydd-uat.thinkerfint.com"
+    EMAIL: "moneydd-uat@thinkerfint.com"
+    PASSWORD: "moneydd-uat"
+
+  - name: PERF
+    BASE_URL: "https://moneydd-perftest.thinkerfint.com"
+    EMAIL: "moneydd-perftest@thinkerfint.com"
+    PASSWORD: "moneydd-perftest"
+    
+  - name: PROD
+    BASE_URL: "https://moneydd.thinkerfint.com"
+    EMAIL: "moneydd-prod@thinkerfint.com"
+    PASSWORD: "moneydd-prod"
+
+endpoints-config:
+  - name: "Answer Question"
+    endpoint: "/question-taskpool/api/v1/answer-question"
+    method: "POST"
+  - name: "Submit Case"
+    endpoint: "/case-datasources/api/v1/cases/submit"
+    method: "POST"
+
+products:
+  Product1: "moneydd.pLoan"
+  Product2: "moneydd.nanoLoan"

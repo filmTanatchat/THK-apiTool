@@ -13,7 +13,7 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"MoneyDD/types"
+	"thinkerTools/types"
 )
 
 // Result captures the response and status code of an HTTP request.
@@ -120,7 +120,7 @@ func selectProduct(products ProductName) (string, error) {
 func ApplyProductMultiCaseId(env types.Environment, basePath string) error {
 
 	// Load product names from YAML
-	productNamesPath := filepath.Join(basePath, "config", "productName.yaml")
+	productNamesPath := filepath.Join(basePath, "config", "config.yaml")
 	products, err := loadProductsFromYAML(productNamesPath)
 	if err != nil {
 		return fmt.Errorf("error loading product names: %w", err)
@@ -174,10 +174,19 @@ func ApplyProductMultiCaseId(env types.Environment, basePath string) error {
 		return err
 	}
 
-	// Writing to CSV and logging response details
-	if err := writeToCSV(caseIds, basePath); err != nil {
-		return err
+	// Reading and modifying the CSV data
+	csvPath := filepath.Join(basePath, "3. dataSource", "multiCaseId.csv")
+	modifiedData, err := readAndModifyCSV(csvPath, caseIds)
+	if err != nil {
+		return fmt.Errorf("error reading and modifying CSV: %w", err)
 	}
+
+	// Writing modified data to CSV
+	if err := writeToCSV(modifiedData, csvPath); err != nil {
+		return fmt.Errorf("error writing to CSV: %w", err)
+	}
+
+	// Log response details
 	logResponseDetails(responseCounters, uniqueResponses)
 
 	return nil
@@ -210,9 +219,85 @@ func processResults(results chan Result) ([]string, map[int]int, map[int]map[str
 	return caseIds, responseCounters, uniqueResponses, nil
 }
 
-// writeToCSV writes case IDs to a CSV file.
-func writeToCSV(caseIds []string, basePath string) error {
-	csvPath := filepath.Join(basePath, "3. dataSource", "multiCaseId.csv")
+// readAndModifyCSV reads case data from a CSV file, clears existing case_id data, and adds new case IDs.
+func readAndModifyCSV(filePath string, caseIds []string) ([][]string, error) {
+	file, err := os.Open(filePath)
+	if err != nil {
+		// If the file doesn't exist, create a new CSV structure.
+		if os.IsNotExist(err) {
+			return createNewCSVStructure(caseIds), nil
+		}
+		return nil, fmt.Errorf("error opening CSV file: %w", err)
+	}
+	defer file.Close()
+
+	reader := csv.NewReader(file)
+	data, err := reader.ReadAll()
+	if err != nil {
+		return nil, fmt.Errorf("error reading CSV data: %w", err)
+	}
+
+	caseIdIndex, found := findCaseIDColumnIndex(data)
+	if !found {
+		data = prependCaseIDColumn(data, caseIdIndex)
+		caseIdIndex = 0
+	}
+
+	// Clear existing case IDs
+	for i := 1; i < len(data); i++ {
+		data[i][caseIdIndex] = ""
+	}
+
+	// Ensure data has enough rows for all case IDs
+	for len(data)-1 < len(caseIds) {
+		data = append(data, make([]string, len(data[0])))
+	}
+
+	// Update case IDs in the CSV data
+	for i, caseId := range caseIds {
+		data[i+1][caseIdIndex] = caseId
+	}
+
+	return data, nil
+}
+
+// createNewCSVStructure creates a new CSV structure with case_ids.
+func createNewCSVStructure(caseIds []string) [][]string {
+	data := [][]string{{"case_id"}}
+	for _, id := range caseIds {
+		data = append(data, []string{id})
+	}
+	return data
+}
+
+// findCaseIDColumnIndex finds the index of the case_id column.
+func findCaseIDColumnIndex(data [][]string) (int, bool) {
+	if len(data) == 0 {
+		return 0, false
+	}
+
+	for i, header := range data[0] {
+		if header == "case_id" {
+			return i, true
+		}
+	}
+
+	return 0, false
+}
+
+// prependCaseIDColumn adds a case_id column as the first column in the data.
+func prependCaseIDColumn(data [][]string, caseIdIndex int) [][]string {
+	newData := make([][]string, len(data))
+	for i, row := range data {
+		newRow := append([]string{""}, row...)
+		newData[i] = newRow
+	}
+	newData[0][caseIdIndex] = "case_id"
+	return newData
+}
+
+// writeToCSV writes modified CSV data to a file.
+func writeToCSV(data [][]string, csvPath string) error {
 	file, err := os.Create(csvPath)
 	if err != nil {
 		return fmt.Errorf("error creating CSV file: %w", err)
@@ -220,9 +305,10 @@ func writeToCSV(caseIds []string, basePath string) error {
 	defer file.Close()
 
 	writer := csv.NewWriter(file)
-	writer.Write([]string{"case_id"}) // Header
-	for _, caseId := range caseIds {
-		writer.Write([]string{caseId})
+	for _, row := range data {
+		if err := writer.Write(row); err != nil {
+			return fmt.Errorf("error writing CSV row: %w", err)
+		}
 	}
 	writer.Flush()
 	return nil

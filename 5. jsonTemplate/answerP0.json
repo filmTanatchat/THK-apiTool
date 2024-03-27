@@ -23,7 +23,7 @@
         },
         {
             "field_name": "_customerInfo.nationalIdNumber",
-            "field_value": "3200100197003",
+            "field_value": "1101402053551",
             "source": "customer"
         },
         {
@@ -48,7 +48,7 @@
         },
         {
             "field_name": "firstName",
-            "field_value": "ทดสอบ", //กล้านรงค์
+            "field_value": "{{first_name}}", //กล้านรงค์
             "source": "customer"
         },
         {
@@ -58,7 +58,7 @@
         },
         {
             "field_name": "lastName",
-            "field_value": "สมมุติ", //จันทิก
+            "field_value": "{{last_name}}", //จันทิก
             "source": "customer"
         },
         {
@@ -73,7 +73,7 @@
         },
         {
             "field_name": "birthDate",
-            "field_value": "962557200", //1698082440
+            "field_value": "{{birthdate}}", //1698082440
             "source": "customer"
         },
         //ต้องส่ง

@@ -6,7 +6,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:48, Duration: 192.623542ms
+Time Received: 2024-03-27 23:08:34, Duration: 160.184875ms
 ----------------------------
 Error in row 2: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -16,7 +16,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:48, Duration: 182.71925ms
+Time Received: 2024-03-27 23:08:34, Duration: 162.063292ms
 ----------------------------
 Error in row 3: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -26,7 +26,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:48, Duration: 197.318417ms
+Time Received: 2024-03-27 23:08:35, Duration: 145.399875ms
 ----------------------------
 Error in row 4: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -36,7 +36,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:48, Duration: 167.469625ms
+Time Received: 2024-03-27 23:08:35, Duration: 148.85275ms
 ----------------------------
 Error in row 5: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -46,7 +46,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:48, Duration: 162.718541ms
+Time Received: 2024-03-27 23:08:35, Duration: 151.623541ms
 ----------------------------
 Error in row 6: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -56,7 +56,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:49, Duration: 179.524333ms
+Time Received: 2024-03-27 23:08:35, Duration: 151.639542ms
 ----------------------------
 Error in row 7: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -66,7 +66,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:49, Duration: 260.847125ms
+Time Received: 2024-03-27 23:08:35, Duration: 141.490791ms
 ----------------------------
 Error in row 8: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -76,7 +76,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:49, Duration: 186.148917ms
+Time Received: 2024-03-27 23:08:35, Duration: 155.925083ms
 ----------------------------
 Error in row 9: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -86,7 +86,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:49, Duration: 337.933834ms
+Time Received: 2024-03-27 23:08:36, Duration: 144.402667ms
 ----------------------------
 Error in row 10: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -96,7 +96,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:50, Duration: 167.724875ms
+Time Received: 2024-03-27 23:08:36, Duration: 158.55425ms
 ----------------------------
 Error in row 11: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -106,7 +106,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:50, Duration: 175.45425ms
+Time Received: 2024-03-27 23:08:36, Duration: 151.302875ms
 ----------------------------
 Error in row 12: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -116,7 +116,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:50, Duration: 168.419583ms
+Time Received: 2024-03-27 23:08:36, Duration: 147.996084ms
 ----------------------------
 Error in row 13: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -126,7 +126,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:50, Duration: 166.559375ms
+Time Received: 2024-03-27 23:08:36, Duration: 148.38125ms
 ----------------------------
 Error in row 14: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -136,7 +136,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:50, Duration: 170.301167ms
+Time Received: 2024-03-27 23:08:36, Duration: 155.315083ms
 ----------------------------
 Error in row 15: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -146,7 +146,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:50, Duration: 170.078583ms
+Time Received: 2024-03-27 23:08:36, Duration: 148.396292ms
 ----------------------------
 Error in row 16: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -156,7 +156,7 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:51, Duration: 168.752459ms
+Time Received: 2024-03-27 23:08:37, Duration: 152.3585ms
 ----------------------------
 Error in row 17: unexpected status code: 400
 Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
@@ -166,5 +166,5 @@ Payload: {
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-23 10:43:51, Duration: 168.568916ms
+Time Received: 2024-03-27 23:08:37, Duration: 153.753583ms
 ----------------------------
