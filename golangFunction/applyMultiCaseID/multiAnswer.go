@@ -2,7 +2,6 @@ package applyProductMultiCaseId
 
 import (
 	"bytes"
-	"encoding/csv"
 	"fmt"
 	"io"
 	"net/http"
@@ -11,41 +10,12 @@ import (
 	"strings"
 	"sync"
 
+	"thinkerTools/models"
 	"thinkerTools/types"
-
-	"gopkg.in/yaml.v2"
 )
 
-// EndpointConfig represents a single endpoint configuration in YAML.
-type EndpointConfig struct {
-	Name     string `yaml:"name"`
-	Endpoint string `yaml:"endpoint"`
-	Method   string `yaml:"method"`
-}
-
-type Endpoints struct {
-	Configs []EndpointConfig `yaml:"endpoints-config"`
-}
-
-// LoadEndpoints loads endpoints from a YAML file
-func LoadEndpoints(filePath string) (Endpoints, error) {
-	var endpoints Endpoints
-
-	file, err := os.ReadFile(filePath)
-	if err != nil {
-		return endpoints, fmt.Errorf("error reading endpoints file: %w", err)
-	}
-
-	err = yaml.Unmarshal(file, &endpoints)
-	if err != nil {
-		return endpoints, fmt.Errorf("error unmarshaling YAML: %w", err)
-	}
-
-	return endpoints, nil
-}
-
 // SelectEndpoint allows the user to choose an endpoint and returns its URL and method.
-func SelectEndpoint(endpoints Endpoints) (string, string, error) {
+func SelectEndpoint(endpoints models.Endpoints) (string, string, error) {
 	fmt.Println("Select an endpoint:")
 	for i, config := range endpoints.Configs {
 		fmt.Printf("%d: %s - %s (%s)\n", i+1, config.Name, config.Endpoint, config.Method)
@@ -129,68 +99,22 @@ func ReadJSONTemplate(filePath string) (string, error) {
 	return RemoveComments(string(content)), nil
 }
 
-// ReadCaseDataFromCSV reads case data from a CSV file and returns a slice of maps.
-func ReadCaseDataFromCSV(filePath string) ([]map[string]string, error) {
-	file, err := os.Open(filePath)
+// WriteLogToFile appends a log message to a log file or creates the log file if it does not exist.
+func WriteLogToFile(logFilePath, logMessage string) error {
+	// Open the file in append mode (os.O_APPEND), create it if it doesn't exist (os.O_CREATE), and open it for writing (os.O_WRONLY)
+	file, err := os.OpenFile(logFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
-		return nil, fmt.Errorf("error opening CSV file: %w", err)
+		return fmt.Errorf("error opening log file: %w", err)
 	}
 	defer file.Close()
 
-	var caseData []map[string]string
-	reader := csv.NewReader(file)
-	headers, err := reader.Read() // Read headers
-	if err != nil {
-		return nil, fmt.Errorf("error reading CSV headers: %w", err)
+	// Append the log message followed by a newline
+	if _, err := file.WriteString(logMessage + "\n"); err != nil {
+		return fmt.Errorf("error writing to log file: %w", err)
 	}
 
-	for {
-		record, err := reader.Read()
-		if err == io.EOF {
-			break
-		}
-		if err != nil {
-			return nil, fmt.Errorf("error reading CSV record: %w", err)
-		}
-
-		rowData := make(map[string]string)
-		for i, header := range headers {
-			rowData[header] = record[i]
-		}
-		caseData = append(caseData, rowData)
-	}
-	return caseData, nil
+	return nil
 }
-
-// ModifyPayload replaces placeholders in JSON template with values from CSV row.
-func ModifyPayload(template string, rowData map[string]string) string {
-	modifiedPayload := template
-	for key, value := range rowData {
-		placeholder := fmt.Sprintf("{{%s}}", key)
-		if strings.Contains(modifiedPayload, placeholder) {
-			modifiedPayload = strings.ReplaceAll(modifiedPayload, placeholder, value)
-		}
-	}
-	return modifiedPayload
-}
-
-// WriteLogToFile appends a log message to a log file or creates the log file if it does not exist.
-func WriteLogToFile(logFilePath, logMessage string) error {
-    // Open the file in append mode (os.O_APPEND), create it if it doesn't exist (os.O_CREATE), and open it for writing (os.O_WRONLY)
-    file, err := os.OpenFile(logFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-    if err != nil {
-        return fmt.Errorf("error opening log file: %w", err)
-    }
-    defer file.Close()
-
-    // Append the log message followed by a newline
-    if _, err := file.WriteString(logMessage + "\n"); err != nil {
-        return fmt.Errorf("error writing to log file: %w", err)
-    }
-
-    return nil
-}
-
 
 // SendRequest sends the request with the modified JSON payload and logs the entire process.
 func SendRequest(client *http.Client, method, apiURL, token, payload, logFilePath, cid string) error {
@@ -294,8 +218,9 @@ func AnswerMultiCaseId(env types.Environment, basePath string) error {
 	}
 	token := splitToken[1]
 
-	yamlPath := filepath.Join(basePath, "config", "endPoint.yaml")
-	endpoints, err := LoadEndpoints(yamlPath)
+	yamlPath := filepath.Join(basePath, "config", "config.yaml")
+	// Use LoadEndpoints from models package
+	endpoints, err := models.LoadEndpoints(yamlPath)
 	if err != nil {
 		return fmt.Errorf("error loading endpoints: %w", err)
 	}
@@ -319,9 +244,10 @@ func AnswerMultiCaseId(env types.Environment, basePath string) error {
 
 	// Read case data from CSV
 	csvPath := filepath.Join(basePath, "3. dataSource", "multiCaseId.csv")
-	caseData, err := ReadCaseDataFromCSV(csvPath)
+	// Use ReadCaseDataFromCSV from models package
+	caseData, err := models.ReadCaseDataFromCSV(csvPath)
 	if err != nil {
-		return err
+		return fmt.Errorf("error reading case data: %w", err)
 	}
 
 	logFilePath := filepath.Join(basePath, "2. log", "multiAnswer.log")
@@ -340,7 +266,7 @@ func AnswerMultiCaseId(env types.Environment, basePath string) error {
 			}
 
 			// Modify the payload based on the data from CSV
-			modifiedPayload := ModifyPayload(jsonTemplate, data)
+			modifiedPayload := models.ModifyPayload(jsonTemplate, data)
 
 			// Send the request
 			if err := SendRequest(client, selectedMethod, apiURL, token, modifiedPayload, logFilePath, cid); err != nil {

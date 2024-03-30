@@ -7,7 +7,6 @@ from collections import defaultdict
 
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
-
 def remove_comments(json_str):
     """Remove comments from a JSON string."""
     pattern = r"//.*?$|/\*.*?\*/|'(?:(?:\\.|[^'\\])*)'|\"(?:(?:\\.|[^\"\\])*)\""

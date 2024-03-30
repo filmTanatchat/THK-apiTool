@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 	"thinkerTools/controllers"
-	"thinkerTools/models" // Make sure to import the models package
+	"thinkerTools/models"
 )
 
 func main() {

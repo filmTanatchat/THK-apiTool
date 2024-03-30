@@ -14,11 +14,7 @@ func DisplayMainMenu(packages []struct {
 	Name   string
 	Action func(types.Environment) error
 }) string {
-	fmt.Println("Select the package to run (or type 'exit' to quit):")
-	for i, pkg := range packages {
-		fmt.Printf("%d: %s\n", i+1, pkg.Name)
-	}
-
+	displayMenu("Select the package to run (or type 'exit' to quit):", packages)
 	return promptForInput("Enter your choice: ")
 }
 
@@ -29,12 +25,9 @@ func DisplayConfigMenu(cfg types.Config) (int, bool, bool) {
 		return 0, false, false
 	}
 
-	fmt.Println("Select environment (or type 'exit' to quit):")
-	for i, env := range cfg.Environments {
-		fmt.Printf("%d: %s\n", i+1, env.Name)
-	}
-
+	displayEnvironments(cfg.Environments)
 	choiceStr := promptForInput("Enter your choice: ")
+
 	if strings.ToLower(choiceStr) == "exit" {
 		return 0, false, true
 	}
@@ -55,8 +48,31 @@ func DisplayError(err error) {
 
 // promptForInput is a helper function to read user input.
 func promptForInput(prompt string) string {
-	reader := bufio.NewReader(os.Stdin)
 	fmt.Print(prompt)
-	input, _ := reader.ReadString('\n')
+	reader := bufio.NewReader(os.Stdin)
+	input, err := reader.ReadString('\n')
+	if err != nil {
+		fmt.Println("Error reading input. Please try again.")
+		return promptForInput(prompt)
+	}
 	return strings.TrimSpace(input)
+}
+
+// displayMenu helps to display the menu options.
+func displayMenu(prompt string, packages []struct {
+	Name   string
+	Action func(types.Environment) error
+}) {
+	fmt.Println(prompt)
+	for i, pkg := range packages {
+		fmt.Printf("%d: %s\n", i+1, pkg.Name)
+	}
+}
+
+// displayEnvironments helps to display the available environments.
+func displayEnvironments(environments []types.Environment) {
+	fmt.Println("Select environment (or type 'exit' to quit):")
+	for i, env := range environments {
+		fmt.Printf("%d: %s\n", i+1, env.Name)
+	}
 }
