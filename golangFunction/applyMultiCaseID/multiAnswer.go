@@ -37,57 +37,6 @@ func SelectEndpoint(endpoints models.Endpoints) (string, string, error) {
 	return selectedEndpoint, selectedMethod, nil
 }
 
-// RemoveComments removes comments from a JSON string.
-func RemoveComments(jsonStr string) string {
-	var inString bool
-	var inBlockComment bool
-	var inLineComment bool
-	var result strings.Builder
-
-	for i := 0; i < len(jsonStr); i++ {
-		switch jsonStr[i] {
-		case '"':
-			if !inLineComment && !inBlockComment && (i == 0 || jsonStr[i-1] != '\\') {
-				inString = !inString
-			}
-			if !inLineComment && !inBlockComment {
-				result.WriteByte(jsonStr[i])
-			}
-		case '/':
-			if !inString {
-				if !inLineComment && !inBlockComment && i+1 < len(jsonStr) && jsonStr[i+1] == '/' {
-					inLineComment = true
-				} else if !inLineComment && !inBlockComment && i+1 < len(jsonStr) && jsonStr[i+1] == '*' {
-					inBlockComment = true
-				} else if !inLineComment && !inBlockComment {
-					result.WriteByte(jsonStr[i])
-				}
-			} else if !inLineComment && !inBlockComment {
-				result.WriteByte(jsonStr[i])
-			}
-		case '*':
-			if !inString && inBlockComment && i+1 < len(jsonStr) && jsonStr[i+1] == '/' {
-				inBlockComment = false
-				i++ // Skip '/'
-			} else if !inLineComment && !inBlockComment {
-				result.WriteByte(jsonStr[i])
-			}
-		case '\n':
-			if inLineComment {
-				inLineComment = false
-			}
-			if !inBlockComment && !inLineComment {
-				result.WriteByte(jsonStr[i])
-			}
-		default:
-			if !inLineComment && !inBlockComment {
-				result.WriteByte(jsonStr[i])
-			}
-		}
-	}
-	return result.String()
-}
-
 // ReadJSONTemplate reads the JSON template from the file.
 func ReadJSONTemplate(filePath string) (string, error) {
 	content, err := os.ReadFile(filePath)
@@ -96,7 +45,7 @@ func ReadJSONTemplate(filePath string) (string, error) {
 	}
 
 	// Remove comments from JSON content
-	return RemoveComments(string(content)), nil
+	return types.RemoveComments(string(content)), nil
 }
 
 // WriteLogToFile appends a log message to a log file or creates the log file if it does not exist.

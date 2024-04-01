@@ -125,3 +125,53 @@ func SelectEnvironment(cfg Config) (Environment, bool, bool) {
 	selectedEnv := cfg.Environments[choice-1]
 	return selectedEnv, true, false
 }
+
+func RemoveComments(jsonStr string) string {
+	var inString bool
+	var inBlockComment bool
+	var inLineComment bool
+	var result strings.Builder
+
+	for i := 0; i < len(jsonStr); i++ {
+		switch jsonStr[i] {
+		case '"':
+			if !inLineComment && !inBlockComment && (i == 0 || jsonStr[i-1] != '\\') {
+				inString = !inString
+			}
+			if !inLineComment && !inBlockComment {
+				result.WriteByte(jsonStr[i])
+			}
+		case '/':
+			if !inString {
+				if !inLineComment && !inBlockComment && i+1 < len(jsonStr) && jsonStr[i+1] == '/' {
+					inLineComment = true
+				} else if !inLineComment && !inBlockComment && i+1 < len(jsonStr) && jsonStr[i+1] == '*' {
+					inBlockComment = true
+				} else if !inLineComment && !inBlockComment {
+					result.WriteByte(jsonStr[i])
+				}
+			} else if !inLineComment && !inBlockComment {
+				result.WriteByte(jsonStr[i])
+			}
+		case '*':
+			if !inString && inBlockComment && i+1 < len(jsonStr) && jsonStr[i+1] == '/' {
+				inBlockComment = false
+				i++ // Skip '/'
+			} else if !inLineComment && !inBlockComment {
+				result.WriteByte(jsonStr[i])
+			}
+		case '\n':
+			if inLineComment {
+				inLineComment = false
+			}
+			if !inBlockComment && !inLineComment {
+				result.WriteByte(jsonStr[i])
+			}
+		default:
+			if !inLineComment && !inBlockComment {
+				result.WriteByte(jsonStr[i])
+			}
+		}
+	}
+	return result.String()
+}

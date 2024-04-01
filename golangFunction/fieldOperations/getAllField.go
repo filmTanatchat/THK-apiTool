@@ -1,4 +1,4 @@
-package main
+package fieldOperations
 
 import (
 	"bytes"
@@ -9,9 +9,8 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
-	"regexp"
-	"strings"
 
+	"thinkerTools/models"
 	"thinkerTools/types"
 )
 
@@ -69,9 +68,9 @@ type Field struct {
 }
 
 type FormData struct {
-	CaseID           string  `json:"case_id"`
-	Fields           []Field `json:"fields"`
-	AdditionalFields []Field `json:"additional_fields"`
+	CaseID           string         `json:"case_id"`
+	Fields           []models.Field `json:"fields"`
+	AdditionalFields []models.Field `json:"additional_fields"`
 }
 
 type GetFullFormResponse struct {
@@ -90,31 +89,11 @@ func loadJSONFromPath(path string) (map[string]interface{}, error) {
 		return nil, err
 	}
 
-	jsonStr, err := removeComments(string(file))
-	if err != nil {
-		return nil, err
-	}
+	jsonStr, err := types.RemoveComments(string(file)), nil
 
 	var result map[string]interface{}
 	err = json.Unmarshal([]byte(jsonStr), &result)
 	return result, err
-}
-
-// removeComments removes comments from a JSON string.
-func removeComments(jsonStr string) (string, error) {
-	pattern := `//.*?$|/\*.*?\*/|'(?:(?:\\.|[^'\\])*)'|"(?:(?:\\.|[^"\\])*)"`
-	re, err := regexp.Compile(pattern)
-	if err != nil {
-		return "", err
-	}
-
-	cleaned := re.ReplaceAllStringFunc(jsonStr, func(m string) string {
-		if strings.HasPrefix(m, `"`) || strings.HasPrefix(m, `'`) {
-			return m
-		}
-		return ""
-	})
-	return cleaned, nil
 }
 
 // makeRequest makes an HTTP request and returns the response.
@@ -194,7 +173,7 @@ func makeGetFullFormRequest(client *http.Client, env types.Environment, headers 
 }
 
 func extractCSVData(formData FormData, fieldType string) ([]string, []string) {
-	var allFields []Field
+	var allFields []models.Field // Changed type to models.Field
 
 	if fieldType == "fields" || fieldType == "all" {
 		allFields = append(allFields, formData.Fields...)
@@ -207,20 +186,21 @@ func extractCSVData(formData FormData, fieldType string) ([]string, []string) {
 	exampleDataRow := []string{formData.CaseID}
 
 	for _, field := range allFields {
-		formattedFieldName := formatFieldName(field) // Use the formatFieldName function
+		if field.InputSource != "" {
+			continue
+		}
+
+		formattedFieldName := formatFieldName(field)
 		header = append(header, formattedFieldName)
 
-		exampleValue := field.CurrentValue
-		if exampleValue == "" {
-			exampleValue = exampleDataForField(field) // Use the exampleDataForField function
-		}
+		exampleValue := exampleDataForField(field)
 		exampleDataRow = append(exampleDataRow, exampleValue)
 	}
 
 	return header, exampleDataRow
 }
 
-func formatFieldName(field Field) string {
+func formatFieldName(field models.Field) string {
 	formattedName := field.FieldName + "||" + field.DataType
 	if field.IsMultipleValuesAllowed {
 		formattedName += "||MULTI"
@@ -228,12 +208,24 @@ func formatFieldName(field Field) string {
 	return formattedName
 }
 
-func exampleDataForField(field Field) string {
+func exampleDataForField(field models.Field) string {
+
 	switch field.DataType {
 	case "date":
+		if field.IsMultipleValuesAllowed {
+			return "DD-MM-YYYY\\DD-MM-YYYY"
+		}
 		return "DD-MM-YYYY"
 	case "date_time":
+		if field.IsMultipleValuesAllowed {
+			return "DD-MM-YYYY hh:mm:ss\\DD-MM-YYYY hh:mm:ss"
+		}
 		return "DD-MM-YYYY hh:mm:ss"
+	case "boolean":
+		if field.IsMultipleValuesAllowed {
+			return "true\\false"
+		}
+		return "true"
 	case "number":
 		if field.IsMultipleValuesAllowed {
 			return "0\\0"
@@ -276,32 +268,23 @@ func writeCSV(header []string, row []string, path string) error {
 	return nil
 }
 
-func main() {
-	basePath, err := os.Getwd()
-	handleErr(err, "Error getting current working directory")
+func GetAllField(env types.Environment) ([]models.Field, error) {
+	session := &http.Client{}
 
-	configPath := filepath.Join(basePath, "config", "config.yaml")
-	config, err := types.LoadConfig(configPath)
-	handleErr(err, "Failed to load configuration")
-
-	selectedEnv, ok, exit := types.SelectEnvironment(config)
-	if !ok {
-		if exit {
-			fmt.Println("Exiting...")
-			os.Exit(0)
-		}
-		fmt.Println("Invalid environment selection")
-		os.Exit(1)
+	// Authenticate and obtain headers
+	headers, err := types.Authenticate(session, env.BaseURL+"/authentication/api/v1/login", env.Email, env.Password)
+	if err != nil {
+		return nil, fmt.Errorf("error during authentication: %w", err)
 	}
 
-	session := &http.Client{}
-	headers, err := types.Authenticate(session, selectedEnv.BaseURL+"/authentication/api/v1/login", selectedEnv.Email, selectedEnv.Password)
-	handleErr(err, "Error during authentication")
+	applyProductResp := makeApplyForProductRequest(session, env, headers)
+	fullFormResponse := makeGetFullFormRequest(session, env, headers, applyProductResp.Data.CaseID)
 
-	applyProductResp := makeApplyForProductRequest(session, selectedEnv, headers)
-	fullFormResponse := makeGetFullFormRequest(session, selectedEnv, headers, applyProductResp.Data.CaseID)
+	// Extract CSV data and write to file (if needed)
+	header, rowData := extractCSVData(fullFormResponse.Data, "all")
+	if err := writeCSV(header, rowData, "4. answerAndQuestion/questionAllFields.csv"); err != nil {
+		return nil, fmt.Errorf("error writing CSV: %w", err)
+	}
 
-	// Extract CSV data and write to file
-	header, row := extractCSVData(fullFormResponse.Data, "all")
-	writeCSV(header, row, "4. answerAndQuestion/questionAllFields.csv")
+	return fullFormResponse.Data.Fields, nil
 }

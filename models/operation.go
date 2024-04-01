@@ -25,18 +25,34 @@ type Endpoints struct {
 // FullFormResponse represents the JSON structure of the response.
 type FullFormResponse struct {
 	Data struct {
-		CaseID           string `json:"case_id"`
-		Fields           []Field
+		CaseID           string  `json:"case_id"`
+		Fields           []Field `json:"fields"` // added JSON tag here
 		AdditionalFields []Field `json:"additional_fields"`
 	}
 	Status int `json:"status"`
 }
 
+type Label struct {
+	Text     string `json:"text"`
+	ImageURL string `json:"image_url"`
+}
+
+type Choice struct {
+	Value string           `json:"value"`
+	Label map[string]Label `json:"label"`
+}
+
 // Field represents a single field structure.
 type Field struct {
-	FieldName               string `json:"field_name"`
-	DataType                string `json:"data_type"`
-	IsMultipleValuesAllowed bool   `json:"is_multiple_values_allowed"`
+	FieldName               string           `json:"field_name"`
+	DataType                string           `json:"data_type"`
+	CurrentValue            string           `json:"current_value"`
+	Label                   map[string]Label `json:"label"`
+	Choices                 []Choice         `json:"choices"`
+	IsMandatory             bool             `json:"is_mandatory"`
+	InputSource             string           `json:"input_source"`
+	IsMultipleValuesAllowed bool             `json:"is_multiple_values_allowed"`
+	Alias                   string           `json:"alias"`
 }
 
 // LoadConfig reads environment configuration from a YAML file.

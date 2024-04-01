@@ -9,6 +9,7 @@ import (
 	"strconv"
 	formAddField "thinkerTools/golangFunction/addFieldToForm"
 	applyProductMultiCaseId "thinkerTools/golangFunction/applyMultiCaseID"
+	"thinkerTools/golangFunction/fieldOperations"
 	roleAssignment "thinkerTools/golangFunction/roleAssignment"
 	"thinkerTools/types"
 	"thinkerTools/views"
@@ -35,6 +36,7 @@ func NewMainController(config types.Config) *MainController {
 			{"Apply Product", ApplyProductMultiCaseId},
 			{"Assign Role", AssignRoleModel},
 			{"Send API JSON ", MultiAnswerQuestionJson},
+			{"Get All Field", GetAllFieldWrapper},
 		},
 	}
 }
@@ -98,10 +100,14 @@ func (mc *MainController) Run() {
 			continue // Go back to the beginning of the loop for another try
 		}
 
+		if err := mc.Authenticate(&selectedEnv); err != nil {
+			views.DisplayError(fmt.Errorf("authentication failed: %w", err))
+			continue // Go back to the beginning of the loop for another try
+		}
+
 		if err := mc.Packages[choice-1].Action(selectedEnv); err != nil {
 			views.DisplayError(err)
-			// Optional: Decide if you want to exit or continue after an error
-			continue // Go back to selecting environment
+			continue
 		}
 		// Optional: Add a message or logic here if you want something to happen after a successful action
 		// Go back to selecting environment after completing the action
@@ -136,4 +142,10 @@ func MultiAnswerQuestionJson(env types.Environment) error {
 	}
 
 	return applyProductMultiCaseId.AnswerMultiCaseId(env, basePath)
+}
+
+// GetAllFieldWrapper wraps the fieldOperations.GetAllField function
+func GetAllFieldWrapper(env types.Environment) error {
+	_, err := fieldOperations.GetAllField(env)
+	return err // Just return the error, ignore the fields for now
 }
