@@ -1,2 +1,2 @@
-case_id
-d414bf54-89bd-4983-9d01-4a8e3407975c
+case_id,_occupation.periodYear||number,_occupation.periodMonth||number,_occupation.previousPeriodMonth||number,_occupation.previousPeriodYear||number,_occupation.totalPeriodYear||number,_occupation.totalPeriodMonth||number,_occupation.employType||text,_occupation.incomeAmount||number,_occupation.type||text,_occupation.subType||text,_occupation.typeOther||text,_customerInfo.nationalIdNumber||text,firstName||text,lastName||text,thinker.isLoanApprove||text
+6eafd11c-eab2-43fd-a580-7777822a0c45,0,0,0,0,0,0,text,0,text,text,text,text,text,text,true

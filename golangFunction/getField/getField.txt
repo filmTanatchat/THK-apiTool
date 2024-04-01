@@ -158,41 +158,6 @@ func makeRequest(client *http.Client, apiURL string, headers map[string]string, 
 	return &responseJSON, bodyBytes, nil
 }
 
-func handleErr(err error, msg string) {
-	if err != nil {
-		fmt.Printf("%s: %v\n", msg, err)
-		os.Exit(1)
-	}
-}
-
-func makeApplyForProductRequest(client *http.Client, env types.Environment, headers map[string]string) ApplyProductResponse {
-
-	payload, err := loadJSONFromPath(filepath.Join(basePath, "3. dataSource/productName.json"))
-	handleErr(err, "Failed to load payload")
-
-	_, bodyBytes, err := makeRequest(client, env.BaseURL+"/question-taskpool/api/v1/apply-for-product", headers, payload)
-	handleErr(err, "Error applying for product")
-
-	var applyProductResp ApplyProductResponse
-	err = json.Unmarshal(bodyBytes, &applyProductResp)
-	handleErr(err, "Error unmarshalling apply product response")
-
-	return applyProductResp
-}
-
-func makeGetFullFormRequest(client *http.Client, env types.Environment, headers map[string]string, caseID string) GetFullFormResponse {
-
-	payloadGetFullForm := map[string]string{"case_id": caseID}
-	_, bodyBytes, err := makeRequest(client, env.BaseURL+"/question-taskpool/api/v1/get-full-form", headers, payloadGetFullForm)
-	handleErr(err, "Error in get-full-form request")
-
-	var fullFormResponse GetFullFormResponse
-	err = json.Unmarshal(bodyBytes, &fullFormResponse)
-	handleErr(err, "Error decoding full form response")
-
-	return fullFormResponse
-}
-
 func extractCSVData(formData FormData, fieldType string) ([]string, []string) {
 	var allFields []Field
 
@@ -278,11 +243,20 @@ func writeCSV(header []string, row []string, path string) error {
 
 func main() {
 	basePath, err := os.Getwd()
-	handleErr(err, "Error getting current working directory")
+	if err != nil {
+		fmt.Println("Error getting current working directory:", err)
+		os.Exit(1)
+	}
 
+	// Assuming the config file is in a folder named 'config' within the current working directory
 	configPath := filepath.Join(basePath, "config", "config.yaml")
+
+	// Load configuration
 	config, err := types.LoadConfig(configPath)
-	handleErr(err, "Failed to load configuration")
+	if err != nil {
+		fmt.Println("Failed to load configuration:", err)
+		os.Exit(1)
+	}
 
 	selectedEnv, ok, exit := types.SelectEnvironment(config)
 	if !ok {
@@ -296,12 +270,145 @@ func main() {
 
 	session := &http.Client{}
 	headers, err := types.Authenticate(session, selectedEnv.BaseURL+"/authentication/api/v1/login", selectedEnv.Email, selectedEnv.Password)
-	handleErr(err, "Error during authentication")
+	if err != nil {
+		fmt.Println("Error during authentication:", err)
+		os.Exit(1)
+	}
 
-	applyProductResp := makeApplyForProductRequest(session, selectedEnv, headers)
-	fullFormResponse := makeGetFullFormRequest(session, selectedEnv, headers, applyProductResp.Data.CaseID)
+	payload, err := loadJSONFromPath(filepath.Join(basePath, "3. dataSource/productName.json"))
+	if err != nil {
+		fmt.Println("Failed to load payload:", err)
+		os.Exit(1)
+	}
 
-	// Extract CSV data and write to file
+	// Apply for product and get the case ID
+	responseApplyProduct, applyProductBodyBytes, err := makeRequest(session, selectedEnv.BaseURL+"/question-taskpool/api/v1/apply-for-product", headers, payload)
+	if err != nil {
+		fmt.Println("Error applying for product:", err)
+		os.Exit(1)
+	}
+
+	var applyProductResp ApplyProductResponse
+	if err := json.Unmarshal(applyProductBodyBytes, &applyProductResp); err != nil {
+		fmt.Println("Error unmarshalling apply product response:", err)
+		os.Exit(1)
+	}
+
+	// Prepare payload for get-full-form request
+	payloadGetFullForm := map[string]string{"case_id": applyProductResp.Data.CaseID}
+	_, getFullFormBodyBytes, err := makeRequest(session, selectedEnv.BaseURL+"/question-taskpool/api/v1/get-full-form", headers, payloadGetFullForm)
+	if err != nil {
+		fmt.Printf("Error in get-full-form request: %v\n", err)
+		os.Exit(1)
+	}
+
+	// Extracting the actual FormData from the response
+	var fullFormResponse GetFullFormResponse
+	if err := json.Unmarshal(getFullFormBodyBytes, &fullFormResponse); err != nil {
+		fmt.Println("Error decoding full form response:", err)
+		os.Exit(1)
+	}
+
+	// Process and write the data to CSV
 	header, row := extractCSVData(fullFormResponse.Data, "all")
-	writeCSV(header, row, "4. answerAndQuestion/questionAllFields.csv")
+	csvFilePath := "output.csv"
+	if err := writeCSV(header, row, csvFilePath); err != nil {
+		fmt.Println("Error writing to CSV:", err)
+		os.Exit(1)
+	}
+
+	// Writing to CSV
+	if err := writeCSV(header, row, "4. answerAndQuestion/questionAllFields.csv"); err != nil {
+		fmt.Printf("Error writing CSV: %v\n", err)
+		os.Exit(1)
+	}
+
+	responseCounters := make(map[int]int)
+	uniqueResponses := make(map[int]map[string]int)
+
+	responseStr, err := json.Marshal(responseApplyProduct.Response)
+	if err != nil {
+		panic(err)
+	}
+
+	status := responseApplyProduct.Status
+	responseCounters[status]++
+
+	if uniqueResponses[status] == nil {
+		uniqueResponses[status] = make(map[string]int)
+	}
+	uniqueResponses[status][string(responseStr)]++
+
+	if status == 200 {
+		var applyProductResp ApplyProductResponse
+		responseBytes, err := json.Marshal(responseApplyProduct.Response)
+		if err != nil {
+			panic(err)
+		}
+
+		err = json.Unmarshal(responseBytes, &applyProductResp)
+		if err != nil {
+			panic(err)
+		}
+
+		caseID := applyProductResp.Data.CaseID
+
+		payloadGetFullForm := map[string]string{"case_id": caseID}
+
+		// Make the request to the get-full-form API
+		responseGetFullForm, bodyBytes, err := makeRequest(session, selectedEnv.BaseURL+"/question-taskpool/api/v1/get-full-form", headers, payloadGetFullForm)
+		if err != nil {
+			fmt.Printf("Error in get-full-form request: %v\n", err)
+			os.Exit(1)
+		}
+
+		// Check if the status code is OK
+		if responseGetFullForm.Status != http.StatusOK {
+			fmt.Println("Non-200 status received:", responseGetFullForm.Status)
+			os.Exit(1)
+		}
+
+		// Extracting the actual FormData from the response
+		var fullFormResponse GetFullFormResponse
+		if err := json.Unmarshal(bodyBytes, &fullFormResponse); err != nil {
+			fmt.Println("Error decoding full form response:", err)
+			os.Exit(1)
+		}
+
+		// Debug print to check if fields are correctly populated
+		fmt.Printf("Decoded FormData: %+v\n", fullFormResponse.Data)
+		fmt.Printf("Number of regular fields: %d\n", len(fullFormResponse.Data.Fields))
+		fmt.Printf("Number of additional fields: %d\n", len(fullFormResponse.Data.AdditionalFields))
+
+		// Now pass the correct FormData to extractCSVData
+		headerAll, rowAll := extractCSVData(fullFormResponse.Data, "all")
+		if err := writeCSV(headerAll, rowAll, "4. answerAndQuestion/questionAllFields.csv"); err != nil {
+			fmt.Printf("Error writing CSV: %v\n", err)
+			os.Exit(1)
+		}
+
+		headerFields, rowFields := extractCSVData(fullFormResponse.Data, "fields")
+		if err := writeCSV(headerFields, rowFields, "4. answerAndQuestion/questionMandatoryFields.csv"); err != nil {
+			panic(err)
+		}
+
+		headerAddFields, rowAddFields := extractCSVData(fullFormResponse.Data, "additional_fields")
+		if err := writeCSV(headerAddFields, rowAddFields, "4. answerAndQuestion/questionAdditionalFields.csv"); err != nil {
+			panic(err)
+		}
+	} else {
+		fmt.Printf("Received non-200 status from apply for product: %d\n", responseApplyProduct.Status)
+		os.Exit(1)
+	}
+
+	// Print summary of responses
+	for status, count := range responseCounters {
+		fmt.Printf("status %d : %d Requests.\n", status, count)
+		fmt.Println("detail of", status, ":")
+		for responseStr, occurrence := range uniqueResponses[status] {
+			fmt.Printf("Occurrences: %d\n", occurrence)
+			fmt.Println("Response:", responseStr)
+			fmt.Println("----------------------")
+		}
+	}
 }
