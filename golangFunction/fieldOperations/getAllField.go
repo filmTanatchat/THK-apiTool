@@ -1,179 +1,48 @@
 package fieldOperations
 
 import (
-	"bytes"
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
-	"io"
 	"net/http"
 	"os"
 	"path/filepath"
 
-	"thinkerTools/models"
 	"thinkerTools/types"
 )
 
-// Env represents the environment configuration
-type Env struct {
-	BaseURL  string `json:"BASE_URL"`
-	Email    string `json:"EMAIL"`
-	Password string `json:"PASSWORD"`
-}
-
-// ResponseData represents the data section of a response
-type ResponseData struct {
-	CaseID           string  `json:"case_id"`
-	Fields           []Field `json:"fields"`
-	AdditionalFields []Field `json:"additional_fields"`
-}
-
-// ResponseJSON represents a typical JSON response structure
-type ResponseJSON struct {
-	Response map[string]interface{} `json:"Response"`
-	Status   int                    `json:"Status"`
-}
-
-type ApplyProductResponse struct {
-	Code    int    `json:"code"`
-	Message string `json:"message"`
-	Data    struct {
-		CaseID           string  `json:"case_id"`
-		AnswerToken      string  `json:"answer_token"`
-		Field            Field   `json:"field"`
-		AdditionalFields []Field `json:"additional_fields"`
-	} `json:"data"`
-}
-
-type Label struct {
-	Text     string `json:"text"`
-	ImageURL string `json:"image_url"`
-}
-
-type Choice struct {
-	Value string           `json:"value"`
-	Label map[string]Label `json:"label"`
-}
-
-type Field struct {
-	FieldName               string           `json:"field_name"`
-	DataType                string           `json:"data_type"`
-	CurrentValue            string           `json:"current_value"`
-	Label                   map[string]Label `json:"label"`
-	Choices                 []Choice         `json:"choices"`
-	IsMandatory             bool             `json:"is_mandatory"`
-	InputSource             string           `json:"input_source"`
-	IsMultipleValuesAllowed bool             `json:"is_multiple_values_allowed"`
-	Alias                   string           `json:"alias"`
-}
-
-type FormData struct {
-	CaseID           string         `json:"case_id"`
-	Fields           []models.Field `json:"fields"`
-	AdditionalFields []models.Field `json:"additional_fields"`
-}
-
-type GetFullFormResponse struct {
-	Code    int      `json:"code"`
-	Message string   `json:"message"`
-	Data    FormData `json:"data"`
-}
-
 var basePath string
 
-// loadJSONFromPath loads JSON from a given file path.
-func loadJSONFromPath(path string) (map[string]interface{}, error) {
-	filePath := filepath.Join(basePath, path)
-	file, err := os.ReadFile(filePath)
-	if err != nil {
-		return nil, err
-	}
+func makeApplyForProductRequest(client *http.Client, env types.Environment, headers map[string]string) types.ApplyProductResponse {
+	payload, err := types.LoadJSONFromPath(filepath.Join(basePath, "3. dataSource/productName.json"))
+	types.HandleErr(err, "Failed to load payload")
 
-	jsonStr, err := types.RemoveComments(string(file)), nil
+	resp, err := types.MakeRequest(client, env.BaseURL+"/question-taskpool/api/v1/apply-for-product", headers, payload)
+	types.HandleErr(err, "Error applying for product")
 
-	var result map[string]interface{}
-	err = json.Unmarshal([]byte(jsonStr), &result)
-	return result, err
-}
-
-// makeRequest makes an HTTP request and returns the response.
-func makeRequest(client *http.Client, apiURL string, headers map[string]string, payload interface{}) (*ResponseJSON, []byte, error) {
-	data, err := json.Marshal(payload)
-	if err != nil {
-		return nil, nil, err
-	}
-
-	req, err := http.NewRequest("POST", apiURL, bytes.NewBuffer(data))
-	if err != nil {
-		return nil, nil, err
-	}
-
-	for key, value := range headers {
-		req.Header.Set(key, value)
-	}
-
-	fmt.Printf("Sending request to URL: %s with payload: %s\n", apiURL, string(data))
-
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, nil, err
-	}
 	defer resp.Body.Close()
-
-	bodyBytes, err := io.ReadAll(resp.Body)
-	if err != nil {
-		return nil, nil, err
-	}
-
-	var responseJSON ResponseJSON
-	if err := json.Unmarshal(bodyBytes, &responseJSON); err != nil {
-		return nil, bodyBytes, err
-	}
-
-	if resp.StatusCode != http.StatusOK {
-		return nil, bodyBytes, fmt.Errorf("received non-200 status: %d", resp.StatusCode)
-	}
-
-	return &responseJSON, bodyBytes, nil
-}
-
-func handleErr(err error, msg string) {
-	if err != nil {
-		fmt.Printf("%s: %v\n", msg, err)
-		os.Exit(1)
-	}
-}
-
-func makeApplyForProductRequest(client *http.Client, env types.Environment, headers map[string]string) ApplyProductResponse {
-
-	payload, err := loadJSONFromPath(filepath.Join(basePath, "3. dataSource/productName.json"))
-	handleErr(err, "Failed to load payload")
-
-	_, bodyBytes, err := makeRequest(client, env.BaseURL+"/question-taskpool/api/v1/apply-for-product", headers, payload)
-	handleErr(err, "Error applying for product")
-
-	var applyProductResp ApplyProductResponse
-	err = json.Unmarshal(bodyBytes, &applyProductResp)
-	handleErr(err, "Error unmarshalling apply product response")
+	var applyProductResp types.ApplyProductResponse
+	err = json.NewDecoder(resp.Body).Decode(&applyProductResp)
+	types.HandleErr(err, "Error unmarshalling apply product response")
 
 	return applyProductResp
 }
 
-func makeGetFullFormRequest(client *http.Client, env types.Environment, headers map[string]string, caseID string) GetFullFormResponse {
-
+func makeGetFullFormRequest(client *http.Client, env types.Environment, headers map[string]string, caseID string) types.GetFullFormResponse {
 	payloadGetFullForm := map[string]string{"case_id": caseID}
-	_, bodyBytes, err := makeRequest(client, env.BaseURL+"/question-taskpool/api/v1/get-full-form", headers, payloadGetFullForm)
-	handleErr(err, "Error in get-full-form request")
+	resp, err := types.MakeRequest(client, env.BaseURL+"/question-taskpool/api/v1/get-full-form", headers, payloadGetFullForm)
+	types.HandleErr(err, "Error in get-full-form request")
 
-	var fullFormResponse GetFullFormResponse
-	err = json.Unmarshal(bodyBytes, &fullFormResponse)
-	handleErr(err, "Error decoding full form response")
+	defer resp.Body.Close()
+	var fullFormResponse types.GetFullFormResponse
+	err = json.NewDecoder(resp.Body).Decode(&fullFormResponse)
+	types.HandleErr(err, "Error decoding full form response")
 
 	return fullFormResponse
 }
 
-func extractCSVData(formData FormData, fieldType string) ([]string, []string) {
-	var allFields []models.Field // Changed type to models.Field
+func extractCSVData(formData types.FormData, fieldType string) ([]string, []string) {
+	var allFields []types.Field
 
 	if fieldType == "fields" || fieldType == "all" {
 		allFields = append(allFields, formData.Fields...)
@@ -200,7 +69,7 @@ func extractCSVData(formData FormData, fieldType string) ([]string, []string) {
 	return header, exampleDataRow
 }
 
-func formatFieldName(field models.Field) string {
+func formatFieldName(field types.Field) string {
 	formattedName := field.FieldName + "||" + field.DataType
 	if field.IsMultipleValuesAllowed {
 		formattedName += "||MULTI"
@@ -208,7 +77,7 @@ func formatFieldName(field models.Field) string {
 	return formattedName
 }
 
-func exampleDataForField(field models.Field) string {
+func exampleDataForField(field types.Field) string {
 
 	switch field.DataType {
 	case "date":
@@ -268,7 +137,39 @@ func writeCSV(header []string, row []string, path string) error {
 	return nil
 }
 
-func GetAllField(env types.Environment) ([]models.Field, error) {
+func generateSummary(fields []types.Field) string {
+	summary := fmt.Sprintf("Total Fields: %d\n", len(fields))
+	mandatoryCount := countMandatoryFields(fields)
+	fieldTypes := countFieldTypes(fields)
+
+	summary += fmt.Sprintf("Mandatory Fields: %d\n", mandatoryCount)
+	summary += "Field Types Count:\n"
+	for dataType, count := range fieldTypes {
+		summary += fmt.Sprintf("- %s: %d\n", dataType, count)
+	}
+
+	return summary
+}
+
+func countMandatoryFields(fields []types.Field) int {
+	count := 0
+	for _, field := range fields {
+		if field.IsMandatory {
+			count++
+		}
+	}
+	return count
+}
+
+func countFieldTypes(fields []types.Field) map[string]int {
+	fieldTypes := make(map[string]int)
+	for _, field := range fields {
+		fieldTypes[field.DataType]++
+	}
+	return fieldTypes
+}
+
+func GetAllField(env types.Environment) ([]types.Field, error) {
 	session := &http.Client{}
 
 	// Authenticate and obtain headers
@@ -280,11 +181,15 @@ func GetAllField(env types.Environment) ([]models.Field, error) {
 	applyProductResp := makeApplyForProductRequest(session, env, headers)
 	fullFormResponse := makeGetFullFormRequest(session, env, headers, applyProductResp.Data.CaseID)
 
-	// Extract CSV data and write to file (if needed)
+	// Extract CSV data
 	header, rowData := extractCSVData(fullFormResponse.Data, "all")
 	if err := writeCSV(header, rowData, "4. answerAndQuestion/questionAllFields.csv"); err != nil {
 		return nil, fmt.Errorf("error writing CSV: %w", err)
 	}
+
+	// Generate and print summary
+	summary := generateSummary(fullFormResponse.Data.Fields)
+	fmt.Println("_____________________\nSummary:\n" + summary + "_____________________")
 
 	return fullFormResponse.Data.Fields, nil
 }

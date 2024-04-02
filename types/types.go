@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 
@@ -41,6 +42,59 @@ type AuthResponse struct {
 		SessionID string `json:"session_id"`
 	} `json:"data"`
 }
+
+type ApplyProductResponse struct {
+	Code    int    `json:"code"`
+	Message string `json:"message"`
+	Data    struct {
+		CaseID           string  `json:"case_id"`
+		AnswerToken      string  `json:"answer_token"`
+		Field            Field   `json:"field"`
+		AdditionalFields []Field `json:"additional_fields"`
+	} `json:"data"`
+}
+
+type ResponseJSON struct {
+	Response map[string]interface{} `json:"Response"`
+	Status   int                    `json:"Status"`
+}
+
+type Label struct {
+	Text     string `json:"text"`
+	ImageURL string `json:"image_url"`
+}
+
+type Choice struct {
+	Value string           `json:"value"`
+	Label map[string]Label `json:"label"`
+}
+
+// Field represents a single field structure.
+type Field struct {
+	FieldName               string           `json:"field_name"`
+	DataType                string           `json:"data_type"`
+	CurrentValue            string           `json:"current_value"`
+	Label                   map[string]Label `json:"label"`
+	Choices                 []Choice         `json:"choices"`
+	IsMandatory             bool             `json:"is_mandatory"`
+	InputSource             string           `json:"input_source"`
+	IsMultipleValuesAllowed bool             `json:"is_multiple_values_allowed"`
+	Alias                   string           `json:"alias"`
+}
+
+type FormData struct {
+	CaseID           string  `json:"case_id"`
+	Fields           []Field `json:"fields"`
+	AdditionalFields []Field `json:"additional_fields"`
+}
+
+type GetFullFormResponse struct {
+	Code    int      `json:"code"`
+	Message string   `json:"message"`
+	Data    FormData `json:"data"`
+}
+
+var basePath string
 
 // Authenticate handles user authentication and returns a headers map if successful.
 func Authenticate(session *http.Client, loginURL, email, password string) (map[string]string, error) {
@@ -174,4 +228,43 @@ func RemoveComments(jsonStr string) string {
 		}
 	}
 	return result.String()
+}
+
+// loadJSONFromPath loads JSON from a given file path.
+func LoadJSONFromPath(path string) (map[string]interface{}, error) {
+	filePath := filepath.Join(basePath, path)
+	fileData, err := os.ReadFile(filePath)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read file: %w", err)
+	}
+	jsonStr := RemoveComments(string(fileData))
+	var result map[string]interface{}
+	if err := json.Unmarshal([]byte(jsonStr), &result); err != nil {
+		return nil, fmt.Errorf("failed to unmarshal json: %w", err)
+	}
+	return result, nil
+}
+
+// makeRequest makes an HTTP request and returns the response.
+func MakeRequest(client *http.Client, apiURL string, headers map[string]string, payload interface{}) (*http.Response, error) {
+	data, err := json.Marshal(payload)
+	if err != nil {
+		return nil, fmt.Errorf("failed to marshal payload: %w", err)
+	}
+	req, err := http.NewRequest("POST", apiURL, bytes.NewBuffer(data))
+	if err != nil {
+		return nil, fmt.Errorf("failed to create new request: %w", err)
+	}
+	for key, value := range headers {
+		req.Header.Set(key, value)
+	}
+	return client.Do(req)
+}
+
+// handleErr prints an error message and exits if there's an error.
+func HandleErr(err error, msg string) {
+	if err != nil {
+		fmt.Printf("%s: %v\n", msg, err)
+		os.Exit(1)
+	}
 }
