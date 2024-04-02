@@ -27,7 +27,8 @@ type MainController struct {
 func NewMainController(config types.Config) *MainController {
 	// Initialize your packages/actions here similar to how it's done in main.go
 	return &MainController{
-		Config: config,
+		Config:  config,
+		Session: &http.Client{},
 		Packages: []struct {
 			Name   string
 			Action func(types.Environment) error
@@ -43,6 +44,10 @@ func NewMainController(config types.Config) *MainController {
 
 // Authenticate handles user authentication
 func (mc *MainController) Authenticate(env *types.Environment) error {
+	if mc.Session == nil {
+		mc.Session = &http.Client{}
+	}
+
 	payload := types.AuthPayload{
 		Email:    env.Email,
 		Password: env.Password,
@@ -52,7 +57,7 @@ func (mc *MainController) Authenticate(env *types.Environment) error {
 		return err
 	}
 
-	req, err := http.NewRequest(http.MethodPost, env.BaseURL+"/auth-endpoint", bytes.NewBuffer(jsonPayload))
+	req, err := http.NewRequest(http.MethodPost, env.BaseURL+"/authentication/api/v1/login", bytes.NewBuffer(jsonPayload))
 	if err != nil {
 		return err
 	}

@@ -1,2 +1,0 @@
-case_id,_occupation.periodMonth||number,_occupation.periodYear||number,_occupation.previousPeriodYear||number,_occupation.previousPeriodMonth||number,_occupation.totalPeriodMonth||number,_occupation.totalPeriodYear||number,_occupation.employType||text,_occupation.incomeAmount||number,_occupation.type||text,_occupation.subType||text,_occupation.typeOther||text,_customerInfo.nationalIdNumber||text,firstName||text,lastName||text,thinker.isLoanApprove||text
-6cbdfaad-28a2-45ab-9a50-7d8c0767a117,0,0,0,0,0,0,text,0,text,text,text,text,text,text,true
