@@ -12,6 +12,7 @@ import (
 	"strings"
 	"time"
 
+	"thinkerTools/models"
 	"thinkerTools/types"
 )
 
@@ -188,7 +189,7 @@ func formatLogEntry(result Result) string {
 	return logEntry
 }
 
-func setupSession(env types.Environment) (*http.Client, map[string]string, error) {
+func setupSession(env models.Environment) (*http.Client, map[string]string, error) {
 	session := &http.Client{}
 	loginURL := env.BaseURL + "/authentication/api/v1/login"
 	headers, err := types.Authenticate(session, loginURL, env.Email, env.Password)
@@ -198,7 +199,7 @@ func setupSession(env types.Environment) (*http.Client, map[string]string, error
 	return session, headers, nil
 }
 
-func AddFieldsFromCSV(env types.Environment) error {
+func AddFieldsFromCSV(env models.Environment) error {
 	session, headers, err := setupSession(env)
 	if err != nil {
 		fmt.Println("Failed to setup session:", err)

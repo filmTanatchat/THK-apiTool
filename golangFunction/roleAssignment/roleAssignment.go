@@ -12,6 +12,7 @@ import (
 	"sync"
 	"time"
 
+	"thinkerTools/models"
 	"thinkerTools/types"
 )
 
@@ -28,7 +29,7 @@ type Result struct {
 	Duration     string      `json:"Duration"`
 }
 
-func AssignRole(env types.Environment) error {
+func AssignRole(env models.Environment) error {
 	basePath, _ := os.Getwd()
 	logFilePath := filepath.Join(basePath, "2. log", "roleAssignment.log")
 	csvFilePath := filepath.Join(basePath, "3. dataSource", "role.csv")
@@ -52,7 +53,7 @@ func AssignRole(env types.Environment) error {
 	return processCSV(csvFilePath, session, headers, env.BaseURL, logFile)
 }
 
-func setupSession(env types.Environment) (*http.Client, map[string]string, error) {
+func setupSession(env models.Environment) (*http.Client, map[string]string, error) {
 	session := &http.Client{}
 	loginURL := env.BaseURL + "/authentication/api/v1/login"
 	headers, err := types.Authenticate(session, loginURL, env.Email, env.Password)

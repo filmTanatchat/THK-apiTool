@@ -6,99 +6,23 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io"
 	"net/http"
 	"os"
 	"path/filepath"
 	"strconv"
 	"strings"
 
+	"thinkerTools/models"
+
 	"gopkg.in/yaml.v2"
 )
-
-// Environment struct holds the configuration for an environment.
-type Environment struct {
-	Name         string `yaml:"name"`
-	BaseURL      string `yaml:"BASE_URL"`
-	Email        string `yaml:"EMAIL"`
-	Password     string `yaml:"PASSWORD"`
-	SessionToken string
-	CSVFilePath  string
-}
-
-// Config represents a list of environments.
-type Config struct {
-	Environments []Environment `yaml:"environments"`
-}
-
-// AuthPayload holds the authentication credentials.
-type AuthPayload struct {
-	Email    string `json:"email"`
-	Password string `json:"password"`
-}
-
-// AuthResponse is the expected response from the authentication request.
-type AuthResponse struct {
-	Data struct {
-		SessionID string `json:"session_id"`
-	} `json:"data"`
-}
-
-type ApplyProductResponse struct {
-	Code    int    `json:"code"`
-	Message string `json:"message"`
-	Data    struct {
-		CaseID           string  `json:"case_id"`
-		AnswerToken      string  `json:"answer_token"`
-		Field            Field   `json:"field"`
-		AdditionalFields []Field `json:"additional_fields"`
-	} `json:"data"`
-}
-
-type ResponseJSON struct {
-	Response map[string]interface{} `json:"Response"`
-	Status   int                    `json:"Status"`
-}
-
-type Label struct {
-	Text     string `json:"text"`
-	ImageURL string `json:"image_url"`
-}
-
-type Choice struct {
-	Value string           `json:"value"`
-	Label map[string]Label `json:"label"`
-}
-
-// Field represents a single field structure.
-type Field struct {
-	FieldName               string           `json:"field_name"`
-	DataType                string           `json:"data_type"`
-	CurrentValue            string           `json:"current_value"`
-	Label                   map[string]Label `json:"label"`
-	Choices                 []Choice         `json:"choices"`
-	IsMandatory             bool             `json:"is_mandatory"`
-	InputSource             string           `json:"input_source"`
-	IsMultipleValuesAllowed bool             `json:"is_multiple_values_allowed"`
-	Alias                   string           `json:"alias"`
-}
-
-type FormData struct {
-	CaseID           string  `json:"case_id"`
-	Fields           []Field `json:"fields"`
-	AdditionalFields []Field `json:"additional_fields"`
-}
-
-type GetFullFormResponse struct {
-	Code    int      `json:"code"`
-	Message string   `json:"message"`
-	Data    FormData `json:"data"`
-}
 
 var basePath string
 
 // Authenticate handles user authentication and returns a headers map if successful.
 func Authenticate(session *http.Client, loginURL, email, password string) (map[string]string, error) {
-	payload := AuthPayload{Email: email, Password: password}
+	payload := models.AuthPayload{Email: email, Password: password}
 	jsonPayload, err := json.Marshal(payload)
 	if err != nil {
 		return nil, err
@@ -120,7 +44,7 @@ func Authenticate(session *http.Client, loginURL, email, password string) (map[s
 		return nil, errors.New("authentication failed: " + resp.Status)
 	}
 
-	var authResponse AuthResponse
+	var authResponse models.AuthResponse
 	err = json.NewDecoder(resp.Body).Decode(&authResponse)
 	if err != nil {
 		return nil, err
@@ -133,8 +57,8 @@ func Authenticate(session *http.Client, loginURL, email, password string) (map[s
 }
 
 // LoadConfig reads environment configuration from a YAML file.
-func LoadConfig(filename string) (Config, error) {
-	var cfg Config
+func LoadConfig(filename string) (models.Config, error) {
+	var cfg models.Config
 	data, err := os.ReadFile(filename)
 	if err != nil {
 		return cfg, err
@@ -149,10 +73,10 @@ func LoadConfig(filename string) (Config, error) {
 }
 
 // SelectEnvironment displays a list of environments and allows the user to select one.
-func SelectEnvironment(cfg Config) (Environment, bool, bool) {
+func SelectEnvironment(cfg models.Config) (models.Environment, bool, bool) {
 	if len(cfg.Environments) == 0 {
 		fmt.Println("No environments found in the configuration.")
-		return Environment{}, false, false
+		return models.Environment{}, false, false
 	}
 
 	fmt.Println("Select environment (or type 'exit' to quit):")
@@ -167,13 +91,13 @@ func SelectEnvironment(cfg Config) (Environment, bool, bool) {
 
 	// Check for exit command
 	if strings.ToLower(choiceStr) == "exit" {
-		return Environment{}, false, true
+		return models.Environment{}, false, true
 	}
 
 	choice, err := strconv.Atoi(choiceStr)
 	if err != nil || choice < 1 || choice > len(cfg.Environments) {
 		fmt.Println("Invalid choice")
-		return Environment{}, false, false
+		return models.Environment{}, false, false
 	}
 
 	selectedEnv := cfg.Environments[choice-1]
@@ -245,19 +169,27 @@ func LoadJSONFromPath(path string) (map[string]interface{}, error) {
 	return result, nil
 }
 
-// makeRequest makes an HTTP request and returns the response.
-func MakeRequest(client *http.Client, apiURL string, headers map[string]string, payload interface{}) (*http.Response, error) {
-	data, err := json.Marshal(payload)
-	if err != nil {
-		return nil, fmt.Errorf("failed to marshal payload: %w", err)
+// makeRequest makes an HTTP request with a given method and returns the response.
+func MakeRequest(client *http.Client, method, apiURL string, headers map[string]string, payload interface{}) (*http.Response, error) {
+	var reqBody io.Reader
+
+	if payload != nil {
+		data, err := json.Marshal(payload)
+		if err != nil {
+			return nil, fmt.Errorf("failed to marshal payload: %w", err)
+		}
+		reqBody = bytes.NewBuffer(data)
 	}
-	req, err := http.NewRequest("POST", apiURL, bytes.NewBuffer(data))
+
+	req, err := http.NewRequest(method, apiURL, reqBody)
 	if err != nil {
 		return nil, fmt.Errorf("failed to create new request: %w", err)
 	}
+
 	for key, value := range headers {
 		req.Header.Set(key, value)
 	}
+
 	return client.Do(req)
 }
 

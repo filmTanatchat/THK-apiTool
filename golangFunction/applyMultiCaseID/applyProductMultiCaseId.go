@@ -13,6 +13,7 @@ import (
 
 	"gopkg.in/yaml.v2"
 
+	"thinkerTools/models"
 	"thinkerTools/types"
 )
 
@@ -117,7 +118,7 @@ func selectProduct(products ProductName) (string, error) {
 }
 
 // ApplyProductMultiCaseId is the main function for the applyProductMultiCaseId package.
-func ApplyProductMultiCaseId(env types.Environment, basePath string) error {
+func ApplyProductMultiCaseId(env models.Environment, basePath string) error {
 
 	// Load product names from YAML
 	productNamesPath := filepath.Join(basePath, "config", "config.yaml")

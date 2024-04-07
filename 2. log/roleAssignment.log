@@ -1,161 +1,154 @@
-Row 3 successful
+Row 22 successful
 Role Name: , VM Name: 
 Status Code: 200, Response: map[code:0 data:map[added:false] message:]
 Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"bank.3.information.cm"}}
-Time Received: 2024-03-27 22:48:03, Duration: 54.625958ms
-----------------------------
-Row 19 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.freelance.cm"}}
-Time Received: 2024-03-27 22:48:03, Duration: 109.336709ms
-----------------------------
-Row 10 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"ncb.verify.cm"}}
-Time Received: 2024-03-27 22:48:03, Duration: 132.414042ms
-----------------------------
-Row 17 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.selfEmploy.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 151.062625ms
-----------------------------
-Row 18 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"bank.2.information.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 150.826041ms
-----------------------------
-Row 7 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"credit.informationOldCustomer.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 151.057625ms
-----------------------------
-Row 20 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.selfEmploy.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 153.043375ms
-----------------------------
-Row 5 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"bank.5.information.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 153.149959ms
-----------------------------
-Row 1 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"summary.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 161.419875ms
-----------------------------
-Row 15 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.freelance.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 161.016042ms
-----------------------------
-Row 11 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"reference.1.information.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 161.413709ms
-----------------------------
-Row 13 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"reference.2.information.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 161.441208ms
-----------------------------
-Row 2 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"bank.1.information.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 161.460083ms
-----------------------------
-Row 8 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.employee.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 161.406166ms
-----------------------------
-Row 21 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"ncb.manualVerify.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 160.7935ms
-----------------------------
-Row 14 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.other.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 160.910208ms
-----------------------------
-Row 23 successful
-Role Name: , VM Name: 
-Status Code: 200, Response: map[code:0 data:map[added:false] message:]
-Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"occupation.informationPresent.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 161.524917ms
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"ncb.manualVerifyNcrs.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 159.027792ms
 ----------------------------
 Row 16 successful
 Role Name: , VM Name: 
 Status Code: 200, Response: map[code:0 data:map[added:false] message:]
 Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
 Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.employee.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 161.055875ms
+Time Received: 2024-04-04 15:43:20, Duration: 159.422459ms
 ----------------------------
-Row 22 successful
+Row 20 successful
 Role Name: , VM Name: 
 Status Code: 200, Response: map[code:0 data:map[added:false] message:]
 Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
-Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"ncb.manualVerifyNcrs.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 160.778041ms
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.selfEmploy.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 189.229ms
+----------------------------
+Row 13 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"reference.2.information.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 189.299041ms
+----------------------------
+Row 23 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"occupation.informationPresent.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 200.26275ms
+----------------------------
+Row 15 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.freelance.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 199.558625ms
+----------------------------
+Row 1 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"summary.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 200.243875ms
+----------------------------
+Row 8 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.employee.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 200.220833ms
 ----------------------------
 Row 6 successful
 Role Name: , VM Name: 
 Status Code: 200, Response: map[code:0 data:map[added:false] message:]
 Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
 Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"credit.informationNewCustomer.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 161.137167ms
+Time Received: 2024-04-04 15:43:20, Duration: 200.114375ms
+----------------------------
+Row 19 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.freelance.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 199.844458ms
+----------------------------
+Row 21 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"ncb.manualVerify.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 199.823208ms
+----------------------------
+Row 14 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.other.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 235.231416ms
+----------------------------
+Row 17 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"document.selfEmploy.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 234.892208ms
+----------------------------
+Row 7 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"credit.informationOldCustomer.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 235.415125ms
+----------------------------
+Row 2 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"bank.1.information.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 235.788041ms
+----------------------------
+Row 5 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"bank.5.information.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 235.326042ms
 ----------------------------
 Row 4 successful
 Role Name: , VM Name: 
 Status Code: 200, Response: map[code:0 data:map[added:false] message:]
 Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
 Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"bank.4.information.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 160.866875ms
+Time Received: 2024-04-04 15:43:20, Duration: 235.712ms
+----------------------------
+Row 11 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"reference.1.information.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 235.349125ms
 ----------------------------
 Row 9 successful
 Role Name: , VM Name: 
 Status Code: 200, Response: map[code:0 data:map[added:false] message:]
 Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
 Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"ncb.direct.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 160.792625ms
+Time Received: 2024-04-04 15:43:20, Duration: 271.013375ms
+----------------------------
+Row 18 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"bank.2.information.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 271.11175ms
+----------------------------
+Row 3 successful
+Role Name: , VM Name: 
+Status Code: 200, Response: map[code:0 data:map[added:false] message:]
+Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
+Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"bank.3.information.cm"}}
+Time Received: 2024-04-04 15:43:20, Duration: 271.902334ms
 ----------------------------
 Row 12 successful
 Role Name: , VM Name: 
 Status Code: 200, Response: map[code:0 data:map[added:false] message:]
 Endpoint: https://moneydd-dev.thinkerfint.com/authentication/api/v1/rbac/add-role-policy
 Payload: {"policy":{"action":"EDIT","role_name":"EXECUTIVE_COMMITTEE","url_path":"occupation.informationPrevious.cm"}}
-Time Received: 2024-03-27 22:48:04, Duration: 161.126292ms
+Time Received: 2024-04-04 15:43:20, Duration: 271.079834ms
 ----------------------------

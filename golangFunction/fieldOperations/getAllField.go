@@ -8,41 +8,42 @@ import (
 	"os"
 	"path/filepath"
 
+	"thinkerTools/models"
 	"thinkerTools/types"
 )
 
 var basePath string
 
-func makeApplyForProductRequest(client *http.Client, env types.Environment, headers map[string]string) types.ApplyProductResponse {
+func makeApplyForProductRequest(client *http.Client, env models.Environment, headers map[string]string) models.ApplyProductResponse {
 	payload, err := types.LoadJSONFromPath(filepath.Join(basePath, "3. dataSource/productName.json"))
 	types.HandleErr(err, "Failed to load payload")
 
-	resp, err := types.MakeRequest(client, env.BaseURL+"/question-taskpool/api/v1/apply-for-product", headers, payload)
+	resp, err := types.MakeRequest(client, "POST", env.BaseURL+"/question-taskpool/api/v1/apply-for-product", headers, payload)
 	types.HandleErr(err, "Error applying for product")
 
 	defer resp.Body.Close()
-	var applyProductResp types.ApplyProductResponse
+	var applyProductResp models.ApplyProductResponse
 	err = json.NewDecoder(resp.Body).Decode(&applyProductResp)
 	types.HandleErr(err, "Error unmarshalling apply product response")
 
 	return applyProductResp
 }
 
-func makeGetFullFormRequest(client *http.Client, env types.Environment, headers map[string]string, caseID string) types.GetFullFormResponse {
+func makeGetFullFormRequest(client *http.Client, env models.Environment, headers map[string]string, caseID string) models.GetFullFormResponse {
 	payloadGetFullForm := map[string]string{"case_id": caseID}
-	resp, err := types.MakeRequest(client, env.BaseURL+"/question-taskpool/api/v1/get-full-form", headers, payloadGetFullForm)
+	resp, err := types.MakeRequest(client, "POST", env.BaseURL+"/question-taskpool/api/v1/get-full-form", headers, payloadGetFullForm)
 	types.HandleErr(err, "Error in get-full-form request")
 
 	defer resp.Body.Close()
-	var fullFormResponse types.GetFullFormResponse
+	var fullFormResponse models.GetFullFormResponse
 	err = json.NewDecoder(resp.Body).Decode(&fullFormResponse)
 	types.HandleErr(err, "Error decoding full form response")
 
 	return fullFormResponse
 }
 
-func extractCSVData(formData types.FormData, fieldType string) ([]string, []string) {
-	var allFields []types.Field
+func extractCSVData(formData models.FormData, fieldType string) ([]string, []string) {
+	var allFields []models.Field
 
 	if fieldType == "fields" || fieldType == "all" {
 		allFields = append(allFields, formData.Fields...)
@@ -69,7 +70,7 @@ func extractCSVData(formData types.FormData, fieldType string) ([]string, []stri
 	return header, exampleDataRow
 }
 
-func formatFieldName(field types.Field) string {
+func formatFieldName(field models.Field) string {
 	formattedName := field.FieldName + "||" + field.DataType
 	if field.IsMultipleValuesAllowed {
 		formattedName += "||MULTI"
@@ -77,8 +78,7 @@ func formatFieldName(field types.Field) string {
 	return formattedName
 }
 
-func exampleDataForField(field types.Field) string {
-
+func exampleDataForField(field models.Field) string {
 	switch field.DataType {
 	case "date":
 		if field.IsMultipleValuesAllowed {
@@ -137,7 +137,7 @@ func writeCSV(header []string, row []string, path string) error {
 	return nil
 }
 
-func generateSummary(fields []types.Field) string {
+func generateSummary(fields []models.Field) string {
 	summary := fmt.Sprintf("Total Fields: %d\n", len(fields))
 	mandatoryCount := countMandatoryFields(fields)
 	fieldTypes := countFieldTypes(fields)
@@ -151,7 +151,7 @@ func generateSummary(fields []types.Field) string {
 	return summary
 }
 
-func countMandatoryFields(fields []types.Field) int {
+func countMandatoryFields(fields []models.Field) int {
 	count := 0
 	for _, field := range fields {
 		if field.IsMandatory {
@@ -161,7 +161,7 @@ func countMandatoryFields(fields []types.Field) int {
 	return count
 }
 
-func countFieldTypes(fields []types.Field) map[string]int {
+func countFieldTypes(fields []models.Field) map[string]int {
 	fieldTypes := make(map[string]int)
 	for _, field := range fields {
 		fieldTypes[field.DataType]++
@@ -169,7 +169,7 @@ func countFieldTypes(fields []types.Field) map[string]int {
 	return fieldTypes
 }
 
-func GetAllField(env types.Environment) ([]types.Field, error) {
+func GetAllField(env models.Environment) ([]models.Field, error) {
 	session := &http.Client{}
 
 	// Authenticate and obtain headers

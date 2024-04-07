@@ -14,29 +14,6 @@ import (
 	"thinkerTools/types"
 )
 
-// SelectEndpoint allows the user to choose an endpoint and returns its URL and method.
-func SelectEndpoint(endpoints models.Endpoints) (string, string, error) {
-	fmt.Println("Select an endpoint:")
-	for i, config := range endpoints.Configs {
-		fmt.Printf("%d: %s - %s (%s)\n", i+1, config.Name, config.Endpoint, config.Method)
-	}
-
-	fmt.Print("Enter your choice: ")
-	var choice int
-	_, err := fmt.Scan(&choice)
-	if err != nil {
-		return "", "", fmt.Errorf("error reading input: %w", err)
-	}
-
-	if choice < 1 || choice > len(endpoints.Configs) {
-		return "", "", fmt.Errorf("invalid choice")
-	}
-
-	selectedEndpoint := endpoints.Configs[choice-1].Endpoint
-	selectedMethod := endpoints.Configs[choice-1].Method
-	return selectedEndpoint, selectedMethod, nil
-}
-
 // ReadJSONTemplate reads the JSON template from the file.
 func ReadJSONTemplate(filePath string) (string, error) {
 	content, err := os.ReadFile(filePath)
@@ -148,7 +125,7 @@ func ChooseJSONTemplate(dirPath string) (string, error) {
 }
 
 // AnswerMultiCaseId processes each case ID with the provided JSON template.
-func AnswerMultiCaseId(env types.Environment, basePath string) error {
+func AnswerMultiCaseId(env models.Environment, basePath string) error {
 	client := &http.Client{}
 
 	authData, err := types.Authenticate(client, env.BaseURL+"/authentication/api/v1/login", env.Email, env.Password)
@@ -174,7 +151,7 @@ func AnswerMultiCaseId(env types.Environment, basePath string) error {
 		return fmt.Errorf("error loading endpoints: %w", err)
 	}
 
-	selectedEndpoint, selectedMethod, err := SelectEndpoint(endpoints)
+	selectedEndpoint, selectedMethod, err := models.SelectEndpoint(endpoints)
 	if err != nil {
 		return fmt.Errorf("error selecting endpoint: %w", err)
 	}

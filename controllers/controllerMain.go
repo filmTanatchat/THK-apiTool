@@ -1,54 +1,57 @@
 package controllers
 
 import (
+	"bufio"
 	"bytes"
 	"encoding/json"
 	"fmt"
 	"net/http"
 	"os"
 	"strconv"
+	"strings"
 	formAddField "thinkerTools/golangFunction/addFieldToForm"
 	applyProductMultiCaseId "thinkerTools/golangFunction/applyMultiCaseID"
 	"thinkerTools/golangFunction/fieldOperations"
 	roleAssignment "thinkerTools/golangFunction/roleAssignment"
-	"thinkerTools/types"
+	"thinkerTools/models"
 	"thinkerTools/views"
 )
 
 type MainController struct {
-	Config   types.Config
+	Config   models.Config
 	Session  *http.Client
 	Packages []struct {
 		Name   string
-		Action func(types.Environment) error
+		Action func(models.Environment) error
 	}
 }
 
-func NewMainController(config types.Config) *MainController {
+func NewMainController(config models.Config) *MainController {
 	// Initialize your packages/actions here similar to how it's done in main.go
 	return &MainController{
 		Config:  config,
 		Session: &http.Client{},
 		Packages: []struct {
 			Name   string
-			Action func(types.Environment) error
+			Action func(models.Environment) error
 		}{
 			{"Form Add Field", AddFieldsFromCSV},
 			{"Apply Product", ApplyProductMultiCaseId},
 			{"Assign Role", AssignRoleModel},
 			{"Send API JSON ", MultiAnswerQuestionJson},
-			{"Get All Field", GetAllFieldWrapper},
+			{"Get All Field", GetAllField},
+			{"Answer Question Via CSV", ProcessAnswerQuestionFromCSVData},
 		},
 	}
 }
 
 // Authenticate handles user authentication
-func (mc *MainController) Authenticate(env *types.Environment) error {
+func (mc *MainController) Authenticate(env *models.Environment) error {
 	if mc.Session == nil {
 		mc.Session = &http.Client{}
 	}
 
-	payload := types.AuthPayload{
+	payload := models.AuthPayload{
 		Email:    env.Email,
 		Password: env.Password,
 	}
@@ -73,7 +76,7 @@ func (mc *MainController) Authenticate(env *types.Environment) error {
 		return fmt.Errorf("authentication failed: %v", resp.Status)
 	}
 
-	var authResponse types.AuthResponse
+	var authResponse models.AuthResponse
 	if err := json.NewDecoder(resp.Body).Decode(&authResponse); err != nil {
 		return err
 	}
@@ -114,18 +117,16 @@ func (mc *MainController) Run() {
 			views.DisplayError(err)
 			continue
 		}
-		// Optional: Add a message or logic here if you want something to happen after a successful action
-		// Go back to selecting environment after completing the action
 	}
 }
 
 // AddFieldsFromCSV calls the external AddFieldsFromCSV function.
-func AddFieldsFromCSV(env types.Environment) error {
+func AddFieldsFromCSV(env models.Environment) error {
 	return formAddField.AddFieldsFromCSV(env)
 }
 
 // ApplyProductMultiCaseId calls the external ApplyProductMultiCaseId function.
-func ApplyProductMultiCaseId(env types.Environment) error {
+func ApplyProductMultiCaseId(env models.Environment) error {
 	basePath, err := os.Getwd()
 	if err != nil {
 		return err
@@ -134,12 +135,12 @@ func ApplyProductMultiCaseId(env types.Environment) error {
 }
 
 // AssignRoleModel is a wrapper function that calls the AssignRole from the roleAssignment package
-func AssignRoleModel(env types.Environment) error {
+func AssignRoleModel(env models.Environment) error {
 	return roleAssignment.AssignRole(env)
 }
 
 // Wrapper function for multiAnswerQuestionJson.AnswerMultiCaseId
-func MultiAnswerQuestionJson(env types.Environment) error {
+func MultiAnswerQuestionJson(env models.Environment) error {
 	basePath, err := os.Getwd()
 	if err != nil {
 		fmt.Printf("Error getting working directory: %v\n", err)
@@ -149,8 +150,27 @@ func MultiAnswerQuestionJson(env types.Environment) error {
 	return applyProductMultiCaseId.AnswerMultiCaseId(env, basePath)
 }
 
-// GetAllFieldWrapper wraps the fieldOperations.GetAllField function
-func GetAllFieldWrapper(env types.Environment) error {
+// GetAllField wraps the fieldOperations.GetAllField function
+func GetAllField(env models.Environment) error {
 	_, err := fieldOperations.GetAllField(env)
 	return err // Just return the error, ignore the fields for now
+}
+
+// ProcessAnswerQuestionFromCSVData wraps the applyProductMultiCaseId.ProcessAnswerQuestionFromCSVData function
+func ProcessAnswerQuestionFromCSVData(env models.Environment) error {
+	reader := bufio.NewReader(os.Stdin)
+
+	// Get number of concurrent requests from user
+	fmt.Print("Enter the number of concurrent requests: ")
+	concurrentStr, err := reader.ReadString('\n')
+	if err != nil {
+		return fmt.Errorf("error reading number of concurrent requests: %w", err)
+	}
+	concurrentRequests, err := strconv.Atoi(strings.TrimSpace(concurrentStr))
+	if err != nil {
+		return fmt.Errorf("invalid number for concurrent requests: %w", err)
+	}
+
+	// Call the ProcessAnswerQuestionFromCSVData function from the applyProductMultiCaseId package
+	return applyProductMultiCaseId.ProcessAnswerQuestionFromCSVData(env, concurrentRequests)
 }

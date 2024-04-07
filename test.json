@@ -1,0 +1,1008 @@
+{
+    "code": 0,
+    "message": "",
+    "data": [
+      {
+        "name": "_occupation.subType.choice",
+        "label": {
+          "en": {
+            "text": "_occupation.subType.choice",
+            "image_url": ""
+          },
+          "th": {
+            "text": "_occupation.subType.choice",
+            "image_url": ""
+          }
+        },
+        "choices": [
+          {
+            "value": "01",
+            "label": {
+              "en": {
+                "text": "Official",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ข้าราชการ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='01'"
+          },
+          {
+            "value": "02",
+            "label": {
+              "en": {
+                "text": "State Enterprise Agent",
+                "image_url": ""
+              },
+              "th": {
+                "text": "พนักงานรัฐวิสาหกิจ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='02'"
+          },
+          {
+            "value": "03",
+            "label": {
+              "en": {
+                "text": "Officer of the Private Company",
+                "image_url": ""
+              },
+              "th": {
+                "text": "พนักงานบริษัท",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='03'"
+          },
+          {
+            "value": "04",
+            "label": {
+              "en": {
+                "text": "Officer of Financial Institution",
+                "image_url": ""
+              },
+              "th": {
+                "text": "พนักงานสถาบันการเงิน",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='04'"
+          },
+          {
+            "value": "05",
+            "label": {
+              "en": {
+                "text": "Business are related to a politician and who pertaining to politics (PEPs)",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ธุรกิจที่มีความเกี่ยวข้องกับนักการเมืองและผู้ที่เกี่ยวข้องกับการเมือง (PEPs)",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "06",
+            "label": {
+              "en": {
+                "text": "Politician",
+                "image_url": ""
+              },
+              "th": {
+                "text": "นักการเมืองและผู้ที่เกี่ยวข้องกับการเมือง (PEPs)",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='06'"
+          },
+          {
+            "value": "07",
+            "label": {
+              "en": {
+                "text": "Laborer",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ผู้รับจ้างทั่วไป / ผู้ใช้แรงงาน",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='07'"
+          },
+          {
+            "value": "08",
+            "label": {
+              "en": {
+                "text": "Farming",
+                "image_url": ""
+              },
+              "th": {
+                "text": "เกษตรกร ทำนา",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='08'"
+          },
+          {
+            "value": "09",
+            "label": {
+              "en": {
+                "text": "Doctor",
+                "image_url": ""
+              },
+              "th": {
+                "text": "แพทย์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='09'"
+          },
+          {
+            "value": "10",
+            "label": {
+              "en": {
+                "text": "Agent Government",
+                "image_url": ""
+              },
+              "th": {
+                "text": "พนักงานราชการ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='01'"
+          },
+          {
+            "value": "11",
+            "label": {
+              "en": {
+                "text": "Casual Worker",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ลูกจ้างรัฐวิสาหกิจ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='02'"
+          },
+          {
+            "value": "12",
+            "label": {
+              "en": {
+                "text": "Worker of the Private Company",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ลูกจ้างบริษัท",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='03'"
+          },
+          {
+            "value": "13",
+            "label": {
+              "en": {
+                "text": "Worker of Financial Institution",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ลูกจ้างสถาบันการเงิน",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='04'"
+          },
+          {
+            "value": "14",
+            "label": {
+              "en": {
+                "text": "Business Services - vocation of Law",
+                "image_url": ""
+              },
+              "th": {
+                "text": "สำนักงานกฎหมาย",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "15",
+            "label": {
+              "en": {
+                "text": "Freelance",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ผู้มีอาชีพอิสระ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='06'"
+          },
+          {
+            "value": "16",
+            "label": {
+              "en": {
+                "text": "Orchard gardening",
+                "image_url": ""
+              },
+              "th": {
+                "text": "เกษตรกร ทำสวน",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='08'"
+          },
+          {
+            "value": "17",
+            "label": {
+              "en": {
+                "text": "Dentist",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ทันตแพทย์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='09'"
+          },
+          {
+            "value": "18",
+            "label": {
+              "en": {
+                "text": "Government Employee",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ลูกจ้างประจำ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='01'"
+          },
+          {
+            "value": "19",
+            "label": {
+              "en": {
+                "text": "Pensionary",
+                "image_url": ""
+              },
+              "th": {
+                "text": "พนักงานบำนาญ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='02'"
+          },
+          {
+            "value": "20",
+            "label": {
+              "en": {
+                "text": "Business Services - vocation of Account",
+                "image_url": ""
+              },
+              "th": {
+                "text": "สำนักงานบัญชี",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "21",
+            "label": {
+              "en": {
+                "text": "Income from commission",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ผู้มีรายได้จากคอมมิชชัน",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='06'"
+          },
+          {
+            "value": "22",
+            "label": {
+              "en": {
+                "text": "Plant crops",
+                "image_url": ""
+              },
+              "th": {
+                "text": "เกษตรกร ทำไร่",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='08'"
+          },
+          {
+            "value": "23",
+            "label": {
+              "en": {
+                "text": "Veterinarian",
+                "image_url": ""
+              },
+              "th": {
+                "text": "สัตวแพทย์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='09'"
+          },
+          {
+            "value": "24",
+            "label": {
+              "en": {
+                "text": "Casual Worker",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ลูกจ้างชั่วคราว",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='01'"
+          },
+          {
+            "value": "25",
+            "label": {
+              "en": {
+                "text": "Jewel / Gold",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ธุรกิจเกี่ยวกับทองคำ เพชรพลอย อัญมณี",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "26",
+            "label": {
+              "en": {
+                "text": "Cultivate the fungi",
+                "image_url": ""
+              },
+              "th": {
+                "text": "เกษตรกร เพาะเห็ด",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='08'"
+          },
+          {
+            "value": "27",
+            "label": {
+              "en": {
+                "text": "Pharmacist",
+                "image_url": ""
+              },
+              "th": {
+                "text": "เภสัชกร",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='09'"
+          },
+          {
+            "value": "28",
+            "label": {
+              "en": {
+                "text": "Retiring Pension",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ข้าราชการบำนาญ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='01'"
+          },
+          {
+            "value": "29",
+            "label": {
+              "en": {
+                "text": "Antique Dealer",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ธุรกิจค้าของเก่าและวัตถุโบราณ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "30",
+            "label": {
+              "en": {
+                "text": "Hotel and other service company",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ประกอบธุรกิจสถานบริการ บริการที่พักแรมประเภทอื่นๆซึ่งมิได้จัดประเภทไว้ในที่อื่น",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='06'"
+          },
+          {
+            "value": "31",
+            "label": {
+              "en": {
+                "text": "Cattle",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ปศุสัตว์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='08'"
+          },
+          {
+            "value": "32",
+            "label": {
+              "en": {
+                "text": "Nurse",
+                "image_url": ""
+              },
+              "th": {
+                "text": "พยาบาล",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='09'"
+          },
+          {
+            "value": "33",
+            "label": {
+              "en": {
+                "text": "Exchange",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ธุรกิจแลกเปลี่ยนเงินตราต่างประเทศ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "34",
+            "label": {
+              "en": {
+                "text": "Sightseeing Business",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ธุรกิจนำเที่ยว กิจกรรมของตัวแทนธุรกิจนำเที่ยว",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='06'"
+          },
+          {
+            "value": "35",
+            "label": {
+              "en": {
+                "text": "Fishry",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ประมง",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='08'"
+          },
+          {
+            "value": "36",
+            "label": {
+              "en": {
+                "text": "Medical Technology",
+                "image_url": ""
+              },
+              "th": {
+                "text": "เทคนิคการแพทย์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='09'"
+          },
+          {
+            "value": "37",
+            "label": {
+              "en": {
+                "text": "Transfer outside the Country",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ธุรกิจโอนเงินออกนอกประเทศ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "38",
+            "label": {
+              "en": {
+                "text": "Accountant",
+                "image_url": ""
+              },
+              "th": {
+                "text": "นักบัญชี",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='09'"
+          },
+          {
+            "value": "39",
+            "label": {
+              "en": {
+                "text": "Casino / Gamble",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ธุรกิจคาสิโน และธุรกิจการพนัน",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "40",
+            "label": {
+              "en": {
+                "text": "Legal Authority",
+                "image_url": ""
+              },
+              "th": {
+                "text": "นักกฎหมายและผู้ใช้วิชาชีพทางกฎหมาย",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='09'"
+          },
+          {
+            "value": "41",
+            "label": {
+              "en": {
+                "text": "Factory business produces arms",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ธุรกิจโรงงานผลิตอาวุธยุทโธปกรณ์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "42",
+            "label": {
+              "en": {
+                "text": "Engineer",
+                "image_url": ""
+              },
+              "th": {
+                "text": "วิศวกร",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='09'"
+          },
+          {
+            "value": "43",
+            "label": {
+              "en": {
+                "text": "Business trades arms",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ธุรกิจค้าอาวุธยุทโธปกรณ์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "44",
+            "label": {
+              "en": {
+                "text": "Architect",
+                "image_url": ""
+              },
+              "th": {
+                "text": "สถาปนิก",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='09'"
+          },
+          {
+            "value": "45",
+            "label": {
+              "en": {
+                "text": "Informal Advance",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ธุรกิจเงินกู้นอกระบบที่ไม่ขัดต่อกฎหมาย",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "46",
+            "label": {
+              "en": {
+                "text": "Trades or rent out buy an automobile / motorcycle",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ผู้ประกอบอาชีพค้า หรือให้เช่าซื้อรถยนต์ หรือรถจักรยานยนต์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "47",
+            "label": {
+              "en": {
+                "text": "Agent / agent trades the immovable property",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ตัวแทนหรือนายหน้าค้าอสังหาริมทรัพย์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "48",
+            "label": {
+              "en": {
+                "text": "Agent trades arms",
+                "image_url": ""
+              },
+              "th": {
+                "text": "นายหน้าค้าอาวุธยุทโธปกรณ์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "49",
+            "label": {
+              "en": {
+                "text": "Grocery animal meat vegetables fruit",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ของชำ เนื้อสัตว์ ผัก ผลไม้",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "50",
+            "label": {
+              "en": {
+                "text": "Food sweets beverage",
+                "image_url": ""
+              },
+              "th": {
+                "text": "อาหารขนมเครื่องดื่ม",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "51",
+            "label": {
+              "en": {
+                "text": "Drug and medical supplies herbs used medicinally",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ยาและเวชภัณฑ์สมุนไพร",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "52",
+            "label": {
+              "en": {
+                "text": "Foodstuff",
+                "image_url": ""
+              },
+              "th": {
+                "text": "สินค้าบริโภคอื่น ๆ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "53",
+            "label": {
+              "en": {
+                "text": "Handicraft invention craft",
+                "image_url": ""
+              },
+              "th": {
+                "text": "หัตถกรรมสิ่งประดิษฐ์งานศิลปะ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "54",
+            "label": {
+              "en": {
+                "text": "Costume decorations cosmetic",
+                "image_url": ""
+              },
+              "th": {
+                "text": "เครื่องแต่งกายเครื่องประดับเครื่องสำอาง",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "55",
+            "label": {
+              "en": {
+                "text": "Furniture Furnishing",
+                "image_url": ""
+              },
+              "th": {
+                "text": "เฟอร์นิเจอร์อุปกรณ์ตกแต่งบ้าน",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "56",
+            "label": {
+              "en": {
+                "text": "Stationery Educational Aid Office equipment printed matters",
+                "image_url": ""
+              },
+              "th": {
+                "text": "เครื่องเขียนอุปกรณ์การศึกษาเครื่องใช้สำนักงานสิ่งพิมพ์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "57",
+            "label": {
+              "en": {
+                "text": "Inventory and the equipment build",
+                "image_url": ""
+              },
+              "th": {
+                "text": "วัสดุและอุปกรณ์ก่อสร้าง",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "58",
+            "label": {
+              "en": {
+                "text": "Component tool lubricating oil equipment machine motor",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ชิ้นส่วนเครื่องมือน้ำมันหล่อลื่นอุปกรณ์เครื่องจักรเครื่องยนต์",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "59",
+            "label": {
+              "en": {
+                "text": "Domestic Animal Animal feed Tree Agricultural and Other Equipment",
+                "image_url": ""
+              },
+              "th": {
+                "text": "สัตว์เลี้ยงอาหารสัตว์ต้นไม้อุปกรณ์การเกษตรอุปกรณ์ต่าง ๆ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "60",
+            "label": {
+              "en": {
+                "text": "Various Utensils",
+                "image_url": ""
+              },
+              "th": {
+                "text": "สินค้าอุปโภคอื่น ๆ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "61",
+            "label": {
+              "en": {
+                "text": "Beautification massage",
+                "image_url": ""
+              },
+              "th": {
+                "text": "บริการเสริมความงามต่าง ๆ นวดแผนโบราณ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "62",
+            "label": {
+              "en": {
+                "text": "Dressmaking Launder",
+                "image_url": ""
+              },
+              "th": {
+                "text": "บริการตัดเย็บเสื้อผ้า ซัก อบ รีด",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "63",
+            "label": {
+              "en": {
+                "text": "Service - Photography Xerox Job work Picture frame",
+                "image_url": ""
+              },
+              "th": {
+                "text": "บริการถ่ายรูป ถ่ายเอกสาร พิมพ์งาน กรอบรูป",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "64",
+            "label": {
+              "en": {
+                "text": "Service - set up repair take do of take repair",
+                "image_url": ""
+              },
+              "th": {
+                "text": "บริการติดตั้ง ซ่อมแซม รับทำของ รับซ่อม",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "65",
+            "label": {
+              "en": {
+                "text": "Service - Rent",
+                "image_url": ""
+              },
+              "th": {
+                "text": "บริการให้เช่า",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "66",
+            "label": {
+              "en": {
+                "text": "Service - Transfer Money",
+                "image_url": ""
+              },
+              "th": {
+                "text": "ธุรกิจโอนเงินทั้งภายในและข้ามประเทศ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "67",
+            "label": {
+              "en": {
+                "text": "Jewel / Gold",
+                "image_url": ""
+              },
+              "th": {
+                "text": "การค้าปลีกและการค้าส่ง - ทองคำ เพชรพลอย อัญมณี",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "68",
+            "label": {
+              "en": {
+                "text": "Antique Dealer",
+                "image_url": ""
+              },
+              "th": {
+                "text": "การค้าปลีกและการค้าส่ง - ของเก่าและวัตถุโบราณ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "69",
+            "label": {
+              "en": {
+                "text": "Employment Agency",
+                "image_url": ""
+              },
+              "th": {
+                "text": "บริษัท หรือนายหน้าจัดหางานรับหรือส่งคนไปทำงานต่างประเทศ",
+                "image_url": ""
+              }
+            },
+            "condition": "<_occupation.type>=='05'"
+          },
+          {
+            "value": "9999",
+            "label": {
+              "en": {
+                "text": "Other",
+                "image_url": ""
+              },
+              "th": {
+                "text": "อื่นๆ",
+                "image_url": ""
+              }
+            },
+            "condition": "(<_occupation.type>=='09')||(<_occupation.type>=='9999')"
+          }
+        ],
+        "is_choice_hierarchy": false,
+        "parent_choice_name": "",
+        "choice_condition_field_names": null,
+        "direct_mapping": null,
+        "created_at": 0,
+        "updated_at": 1712287598,
+        "deleted_at": 0
+      }
+    ]
+  }

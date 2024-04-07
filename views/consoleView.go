@@ -6,20 +6,20 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	"thinkerTools/types"
+	"thinkerTools/models"
 )
 
 // DisplayMainMenu shows the main menu options to the user.
 func DisplayMainMenu(packages []struct {
 	Name   string
-	Action func(types.Environment) error
+	Action func(models.Environment) error
 }) string {
 	displayMenu("Select the package to run (or type 'exit' to quit):", packages)
 	return promptForInput("Enter your choice: ")
 }
 
 // DisplayConfigMenu shows the environment selection menu.
-func DisplayConfigMenu(cfg types.Config) (int, bool, bool) {
+func DisplayConfigMenu(cfg models.Config) (int, bool, bool) {
 	if len(cfg.Environments) == 0 {
 		fmt.Println("No environments found in the configuration.")
 		return 0, false, false
@@ -61,7 +61,7 @@ func promptForInput(prompt string) string {
 // displayMenu helps to display the menu options.
 func displayMenu(prompt string, packages []struct {
 	Name   string
-	Action func(types.Environment) error
+	Action func(models.Environment) error
 }) {
 	fmt.Println(prompt)
 	for i, pkg := range packages {
@@ -70,7 +70,7 @@ func displayMenu(prompt string, packages []struct {
 }
 
 // displayEnvironments helps to display the available environments.
-func displayEnvironments(environments []types.Environment) {
+func displayEnvironments(environments []models.Environment) {
 	fmt.Println("Select environment (or type 'exit' to quit):")
 	for i, env := range environments {
 		fmt.Printf("%d: %s\n", i+1, env.Name)
