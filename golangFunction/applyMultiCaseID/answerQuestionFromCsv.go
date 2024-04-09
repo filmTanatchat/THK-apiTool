@@ -58,13 +58,12 @@ func convertRecordToJSON(record, headers []string, basePath string) (map[string]
 		}
 		payload["answers"] = append(payload["answers"].([]map[string]interface{}), answer)
 	}
-
 	return payload, nil
 }
 
 func getFieldName(header string) string {
 	parts := strings.Split(header, "||")
-	return parts[0] // Return only the field name part
+	return parts[0]
 }
 
 func convertSingleValue(value, dataType, basePath string) (string, error) {
@@ -120,7 +119,7 @@ func convertValue(value, header, basePath string) (string, error) {
 	return convertSingleValue(value, dataType, basePath)
 }
 
-func processRecords(jobs chan []string, wg *sync.WaitGroup, mu *sync.Mutex, client *http.Client, headers map[string]string, fullApiUrl, method string, headersRow []string, csvFilePath string, statusCodes *map[int]int) {
+func processRecords(jobs chan []string, wg *sync.WaitGroup, mu *sync.Mutex, client *http.Client, headers map[string]string, fullApiUrl, method string, headersRow []string, csvFilePath string, statusCodes *map[int]int, allPayloads *[]map[string]interface{}) {
 	defer wg.Done()
 	for record := range jobs {
 		jsonPayload, convertErr := convertRecordToJSON(record, headersRow, csvFilePath)
@@ -128,6 +127,10 @@ func processRecords(jobs chan []string, wg *sync.WaitGroup, mu *sync.Mutex, clie
 			fmt.Printf("Error converting record to JSON: %v\n", convertErr)
 			continue
 		}
+
+		mu.Lock()
+		*allPayloads = append(*allPayloads, jsonPayload)
+		mu.Unlock()
 
 		response, sendErr := types.MakeRequest(client, method, fullApiUrl, headers, jsonPayload)
 		if sendErr != nil {
@@ -230,15 +233,15 @@ func ProcessAnswerQuestionFromCSVData(env models.Environment, concurrentRequests
 	statusCodes := make(map[int]int)
 
 	// Prepare for concurrent processing
-	jobs := make(chan []string, concurrentRequests)
 	var wg sync.WaitGroup
-	var allPayloads []map[string]interface{}
 	var mu sync.Mutex
+	var allPayloads []map[string]interface{} // Declare here
+	statusCodes = make(map[int]int)
+	jobs := make(chan []string, concurrentRequests)
 
-	// Start worker goroutines
 	for w := 0; w < concurrentRequests; w++ {
 		wg.Add(1)
-		go processRecords(jobs, &wg, &mu, client, headers, fullApiUrl, selectedMethod, records[0], env.CSVFilePath, &statusCodes)
+		go processRecords(jobs, &wg, &mu, client, headers, fullApiUrl, selectedMethod, records[0], env.CSVFilePath, &statusCodes, &allPayloads) // Pass reference to allPayloads
 	}
 
 	// Sending jobs to the channel
