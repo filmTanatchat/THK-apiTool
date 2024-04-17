@@ -1,1008 +1,4063 @@
 {
-    "code": 0,
-    "message": "",
-    "data": [
+  "code": 0,
+  "message": "",
+  "data": {
+    "case_id": "a99ebfa0-2845-484d-b0bb-298a42ae24e7",
+    "product": "moneydd.pLoan",
+    "status": "verifying",
+    "verifying_field_list": [
       {
-        "name": "_occupation.subType.choice",
+        "name": "_occupation.type",
+        "alias": "_occupation.type"
+      },
+      {
+        "name": "_occupation.employType",
+        "alias": "_occupation.employType"
+      },
+      {
+        "name": "_occupation.subType",
+        "alias": "_occupation.subType"
+      },
+      {
+        "name": "_occupation.businessType",
+        "alias": "_occupation.businessType"
+      },
+      {
+        "name": "_occupation.periodYear",
+        "alias": "_occupation.periodYear"
+      },
+      {
+        "name": "_occupation.periodMonth",
+        "alias": "_occupation.periodMonth"
+      },
+      {
+        "name": "_occupation.incomeAmount",
+        "alias": "_occupation.incomeAmount"
+      },
+      {
+        "name": "_occupation.shareholdingPorpotion",
+        "alias": "_occupation.shareholdingPorpotion"
+      },
+      {
+        "name": "_credit.ncbGrade",
+        "alias": "_credit.ncbGrade"
+      },
+      {
+        "name": "_credit.expenseAmount",
+        "alias": "_credit.expenseAmount"
+      },
+      {
+        "name": "_bankAccount.1.accountNumber",
+        "alias": "_bankAccount.1.accountNumber"
+      },
+      {
+        "name": "_bankAccount.1.accountName",
+        "alias": "_bankAccount.1.accountName"
+      },
+      {
+        "name": "_loan.interestRateAdjustment",
+        "alias": "_loan.interestRateAdjustment"
+      },
+      {
+        "name": "_loan.isInterestRateAdjustment",
+        "alias": "_loan.isInterestRateAdjustment"
+      },
+      {
+        "name": "_loan.revolvingMaximumCreditOverride",
+        "alias": "_loan.revolvingMaximumCreditOverride"
+      },
+      {
+        "name": "_loan.isRevolvingMaximumCreditOverride",
+        "alias": "_loan.isRevolvingMaximumCreditOverride"
+      },
+      {
+        "name": "_loan.maximumCreditOverride",
+        "alias": "_loan.maximumCreditOverride"
+      },
+      {
+        "name": "_loan.isMaximumCreditOverride",
+        "alias": "_loan.isMaximumCreditOverride"
+      },
+      {
+        "name": "_documents.1.content",
+        "alias": "_documents.1.content"
+      },
+      {
+        "name": "_documents.1.password",
+        "alias": "_documents.1.password"
+      },
+      {
+        "name": "_documents.3.content",
+        "alias": "_documents.3.content"
+      },
+      {
+        "name": "_documents.3.password",
+        "alias": "_documents.3.password"
+      },
+      {
+        "name": "_documents.4.content",
+        "alias": "_documents.4.content"
+      },
+      {
+        "name": "_documents.4.password",
+        "alias": "_documents.4.password"
+      },
+      {
+        "name": "_documents.5.content",
+        "alias": "_documents.5.content"
+      },
+      {
+        "name": "_documents.5.password",
+        "alias": "_documents.5.password"
+      },
+      {
+        "name": "_documents.6.content",
+        "alias": "_documents.6.content"
+      },
+      {
+        "name": "_documents.6.password",
+        "alias": "_documents.6.password"
+      },
+      {
+        "name": "_documents.7.content",
+        "alias": "_documents.7.content"
+      },
+      {
+        "name": "_documents.7.password",
+        "alias": "_documents.7.password"
+      },
+      {
+        "name": "_documents.8.content",
+        "alias": "_documents.8.content"
+      },
+      {
+        "name": "_documents.8.password",
+        "alias": "_documents.8.password"
+      },
+      {
+        "name": "_documents.9.content",
+        "alias": "_documents.9.content"
+      },
+      {
+        "name": "_documents.9.password",
+        "alias": "_documents.9.password"
+      },
+      {
+        "name": "_documents.15.content",
+        "alias": "_documents.15.content"
+      },
+      {
+        "name": "_documents.15.password",
+        "alias": "_documents.15.password"
+      },
+      {
+        "name": "_documents.16.content",
+        "alias": "_documents.16.content"
+      },
+      {
+        "name": "_documents.16.password",
+        "alias": "_documents.16.password"
+      },
+      {
+        "name": "firstName",
+        "alias": "firstName"
+      },
+      {
+        "name": "_customerInfo.enFirstName",
+        "alias": "_customerInfo.enFirstName"
+      },
+      {
+        "name": "lastName",
+        "alias": "lastName"
+      },
+      {
+        "name": "_customerInfo.enLastName",
+        "alias": "_customerInfo.enLastName"
+      },
+      {
+        "name": "_customerInfo.nationalIdNumber",
+        "alias": "_customerInfo.nationalIdNumber"
+      },
+      {
+        "name": "_occupation.previousPeriodMonth",
+        "alias": "_occupation.previousPeriodMonth"
+      },
+      {
+        "name": "_occupation.previousPeriodYear",
+        "alias": "_occupation.previousPeriodYear"
+      },
+      {
+        "name": "_addresses.1.city",
+        "alias": "_addresses.1.city"
+      },
+      {
+        "name": "_addresses.2.city",
+        "alias": "_addresses.2.city"
+      },
+      {
+        "name": "_addresses.3.city",
+        "alias": "_addresses.3.city"
+      },
+      {
+        "name": "_gsb.aScoreGrade",
+        "alias": "_gsb.aScoreGrade"
+      },
+      {
+        "name": "_loan.loanApplicationNumber",
+        "alias": "_loan.loanApplicationNumber"
+      }
+    ],
+    "remaining_verifying_field_list": [
+      {
+        "name": "_occupation.type",
+        "alias": "_occupation.type"
+      },
+      {
+        "name": "_occupation.employType",
+        "alias": "_occupation.employType"
+      },
+      {
+        "name": "_occupation.subType",
+        "alias": "_occupation.subType"
+      },
+      {
+        "name": "_occupation.businessType",
+        "alias": "_occupation.businessType"
+      },
+      {
+        "name": "_occupation.periodYear",
+        "alias": "_occupation.periodYear"
+      },
+      {
+        "name": "_occupation.periodMonth",
+        "alias": "_occupation.periodMonth"
+      },
+      {
+        "name": "_occupation.incomeAmount",
+        "alias": "_occupation.incomeAmount"
+      },
+      {
+        "name": "_occupation.shareholdingPorpotion",
+        "alias": "_occupation.shareholdingPorpotion"
+      },
+      {
+        "name": "_credit.ncbGrade",
+        "alias": "_credit.ncbGrade"
+      },
+      {
+        "name": "_credit.expenseAmount",
+        "alias": "_credit.expenseAmount"
+      },
+      {
+        "name": "_bankAccount.1.accountNumber",
+        "alias": "_bankAccount.1.accountNumber"
+      },
+      {
+        "name": "_bankAccount.1.accountName",
+        "alias": "_bankAccount.1.accountName"
+      },
+      {
+        "name": "_loan.interestRateAdjustment",
+        "alias": "_loan.interestRateAdjustment"
+      },
+      {
+        "name": "_loan.isInterestRateAdjustment",
+        "alias": "_loan.isInterestRateAdjustment"
+      },
+      {
+        "name": "_loan.revolvingMaximumCreditOverride",
+        "alias": "_loan.revolvingMaximumCreditOverride"
+      },
+      {
+        "name": "_loan.isRevolvingMaximumCreditOverride",
+        "alias": "_loan.isRevolvingMaximumCreditOverride"
+      },
+      {
+        "name": "_loan.maximumCreditOverride",
+        "alias": "_loan.maximumCreditOverride"
+      },
+      {
+        "name": "_loan.isMaximumCreditOverride",
+        "alias": "_loan.isMaximumCreditOverride"
+      },
+      {
+        "name": "_documents.1.content",
+        "alias": "_documents.1.content"
+      },
+      {
+        "name": "_documents.1.password",
+        "alias": "_documents.1.password"
+      },
+      {
+        "name": "_documents.3.content",
+        "alias": "_documents.3.content"
+      },
+      {
+        "name": "_documents.3.password",
+        "alias": "_documents.3.password"
+      },
+      {
+        "name": "_documents.4.content",
+        "alias": "_documents.4.content"
+      },
+      {
+        "name": "_documents.4.password",
+        "alias": "_documents.4.password"
+      },
+      {
+        "name": "_documents.5.content",
+        "alias": "_documents.5.content"
+      },
+      {
+        "name": "_documents.5.password",
+        "alias": "_documents.5.password"
+      },
+      {
+        "name": "_documents.6.content",
+        "alias": "_documents.6.content"
+      },
+      {
+        "name": "_documents.6.password",
+        "alias": "_documents.6.password"
+      },
+      {
+        "name": "_documents.7.content",
+        "alias": "_documents.7.content"
+      },
+      {
+        "name": "_documents.7.password",
+        "alias": "_documents.7.password"
+      },
+      {
+        "name": "_documents.8.content",
+        "alias": "_documents.8.content"
+      },
+      {
+        "name": "_documents.8.password",
+        "alias": "_documents.8.password"
+      },
+      {
+        "name": "_documents.9.content",
+        "alias": "_documents.9.content"
+      },
+      {
+        "name": "_documents.9.password",
+        "alias": "_documents.9.password"
+      },
+      {
+        "name": "_documents.15.content",
+        "alias": "_documents.15.content"
+      },
+      {
+        "name": "_documents.15.password",
+        "alias": "_documents.15.password"
+      },
+      {
+        "name": "_documents.16.content",
+        "alias": "_documents.16.content"
+      },
+      {
+        "name": "_documents.16.password",
+        "alias": "_documents.16.password"
+      },
+      {
+        "name": "firstName",
+        "alias": "firstName"
+      },
+      {
+        "name": "_customerInfo.enFirstName",
+        "alias": "_customerInfo.enFirstName"
+      },
+      {
+        "name": "lastName",
+        "alias": "lastName"
+      },
+      {
+        "name": "_customerInfo.enLastName",
+        "alias": "_customerInfo.enLastName"
+      },
+      {
+        "name": "_customerInfo.nationalIdNumber",
+        "alias": "_customerInfo.nationalIdNumber"
+      },
+      {
+        "name": "_occupation.previousPeriodMonth",
+        "alias": "_occupation.previousPeriodMonth"
+      },
+      {
+        "name": "_occupation.previousPeriodYear",
+        "alias": "_occupation.previousPeriodYear"
+      },
+      {
+        "name": "_addresses.1.city",
+        "alias": "_addresses.1.city"
+      },
+      {
+        "name": "_addresses.2.city",
+        "alias": "_addresses.2.city"
+      },
+      {
+        "name": "_addresses.3.city",
+        "alias": "_addresses.3.city"
+      },
+      {
+        "name": "_gsb.aScoreGrade",
+        "alias": "_gsb.aScoreGrade"
+      },
+      {
+        "name": "_loan.loanApplicationNumber",
+        "alias": "_loan.loanApplicationNumber"
+      }
+    ],
+    "customer_data": [
+      {
+        "field_name": "_customerInfo.residencePeriodMonth",
+        "value": "1",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.residencePeriodMonth"
+      },
+      {
+        "field_name": "_addresses.3.city",
+        "value": "10",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_addresses.3.city"
+      },
+      {
+        "field_name": "_documents.15.content",
+        "value": "[\"a99ebfa0-2845-484d-b0bb-298a42ae24e7/_documents.15.content/1/1\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "file",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.15.content"
+      },
+      {
+        "field_name": "_occupation.businessType",
+        "value": "0",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_occupation.businessType"
+      },
+      {
+        "field_name": "thinker.ncb.result",
+        "value": "R01",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "R01",
+        "compute_expression_with_value": "R01",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "thinker.ncb.result"
+      },
+      {
+        "field_name": "_refPersons.2.relationship",
+        "value": "01",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_refPersons.2.relationship"
+      },
+      {
+        "field_name": "_customerInfo.ageYears",
+        "value": "29",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "ROUNDDOWN((DATEDIF(DATENOW(), \u003cbirthDate\u003e, d)-(ROUNDDOWN(DATEDIF(DATENOW(), \u003cbirthDate\u003e, m)/12)/4))/(365))",
+        "compute_expression_with_value": "ROUNDDOWN((DATEDIF(DATENOW(), 792720000, d)-(ROUNDDOWN(DATEDIF(DATENOW(), 792720000, m)/12)/4))/(365))",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.ageYears"
+      },
+      {
+        "field_name": "_credit.isNcbPassValidTads",
+        "value": "true",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.isNcbPassValidTads"
+      },
+      {
+        "field_name": "_occupation.totalPeriodGsb",
+        "value": "395",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "(\u003c_occupation.totalPeriodYear\u003e*365)+(\u003c_occupation.totalPeriodMonth\u003e*30)",
+        "compute_expression_with_value": "(1*365)+(1*30)",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_occupation.totalPeriodGsb"
+      },
+      {
+        "field_name": "_occupation.salaryAmount",
+        "value": "9000",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "\u003c_occupation.incomeAmount\u003e+0",
+        "compute_expression_with_value": "9000+0",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_occupation.salaryAmount"
+      },
+      {
+        "field_name": "_gsb.aScoreModelVersion",
+        "value": "V1.0",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813098,
+        "alias": "_gsb.aScoreModelVersion"
+      },
+      {
+        "field_name": "_loan.branchId",
+        "value": "8888",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.branchId"
+      },
+      {
+        "field_name": "_documents.1.password",
+        "value": "[\"-\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.1.password"
+      },
+      {
+        "field_name": "_documents.5.content",
+        "value": "[\"a99ebfa0-2845-484d-b0bb-298a42ae24e7/_documents.5.content/1/1\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "file",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.5.content"
+      },
+      {
+        "field_name": "thinker.occupationResult",
+        "value": "APPROVE",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "APPROVE",
+        "compute_expression_with_value": "APPROVE",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "thinker.occupationResult"
+      },
+      {
+        "field_name": "_credit.isPepsFound",
+        "value": "NOT_FOUND",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "NOT_FOUND",
+        "compute_expression_with_value": "NOT_FOUND",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.isPepsFound"
+      },
+      {
+        "field_name": "_loan.isInterestRateAdjustment",
+        "value": "false",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811547,
+        "alias": "_loan.isInterestRateAdjustment"
+      },
+      {
+        "field_name": "_credit.isTriggeringMambuLoanSuccess",
+        "value": "null",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_credit.isTriggeringMambuLoanSuccess"
+      },
+      {
+        "field_name": "_loan.maxNanoLoanPolicyLimit",
+        "value": "100000",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.maxNanoLoanPolicyLimit"
+      },
+      {
+        "field_name": "gender",
+        "value": "M",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "gender"
+      },
+      {
+        "field_name": "_occupation.type",
+        "value": "01",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_occupation.type"
+      },
+      {
+        "field_name": "_credit.isSubmitCaseSuccess",
+        "value": "true",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.isSubmitCaseSuccess"
+      },
+      {
+        "field_name": "_customerInfo.residencePeriod",
+        "value": "25",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "(\u003c_customerInfo.residencePeriodYear\u003e*12)+(\u003c_customerInfo.residencePeriodMonth\u003e)",
+        "compute_expression_with_value": "(2*12)+(1)",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.residencePeriod"
+      },
+      {
+        "field_name": "_loan.nanoLoanMaximumInterest",
+        "value": "33",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.nanoLoanMaximumInterest"
+      },
+      {
+        "field_name": "_customerInfo.customerType",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_customerInfo.customerType"
+      },
+      {
+        "field_name": "birthDate",
+        "value": "792720000",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "date",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "birthDate"
+      },
+      {
+        "field_name": "_loan.loanRequest",
+        "value": "50000",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_loan.loanRequest"
+      },
+      {
+        "field_name": "_addresses.1.city",
+        "value": "10",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_addresses.1.city"
+      },
+      {
+        "field_name": "_customerInfo.mailingAddressIndex",
+        "value": "1",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.mailingAddressIndex"
+      },
+      {
+        "field_name": "_documents.3.name",
+        "value": "[\"Pay slip.pdf\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_documents.3.name"
+      },
+      {
+        "field_name": "_gsb.aScoreGrade",
+        "value": "C",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712813098,
+        "alias": "_gsb.aScoreGrade"
+      },
+      {
+        "field_name": "thinker.isPepsFound",
+        "value": "NOT_FOUND",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "thinker.isPepsFound"
+      },
+      {
+        "field_name": "_loan.pLoanMaximumInterest",
+        "value": "25",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.pLoanMaximumInterest"
+      },
+      {
+        "field_name": "_loan.3.range",
+        "value": "18",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.3.range"
+      },
+      {
+        "field_name": "_occupation.previousPeriodYear",
+        "value": "0",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_occupation.previousPeriodYear"
+      },
+      {
+        "field_name": "_customerInfo.residenceType",
+        "value": "01",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.residenceType"
+      },
+      {
+        "field_name": "_documents.3.content",
+        "value": "[\"a99ebfa0-2845-484d-b0bb-298a42ae24e7/_documents.3.content/1/1\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "file",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.3.content"
+      },
+      {
+        "field_name": "_documents.15.password",
+        "value": "[\"744361\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.15.password"
+      },
+      {
+        "field_name": "_occupation.period",
+        "value": "13",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "(\u003c_occupation.periodYear\u003e*12)+(\u003c_occupation.periodMonth\u003e)",
+        "compute_expression_with_value": "(1*12)+(1)",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_occupation.period"
+      },
+      {
+        "field_name": "_credit.tadsResult.ncbIssuerAmount",
+        "value": "[\"0\",\"1\",\"0\",\"0\",\"0\",\"0\",\"0\",\"1\",\"0\",\"0\",\"0\",\"0\",\"0\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.tadsResult.ncbIssuerAmount"
+      },
+      {
+        "field_name": "_loan.maxPLoanPolicyLimit",
+        "value": "1000000",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.maxPLoanPolicyLimit"
+      },
+      {
+        "field_name": "thinker.isLoanApproveRevolving",
+        "value": "false",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "thinker.isLoanApproveRevolving"
+      },
+      {
+        "field_name": "_refPersons.2.firstName",
+        "value": "ชื่อติดต่อสอง",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_refPersons.2.firstName"
+      },
+      {
+        "field_name": "_customerInfo.authenticationType",
+        "value": "NDID",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.authenticationType"
+      },
+      {
+        "field_name": "_documents.4.password",
+        "value": "[\"-\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.4.password"
+      },
+      {
+        "field_name": "_occupation.subTypeAscore",
+        "value": "01",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "01",
+        "compute_expression_with_value": "01",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_occupation.subTypeAscore"
+      },
+      {
+        "field_name": "_customerInfo.ageDays",
+        "value": "26",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "DATEDIF(DATENOW(),DATEADD(DATEADD(\u003cbirthDate\u003e,(ROUNDDOWN((DATEDIF(DATENOW(), \u003cbirthDate\u003e, d)-(ROUNDDOWN(DATEDIF(DATENOW(), \u003cbirthDate\u003e, m)/12)/4))/(365))),y), \u003c_customerInfo.ageMonths\u003e*30,d),d)",
+        "compute_expression_with_value": "DATEDIF(DATENOW(),DATEADD(DATEADD(792720000,(ROUNDDOWN((DATEDIF(DATENOW(), 792720000, d)-(ROUNDDOWN(DATEDIF(DATENOW(), 792720000, m)/12)/4))/(365))),y), 1*30,d),d)",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.ageDays"
+      },
+      {
+        "field_name": "_loan.8.range",
+        "value": "48",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.8.range"
+      },
+      {
+        "field_name": "thinker.isCaDocumentsRequest",
+        "value": "false",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "thinker.isCaDocumentsRequest"
+      },
+      {
+        "field_name": "_refPersons.2.mobilePhone",
+        "value": "0859948765",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_refPersons.2.mobilePhone"
+      },
+      {
+        "field_name": "_documents.8.name",
+        "value": "[\"Bank-statement-example.png\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_documents.8.name"
+      },
+      {
+        "field_name": "_documents.8.password",
+        "value": "[\"-\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.8.password"
+      },
+      {
+        "field_name": "_credit.totalIncomeToRevernueRatio",
+        "value": "66.66666666666667",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "((\u003c_occupation.incomeAmount\u003e-\u003c_credit.expenseAmount\u003e)/\u003c_occupation.incomeAmount\u003e)*100",
+        "compute_expression_with_value": "((9000-3000)/9000)*100",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_credit.totalIncomeToRevernueRatio"
+      },
+      {
+        "field_name": "_credit.isNcbTrustSourceTads",
+        "value": "TRUST",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.isNcbTrustSourceTads"
+      },
+      {
+        "field_name": "_occupation.totalBusinessIncome",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_occupation.totalBusinessIncome"
+      },
+      {
+        "field_name": "_occupation.employType",
+        "value": "EMPLOYEE",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_occupation.employType"
+      },
+      {
+        "field_name": "_occupation.periodMonth",
+        "value": "1",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_occupation.periodMonth"
+      },
+      {
+        "field_name": "_documents.1.name",
+        "value": "[\"ID card.pdf\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_documents.1.name"
+      },
+      {
+        "field_name": "_occupation.isRiskBusinessType",
+        "value": "false",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "false",
+        "compute_expression_with_value": "false",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_occupation.isRiskBusinessType"
+      },
+      {
+        "field_name": "_credit.ncbValidPeriod",
+        "value": "265",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "DATEDIF(DATENOW(), \u003c_credit.ncbIssueDate\u003e, d)",
+        "compute_expression_with_value": "DATEDIF(DATENOW(), 1689858052, d)",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.ncbValidPeriod"
+      },
+      {
+        "field_name": "_loan.subCollateralType",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.subCollateralType"
+      },
+      {
+        "field_name": "_addresses.2.city",
+        "value": "10",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_addresses.2.city"
+      },
+      {
+        "field_name": "_loan.minNanoLoanPolicyLimit",
+        "value": "10000",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.minNanoLoanPolicyLimit"
+      },
+      {
+        "field_name": "_loan.collateralId",
+        "value": "99",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.collateralId"
+      },
+      {
+        "field_name": "_occupation.totalOtherIncome",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_occupation.totalOtherIncome"
+      },
+      {
+        "field_name": "_refPersons.1.mobilePhone",
+        "value": "0988746534",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_refPersons.1.mobilePhone"
+      },
+      {
+        "field_name": "_documents.8.content",
+        "value": "[\"a99ebfa0-2845-484d-b0bb-298a42ae24e7/_documents.8.content/1/1\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "file",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.8.content"
+      },
+      {
+        "field_name": "_credit.foundInAmlo",
+        "value": "NOT_FOUND",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.foundInAmlo"
+      },
+      {
+        "field_name": "_credit.isNcbManualTads",
+        "value": "false",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.isNcbManualTads"
+      },
+      {
+        "field_name": "_loan.interestRateAdjustment",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": true,
+        "updated_at": 1712811547,
+        "alias": "_loan.interestRateAdjustment"
+      },
+      {
+        "field_name": "_credit.debtServiceRatio",
+        "value": "0",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_credit.debtServiceRatio"
+      },
+      {
+        "field_name": "_occupation.subType",
+        "value": "01",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_occupation.subType"
+      },
+      {
+        "field_name": "_bankAccount.1.accountNumber",
+        "value": "10999283877",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_bankAccount.1.accountNumber"
+      },
+      {
+        "field_name": "_gsb.aScoreRemark",
+        "value": "[\"SUCCESS\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813098,
+        "alias": "_gsb.aScoreRemark"
+      },
+      {
+        "field_name": "_occupation.otherBusinessIncome",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_occupation.otherBusinessIncome"
+      },
+      {
+        "field_name": "_occupation.companyName",
+        "value": "บริษัท เงินดีดี จำกัด (มหาชน)",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_occupation.companyName"
+      },
+      {
+        "field_name": "scheduleSettings.fixedDaysOfMonth",
+        "value": "2",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "scheduleSettings.fixedDaysOfMonth"
+      },
+      {
+        "field_name": "_customerInfo.enFirstName",
+        "value": "Nainueng",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.enFirstName"
+      },
+      {
+        "field_name": "_occupation.totalPeriod",
+        "value": "13",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "(\u003c_occupation.totalPeriodMonth\u003e)+(\u003c_occupation.totalPeriodYear\u003e*12)",
+        "compute_expression_with_value": "(1)+(1*12)",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_occupation.totalPeriod"
+      },
+      {
+        "field_name": "_credit.tadsResult.ncbDebtInstallment",
+        "value": "[\"3600\",\"0\",\"0\",\"0\",\"0\",\"815.2\",\"1111.8\",\"0\",\"0\",\"0\",\"0\",\"0\",\"1900\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.tadsResult.ncbDebtInstallment"
+      },
+      {
+        "field_name": "_gsb.foundCustomer",
+        "value": "NOT_FOUND",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_gsb.foundCustomer"
+      },
+      {
+        "field_name": "_loan.loanType",
+        "value": "7200",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "7200",
+        "compute_expression_with_value": "7200",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_loan.loanType"
+      },
+      {
+        "field_name": "_loan.paymentStatus",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.paymentStatus"
+      },
+      {
+        "field_name": "_loan.loanAccountType",
+        "value": "LN",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.loanAccountType"
+      },
+      {
+        "field_name": "scheduleSettings.gracePeriod",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "scheduleSettings.gracePeriod"
+      },
+      {
+        "field_name": "_occupation.shareholdingPorpotion",
+        "value": "0",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_occupation.shareholdingPorpotion"
+      },
+      {
+        "field_name": "_loan.loanApplicationNumber",
+        "value": "MDD231028-00001",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_loan.loanApplicationNumber"
+      },
+      {
+        "field_name": "_documents.15.name",
+        "value": "[\"test1.pdf\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_documents.15.name"
+      },
+      {
+        "field_name": "_customerInfo.isRiskCity",
+        "value": "false",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "false",
+        "compute_expression_with_value": "false",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.isRiskCity"
+      },
+      {
+        "field_name": "_gsb.foundInGsbBlacklist",
+        "value": "NOT_FOUND",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_gsb.foundInGsbBlacklist"
+      },
+      {
+        "field_name": "thinker.isLoanApprove",
+        "value": "true",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "thinker.isLoanApprove"
+      },
+      {
+        "field_name": "_loan.5.range",
+        "value": "30",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.5.range"
+      },
+      {
+        "field_name": "thinker.caComments",
+        "value": "[\"CA : \"]",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "thinker.caComments"
+      },
+      {
+        "field_name": "_occupation.otherIncomeAmount",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_occupation.otherIncomeAmount"
+      },
+      {
+        "field_name": "_refPersons.2.lastName",
+        "value": "นามสกุลติดต่อสอง",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_refPersons.2.lastName"
+      },
+      {
+        "field_name": "_documents.4.name",
+        "value": "[\"Bank-statement-example.png\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_documents.4.name"
+      },
+      {
+        "field_name": "_loan.revolvingMaximumCreditOverride",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": true,
+        "updated_at": 1712811547,
+        "alias": "_loan.revolvingMaximumCreditOverride"
+      },
+      {
+        "field_name": "mobilePhone",
+        "value": "0822463953",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "mobilePhone"
+      },
+      {
+        "field_name": "_bankAccount.1.isDefault",
+        "value": "true",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_bankAccount.1.isDefault"
+      },
+      {
+        "field_name": "_refPersons.1.relationship",
+        "value": "01",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_refPersons.1.relationship"
+      },
+      {
+        "field_name": "_customerInfo.agePolicy",
+        "value": "29",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "ROUNDDOWN((DATEDIF(DATENOW(), \u003cbirthDate\u003e, d)-(ROUNDDOWN(DATEDIF(DATENOW(), \u003cbirthDate\u003e, m)/12)/4))/(365))",
+        "compute_expression_with_value": "ROUNDDOWN((DATEDIF(DATENOW(), 792720000, d)-(ROUNDDOWN(DATEDIF(DATENOW(), 792720000, m)/12)/4))/(365))",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.agePolicy"
+      },
+      {
+        "field_name": "_loan.7.range",
+        "value": "42",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.7.range"
+      },
+      {
+        "field_name": "_loan.collateralType",
+        "value": "99",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.collateralType"
+      },
+      {
+        "field_name": "_bankAccount.1.accountName",
+        "value": "ลูกค้าหนึ่ง",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_bankAccount.1.accountName"
+      },
+      {
+        "field_name": "_documents.6.name",
+        "value": "[\"Bank-statement-example.png\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_documents.6.name"
+      },
+      {
+        "field_name": "_documents.5.name",
+        "value": "[\"Bank-statement-example.png\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_documents.5.name"
+      },
+      {
+        "field_name": "_loan.6.range",
+        "value": "36",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.6.range"
+      },
+      {
+        "field_name": "_customerInfo.residencePeriodYear",
+        "value": "2",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.residencePeriodYear"
+      },
+      {
+        "field_name": "_occupation.previousPeriodMonth",
+        "value": "0",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_occupation.previousPeriodMonth"
+      },
+      {
+        "field_name": "_customerInfo.maritalStatus",
+        "value": "M",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.maritalStatus"
+      },
+      {
+        "field_name": "_customerInfo.residenceStatus",
+        "value": "01",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.residenceStatus"
+      },
+      {
+        "field_name": "_customerInfo.childNotWorkedAmount",
+        "value": "0",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.childNotWorkedAmount"
+      },
+      {
+        "field_name": "_documents.3.password",
+        "value": "[\"-\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.3.password"
+      },
+      {
+        "field_name": "_customerInfo.cifNumber",
+        "value": "1000000000007",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "SUBSTR(\u003c_customerInfo.nationalIdNumber\u003e,1,13)",
+        "compute_expression_with_value": "SUBSTR(1000000000007,1,13)",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.cifNumber"
+      },
+      {
+        "field_name": "_credit.ncbSourceOfData",
+        "value": "EXTRACT",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.ncbSourceOfData"
+      },
+      {
+        "field_name": "_gsb.aScoreDescription",
+        "value": "ความเสี่ยงค่อนข้างสูง",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813098,
+        "alias": "_gsb.aScoreDescription"
+      },
+      {
+        "field_name": "_gsb.aScoreModel",
+        "value": "Personal",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813098,
+        "alias": "_gsb.aScoreModel"
+      },
+      {
+        "field_name": "_customerInfo.educationLevel",
+        "value": "6",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.educationLevel"
+      },
+      {
+        "field_name": "_refPersons.1.lastName",
+        "value": "สกุลติดต่อหนึ่ง",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_refPersons.1.lastName"
+      },
+      {
+        "field_name": "_documents.9.content",
+        "value": "[\"a99ebfa0-2845-484d-b0bb-298a42ae24e7/_documents.9.content/1/1\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "file",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.9.content"
+      },
+      {
+        "field_name": "_documents.16.name",
+        "value": "[\"Bookbank.jpg\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_documents.16.name"
+      },
+      {
+        "field_name": "_loan.loanPeriodInMonth",
+        "value": "24M",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "24M",
+        "compute_expression_with_value": "24M",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_loan.loanPeriodInMonth"
+      },
+      {
+        "field_name": "_credit.tadsResult.ncbTdr",
+        "value": "[\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.tadsResult.ncbTdr"
+      },
+      {
+        "field_name": "_loan.minPLoanPolicyLimit",
+        "value": "10000",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.minPLoanPolicyLimit"
+      },
+      {
+        "field_name": "_bankAccount.1.bankId",
+        "value": "30",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_bankAccount.1.bankId"
+      },
+      {
+        "field_name": "_customerInfo.titleName",
+        "value": "2101",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.titleName"
+      },
+      {
+        "field_name": "emailAddress",
+        "value": "test.email@tester.com",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "emailAddress"
+      },
+      {
+        "field_name": "_documents.16.password",
+        "value": "[\"-\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.16.password"
+      },
+      {
+        "field_name": "_loan.isRevolvingMaximumCreditOverride",
+        "value": "false",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811547,
+        "alias": "_loan.isRevolvingMaximumCreditOverride"
+      },
+      {
+        "field_name": "_documents.31.name",
+        "value": "approval_document.pdf",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_documents.31.name"
+      },
+      {
+        "field_name": "_loan.loanApplicationStatus",
+        "value": "1",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.loanApplicationStatus"
+      },
+      {
+        "field_name": "_credit.ncbDebtInstallment",
+        "value": "0",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_credit.ncbDebtInstallment"
+      },
+      {
+        "field_name": "_occupation.businessAddressPropertyRight",
+        "value": "2",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_occupation.businessAddressPropertyRight"
+      },
+      {
+        "field_name": "_documents.1.content",
+        "value": "[\"a99ebfa0-2845-484d-b0bb-298a42ae24e7/_documents.1.content/1/1\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "file",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.1.content"
+      },
+      {
+        "field_name": "_documents.7.content",
+        "value": "[\"a99ebfa0-2845-484d-b0bb-298a42ae24e7/_documents.7.content/1/1\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "file",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.7.content"
+      },
+      {
+        "field_name": "_documents.7.password",
+        "value": "[\"-\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.7.password"
+      },
+      {
+        "field_name": "_loan.1.range",
+        "value": "6",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.1.range"
+      },
+      {
+        "field_name": "_customerInfo.customerTypeId",
+        "value": "1010",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_customerInfo.customerTypeId"
+      },
+      {
+        "field_name": "_occupation.periodYear",
+        "value": "1",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_occupation.periodYear"
+      },
+      {
+        "field_name": "_customerInfo.childAmount",
+        "value": "0",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.childAmount"
+      },
+      {
+        "field_name": "_refPersons.1.firstName",
+        "value": "ชื่อติดต่อหนึ่ง",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_refPersons.1.firstName"
+      },
+      {
+        "field_name": "_documents.6.content",
+        "value": "[\"a99ebfa0-2845-484d-b0bb-298a42ae24e7/_documents.6.content/1/1\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "file",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.6.content"
+      },
+      {
+        "field_name": "_documents.6.password",
+        "value": "[\"-\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.6.password"
+      },
+      {
+        "field_name": "_documents.16.content",
+        "value": "[\"a99ebfa0-2845-484d-b0bb-298a42ae24e7/_documents.16.content/1/1\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "file",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.16.content"
+      },
+      {
+        "field_name": "_customerInfo.ageMonths",
+        "value": "1",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "(DATEDIF(DATENOW(),DATEADD(\u003cbirthDate\u003e,(ROUNDDOWN((DATEDIF(DATENOW(), \u003cbirthDate\u003e, d)-(ROUNDDOWN(DATEDIF(DATENOW(), \u003cbirthDate\u003e, m)/12)/4))/(365))),y),m))-1",
+        "compute_expression_with_value": "(DATEDIF(DATENOW(),DATEADD(792720000,(ROUNDDOWN((DATEDIF(DATENOW(), 792720000, d)-(ROUNDDOWN(DATEDIF(DATENOW(), 792720000, m)/12)/4))/(365))),y),m))-1",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.ageMonths"
+      },
+      {
+        "field_name": "_customerInfo.foundSuccessLoan",
+        "value": "NOT_FOUND",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.foundSuccessLoan"
+      },
+      {
+        "field_name": "thinker.loanResult",
+        "value": "R01",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "R01",
+        "compute_expression_with_value": "R01",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "thinker.loanResult"
+      },
+      {
+        "field_name": "_occupation.otherIncomeEvidence",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_occupation.otherIncomeEvidence"
+      },
+      {
+        "field_name": "_customerInfo.customerStatus",
+        "value": "1",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_customerInfo.customerStatus"
+      },
+      {
+        "field_name": "_occupation.incomeAmount",
+        "value": "9000",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_occupation.incomeAmount"
+      },
+      {
+        "field_name": "firstName",
+        "value": "ลูกค้าหนึ่ง",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "firstName"
+      },
+      {
+        "field_name": "_documents.5.password",
+        "value": "[\"-\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.5.password"
+      },
+      {
+        "field_name": "_occupation.isRiskIncomeAmount",
+        "value": "false",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "false",
+        "compute_expression_with_value": "false",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_occupation.isRiskIncomeAmount"
+      },
+      {
+        "field_name": "scheduleSettings.gracePeriodType",
+        "value": "NONE",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "scheduleSettings.gracePeriodType"
+      },
+      {
+        "field_name": "accountHolderType",
+        "value": "CLIENT",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "accountHolderType"
+      },
+      {
+        "field_name": "_customerInfo.idExpireDate",
+        "value": "1802563200",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "date",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.idExpireDate"
+      },
+      {
+        "field_name": "_loan.requestDate",
+        "value": "1733097600",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "date",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_loan.requestDate"
+      },
+      {
+        "field_name": "_loan.loanPurposeBot",
+        "value": "15001",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "15001",
+        "compute_expression_with_value": "15001",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_loan.loanPurposeBot"
+      },
+      {
+        "field_name": "_credit.ncbIsValid",
+        "value": "false",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "false",
+        "compute_expression_with_value": "false",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.ncbIsValid"
+      },
+      {
+        "field_name": "_occupation.periodGsb",
+        "value": "395",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "(\u003c_occupation.periodYear\u003e*365)+(\u003c_occupation.periodMonth\u003e*30)",
+        "compute_expression_with_value": "(1*365)+(1*30)",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_occupation.periodGsb"
+      },
+      {
+        "field_name": "_loan.maximumCreditOverride",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": true,
+        "updated_at": 1712811547,
+        "alias": "_loan.maximumCreditOverride"
+      },
+      {
+        "field_name": "_loan.isMaximumCreditOverride",
+        "value": "false",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811547,
+        "alias": "_loan.isMaximumCreditOverride"
+      },
+      {
+        "field_name": "thinker.gracePeriod",
+        "value": "3",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "thinker.gracePeriod"
+      },
+      {
+        "field_name": "thinker.loanStatus",
+        "value": "REJECTED",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "REJECTED",
+        "compute_expression_with_value": "REJECTED",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "thinker.loanStatus"
+      },
+      {
+        "field_name": "scheduleSettings.repaymentInstallments",
+        "value": "24",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "scheduleSettings.repaymentInstallments"
+      },
+      {
+        "field_name": "_bankAccount.1.isValid",
+        "value": "true",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_bankAccount.1.isValid"
+      },
+      {
+        "field_name": "thinker.authenticationTypeResult",
+        "value": "A01",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "A01",
+        "compute_expression_with_value": "A01",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "thinker.authenticationTypeResult"
+      },
+      {
+        "field_name": "_credit.expenseAmount",
+        "value": "3000",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_credit.expenseAmount"
+      },
+      {
+        "field_name": "_documents.9.name",
+        "value": "[\"Bank-statement-example.png\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_documents.9.name"
+      },
+      {
+        "field_name": "_credit.ncbIssueDate",
+        "value": "1689858052",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "date",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.ncbIssueDate"
+      },
+      {
+        "field_name": "_occupation.netBusinessIncome",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_occupation.netBusinessIncome"
+      },
+      {
+        "field_name": "_credit.expenseBusinessOperation",
+        "value": "0",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_credit.expenseBusinessOperation"
+      },
+      {
+        "field_name": "_occupation.totalPeriodMonth",
+        "value": "1",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_occupation.totalPeriodMonth"
+      },
+      {
+        "field_name": "_occupation.totalPeriodYear",
+        "value": "1",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_occupation.totalPeriodYear"
+      },
+      {
+        "field_name": "_customerInfo.childWorkedAmount",
+        "value": "0",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.childWorkedAmount"
+      },
+      {
+        "field_name": "_credit.isNcbConsentAccept",
+        "value": "true",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_credit.isNcbConsentAccept"
+      },
+      {
+        "field_name": "_loan.marketCode",
+        "value": "9001",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.marketCode"
+      },
+      {
+        "field_name": "_loan.4.range",
+        "value": "24",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.4.range"
+      },
+      {
+        "field_name": "_loan.subLoanType",
+        "value": "20001",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "20001",
+        "compute_expression_with_value": "20001",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_loan.subLoanType"
+      },
+      {
+        "field_name": "_loan.loanPurpose",
+        "value": "12001",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "12001",
+        "compute_expression_with_value": "12001",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_loan.loanPurpose"
+      },
+      {
+        "field_name": "_credit.expenseToRevernueRatio",
+        "value": "33.33333333333333",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "(\u003c_credit.expenseAmount\u003e/\u003c_occupation.incomeAmount\u003e)*100",
+        "compute_expression_with_value": "(3000/9000)*100",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_credit.expenseToRevernueRatio"
+      },
+      {
+        "field_name": "_occupation.netSalaryAmount",
+        "value": "9000",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "\u003c_occupation.incomeAmount\u003e+0",
+        "compute_expression_with_value": "9000+0",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_occupation.netSalaryAmount"
+      },
+      {
+        "field_name": "_credit.ncbIdNumber",
+        "value": "1579900122309",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.ncbIdNumber"
+      },
+      {
+        "field_name": "_customerInfo.nationalIdNumber",
+        "value": "1000000000007",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.nationalIdNumber"
+      },
+      {
+        "field_name": "_documents.9.password",
+        "value": "[\"-\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.9.password"
+      },
+      {
+        "field_name": "_occupation.previousPeriod",
+        "value": "0",
+        "input_source": "calculation",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "compound",
+        "compute_expression": "(\u003c_occupation.previousPeriodYear\u003e*12)+(\u003c_occupation.previousPeriodMonth\u003e)",
+        "compute_expression_with_value": "(0*12)+(0)",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_occupation.previousPeriod"
+      },
+      {
+        "field_name": "_loan.2.range",
+        "value": "12",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "number",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "_loan.2.range"
+      },
+      {
+        "field_name": "_documents.4.content",
+        "value": "[\"a99ebfa0-2845-484d-b0bb-298a42ae24e7/_documents.4.content/1/1\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "file",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_documents.4.content"
+      },
+      {
+        "field_name": "_documents.7.name",
+        "value": "[\"Bank-statement-example.png\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_documents.7.name"
+      },
+      {
+        "field_name": "_customerInfo.foundLoanRequestReject",
+        "value": "NOT_FOUND",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.foundLoanRequestReject"
+      },
+      {
+        "field_name": "_credit.submitCaseRemark",
+        "value": "[\"success\"]",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.submitCaseRemark"
+      },
+      {
+        "field_name": "thinker.escalateReason",
+        "value": "[\"-\"]",
+        "input_source": "fixed_in_field",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811547,
+        "alias": "thinker.escalateReason"
+      },
+      {
+        "field_name": "lastName",
+        "value": "สกุลหนึ่ง",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "lastName"
+      },
+      {
+        "field_name": "_customerInfo.enLastName",
+        "value": "Sakunnueng",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_customerInfo.enLastName"
+      },
+      {
+        "field_name": "_loan.loanPurposeMdd",
+        "value": "1",
+        "input_source": "result_node",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "result",
+        "compute_expression": "1",
+        "compute_expression_with_value": "1",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712811681,
+        "alias": "_loan.loanPurposeMdd"
+      },
+      {
+        "field_name": "_credit.isNcbServicePassTads",
+        "value": "PASS",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": false,
+        "updated_at": 1712813094,
+        "alias": "_credit.isNcbServicePassTads"
+      },
+      {
+        "field_name": "_credit.ncbGrade",
+        "value": "BB",
+        "input_source": "customer",
+        "input_name": "",
+        "checker_id": "",
+        "compute_type": "primitive",
+        "compute_expression": "",
+        "compute_expression_with_value": "",
+        "data_type": "text",
+        "verification_need": true,
+        "updated_at": 1712811681,
+        "alias": "_credit.ncbGrade"
+      }
+    ],
+    "submitted_at": 1712813095,
+    "created_at": 1712811546,
+    "updated_at": 1712813098,
+    "tasks": [],
+    "all_tasks": [
+      {
+        "task_id": "80683435-4a33-4d08-8981-e114d02c98a1",
+        "status": "available",
         "label": {
-          "en": {
-            "text": "_occupation.subType.choice",
-            "image_url": ""
-          },
-          "th": {
-            "text": "_occupation.subType.choice",
-            "image_url": ""
-          }
+          "en": "summary.master",
+          "th": "summary.master"
         },
-        "choices": [
-          {
-            "value": "01",
-            "label": {
-              "en": {
-                "text": "Official",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ข้าราชการ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='01'"
-          },
-          {
-            "value": "02",
-            "label": {
-              "en": {
-                "text": "State Enterprise Agent",
-                "image_url": ""
-              },
-              "th": {
-                "text": "พนักงานรัฐวิสาหกิจ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='02'"
-          },
-          {
-            "value": "03",
-            "label": {
-              "en": {
-                "text": "Officer of the Private Company",
-                "image_url": ""
-              },
-              "th": {
-                "text": "พนักงานบริษัท",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='03'"
-          },
-          {
-            "value": "04",
-            "label": {
-              "en": {
-                "text": "Officer of Financial Institution",
-                "image_url": ""
-              },
-              "th": {
-                "text": "พนักงานสถาบันการเงิน",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='04'"
-          },
-          {
-            "value": "05",
-            "label": {
-              "en": {
-                "text": "Business are related to a politician and who pertaining to politics (PEPs)",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ธุรกิจที่มีความเกี่ยวข้องกับนักการเมืองและผู้ที่เกี่ยวข้องกับการเมือง (PEPs)",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "06",
-            "label": {
-              "en": {
-                "text": "Politician",
-                "image_url": ""
-              },
-              "th": {
-                "text": "นักการเมืองและผู้ที่เกี่ยวข้องกับการเมือง (PEPs)",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='06'"
-          },
-          {
-            "value": "07",
-            "label": {
-              "en": {
-                "text": "Laborer",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ผู้รับจ้างทั่วไป / ผู้ใช้แรงงาน",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='07'"
-          },
-          {
-            "value": "08",
-            "label": {
-              "en": {
-                "text": "Farming",
-                "image_url": ""
-              },
-              "th": {
-                "text": "เกษตรกร ทำนา",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='08'"
-          },
-          {
-            "value": "09",
-            "label": {
-              "en": {
-                "text": "Doctor",
-                "image_url": ""
-              },
-              "th": {
-                "text": "แพทย์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='09'"
-          },
-          {
-            "value": "10",
-            "label": {
-              "en": {
-                "text": "Agent Government",
-                "image_url": ""
-              },
-              "th": {
-                "text": "พนักงานราชการ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='01'"
-          },
-          {
-            "value": "11",
-            "label": {
-              "en": {
-                "text": "Casual Worker",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ลูกจ้างรัฐวิสาหกิจ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='02'"
-          },
-          {
-            "value": "12",
-            "label": {
-              "en": {
-                "text": "Worker of the Private Company",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ลูกจ้างบริษัท",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='03'"
-          },
-          {
-            "value": "13",
-            "label": {
-              "en": {
-                "text": "Worker of Financial Institution",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ลูกจ้างสถาบันการเงิน",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='04'"
-          },
-          {
-            "value": "14",
-            "label": {
-              "en": {
-                "text": "Business Services - vocation of Law",
-                "image_url": ""
-              },
-              "th": {
-                "text": "สำนักงานกฎหมาย",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "15",
-            "label": {
-              "en": {
-                "text": "Freelance",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ผู้มีอาชีพอิสระ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='06'"
-          },
-          {
-            "value": "16",
-            "label": {
-              "en": {
-                "text": "Orchard gardening",
-                "image_url": ""
-              },
-              "th": {
-                "text": "เกษตรกร ทำสวน",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='08'"
-          },
-          {
-            "value": "17",
-            "label": {
-              "en": {
-                "text": "Dentist",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ทันตแพทย์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='09'"
-          },
-          {
-            "value": "18",
-            "label": {
-              "en": {
-                "text": "Government Employee",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ลูกจ้างประจำ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='01'"
-          },
-          {
-            "value": "19",
-            "label": {
-              "en": {
-                "text": "Pensionary",
-                "image_url": ""
-              },
-              "th": {
-                "text": "พนักงานบำนาญ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='02'"
-          },
-          {
-            "value": "20",
-            "label": {
-              "en": {
-                "text": "Business Services - vocation of Account",
-                "image_url": ""
-              },
-              "th": {
-                "text": "สำนักงานบัญชี",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "21",
-            "label": {
-              "en": {
-                "text": "Income from commission",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ผู้มีรายได้จากคอมมิชชัน",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='06'"
-          },
-          {
-            "value": "22",
-            "label": {
-              "en": {
-                "text": "Plant crops",
-                "image_url": ""
-              },
-              "th": {
-                "text": "เกษตรกร ทำไร่",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='08'"
-          },
-          {
-            "value": "23",
-            "label": {
-              "en": {
-                "text": "Veterinarian",
-                "image_url": ""
-              },
-              "th": {
-                "text": "สัตวแพทย์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='09'"
-          },
-          {
-            "value": "24",
-            "label": {
-              "en": {
-                "text": "Casual Worker",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ลูกจ้างชั่วคราว",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='01'"
-          },
-          {
-            "value": "25",
-            "label": {
-              "en": {
-                "text": "Jewel / Gold",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ธุรกิจเกี่ยวกับทองคำ เพชรพลอย อัญมณี",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "26",
-            "label": {
-              "en": {
-                "text": "Cultivate the fungi",
-                "image_url": ""
-              },
-              "th": {
-                "text": "เกษตรกร เพาะเห็ด",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='08'"
-          },
-          {
-            "value": "27",
-            "label": {
-              "en": {
-                "text": "Pharmacist",
-                "image_url": ""
-              },
-              "th": {
-                "text": "เภสัชกร",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='09'"
-          },
-          {
-            "value": "28",
-            "label": {
-              "en": {
-                "text": "Retiring Pension",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ข้าราชการบำนาญ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='01'"
-          },
-          {
-            "value": "29",
-            "label": {
-              "en": {
-                "text": "Antique Dealer",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ธุรกิจค้าของเก่าและวัตถุโบราณ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "30",
-            "label": {
-              "en": {
-                "text": "Hotel and other service company",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ประกอบธุรกิจสถานบริการ บริการที่พักแรมประเภทอื่นๆซึ่งมิได้จัดประเภทไว้ในที่อื่น",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='06'"
-          },
-          {
-            "value": "31",
-            "label": {
-              "en": {
-                "text": "Cattle",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ปศุสัตว์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='08'"
-          },
-          {
-            "value": "32",
-            "label": {
-              "en": {
-                "text": "Nurse",
-                "image_url": ""
-              },
-              "th": {
-                "text": "พยาบาล",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='09'"
-          },
-          {
-            "value": "33",
-            "label": {
-              "en": {
-                "text": "Exchange",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ธุรกิจแลกเปลี่ยนเงินตราต่างประเทศ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "34",
-            "label": {
-              "en": {
-                "text": "Sightseeing Business",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ธุรกิจนำเที่ยว กิจกรรมของตัวแทนธุรกิจนำเที่ยว",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='06'"
-          },
-          {
-            "value": "35",
-            "label": {
-              "en": {
-                "text": "Fishry",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ประมง",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='08'"
-          },
-          {
-            "value": "36",
-            "label": {
-              "en": {
-                "text": "Medical Technology",
-                "image_url": ""
-              },
-              "th": {
-                "text": "เทคนิคการแพทย์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='09'"
-          },
-          {
-            "value": "37",
-            "label": {
-              "en": {
-                "text": "Transfer outside the Country",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ธุรกิจโอนเงินออกนอกประเทศ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "38",
-            "label": {
-              "en": {
-                "text": "Accountant",
-                "image_url": ""
-              },
-              "th": {
-                "text": "นักบัญชี",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='09'"
-          },
-          {
-            "value": "39",
-            "label": {
-              "en": {
-                "text": "Casino / Gamble",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ธุรกิจคาสิโน และธุรกิจการพนัน",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "40",
-            "label": {
-              "en": {
-                "text": "Legal Authority",
-                "image_url": ""
-              },
-              "th": {
-                "text": "นักกฎหมายและผู้ใช้วิชาชีพทางกฎหมาย",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='09'"
-          },
-          {
-            "value": "41",
-            "label": {
-              "en": {
-                "text": "Factory business produces arms",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ธุรกิจโรงงานผลิตอาวุธยุทโธปกรณ์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "42",
-            "label": {
-              "en": {
-                "text": "Engineer",
-                "image_url": ""
-              },
-              "th": {
-                "text": "วิศวกร",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='09'"
-          },
-          {
-            "value": "43",
-            "label": {
-              "en": {
-                "text": "Business trades arms",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ธุรกิจค้าอาวุธยุทโธปกรณ์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "44",
-            "label": {
-              "en": {
-                "text": "Architect",
-                "image_url": ""
-              },
-              "th": {
-                "text": "สถาปนิก",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='09'"
-          },
-          {
-            "value": "45",
-            "label": {
-              "en": {
-                "text": "Informal Advance",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ธุรกิจเงินกู้นอกระบบที่ไม่ขัดต่อกฎหมาย",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "46",
-            "label": {
-              "en": {
-                "text": "Trades or rent out buy an automobile / motorcycle",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ผู้ประกอบอาชีพค้า หรือให้เช่าซื้อรถยนต์ หรือรถจักรยานยนต์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "47",
-            "label": {
-              "en": {
-                "text": "Agent / agent trades the immovable property",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ตัวแทนหรือนายหน้าค้าอสังหาริมทรัพย์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "48",
-            "label": {
-              "en": {
-                "text": "Agent trades arms",
-                "image_url": ""
-              },
-              "th": {
-                "text": "นายหน้าค้าอาวุธยุทโธปกรณ์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "49",
-            "label": {
-              "en": {
-                "text": "Grocery animal meat vegetables fruit",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ของชำ เนื้อสัตว์ ผัก ผลไม้",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "50",
-            "label": {
-              "en": {
-                "text": "Food sweets beverage",
-                "image_url": ""
-              },
-              "th": {
-                "text": "อาหารขนมเครื่องดื่ม",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "51",
-            "label": {
-              "en": {
-                "text": "Drug and medical supplies herbs used medicinally",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ยาและเวชภัณฑ์สมุนไพร",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "52",
-            "label": {
-              "en": {
-                "text": "Foodstuff",
-                "image_url": ""
-              },
-              "th": {
-                "text": "สินค้าบริโภคอื่น ๆ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "53",
-            "label": {
-              "en": {
-                "text": "Handicraft invention craft",
-                "image_url": ""
-              },
-              "th": {
-                "text": "หัตถกรรมสิ่งประดิษฐ์งานศิลปะ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "54",
-            "label": {
-              "en": {
-                "text": "Costume decorations cosmetic",
-                "image_url": ""
-              },
-              "th": {
-                "text": "เครื่องแต่งกายเครื่องประดับเครื่องสำอาง",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "55",
-            "label": {
-              "en": {
-                "text": "Furniture Furnishing",
-                "image_url": ""
-              },
-              "th": {
-                "text": "เฟอร์นิเจอร์อุปกรณ์ตกแต่งบ้าน",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "56",
-            "label": {
-              "en": {
-                "text": "Stationery Educational Aid Office equipment printed matters",
-                "image_url": ""
-              },
-              "th": {
-                "text": "เครื่องเขียนอุปกรณ์การศึกษาเครื่องใช้สำนักงานสิ่งพิมพ์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "57",
-            "label": {
-              "en": {
-                "text": "Inventory and the equipment build",
-                "image_url": ""
-              },
-              "th": {
-                "text": "วัสดุและอุปกรณ์ก่อสร้าง",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "58",
-            "label": {
-              "en": {
-                "text": "Component tool lubricating oil equipment machine motor",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ชิ้นส่วนเครื่องมือน้ำมันหล่อลื่นอุปกรณ์เครื่องจักรเครื่องยนต์",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "59",
-            "label": {
-              "en": {
-                "text": "Domestic Animal Animal feed Tree Agricultural and Other Equipment",
-                "image_url": ""
-              },
-              "th": {
-                "text": "สัตว์เลี้ยงอาหารสัตว์ต้นไม้อุปกรณ์การเกษตรอุปกรณ์ต่าง ๆ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "60",
-            "label": {
-              "en": {
-                "text": "Various Utensils",
-                "image_url": ""
-              },
-              "th": {
-                "text": "สินค้าอุปโภคอื่น ๆ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "61",
-            "label": {
-              "en": {
-                "text": "Beautification massage",
-                "image_url": ""
-              },
-              "th": {
-                "text": "บริการเสริมความงามต่าง ๆ นวดแผนโบราณ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "62",
-            "label": {
-              "en": {
-                "text": "Dressmaking Launder",
-                "image_url": ""
-              },
-              "th": {
-                "text": "บริการตัดเย็บเสื้อผ้า ซัก อบ รีด",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "63",
-            "label": {
-              "en": {
-                "text": "Service - Photography Xerox Job work Picture frame",
-                "image_url": ""
-              },
-              "th": {
-                "text": "บริการถ่ายรูป ถ่ายเอกสาร พิมพ์งาน กรอบรูป",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "64",
-            "label": {
-              "en": {
-                "text": "Service - set up repair take do of take repair",
-                "image_url": ""
-              },
-              "th": {
-                "text": "บริการติดตั้ง ซ่อมแซม รับทำของ รับซ่อม",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "65",
-            "label": {
-              "en": {
-                "text": "Service - Rent",
-                "image_url": ""
-              },
-              "th": {
-                "text": "บริการให้เช่า",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "66",
-            "label": {
-              "en": {
-                "text": "Service - Transfer Money",
-                "image_url": ""
-              },
-              "th": {
-                "text": "ธุรกิจโอนเงินทั้งภายในและข้ามประเทศ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "67",
-            "label": {
-              "en": {
-                "text": "Jewel / Gold",
-                "image_url": ""
-              },
-              "th": {
-                "text": "การค้าปลีกและการค้าส่ง - ทองคำ เพชรพลอย อัญมณี",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "68",
-            "label": {
-              "en": {
-                "text": "Antique Dealer",
-                "image_url": ""
-              },
-              "th": {
-                "text": "การค้าปลีกและการค้าส่ง - ของเก่าและวัตถุโบราณ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "69",
-            "label": {
-              "en": {
-                "text": "Employment Agency",
-                "image_url": ""
-              },
-              "th": {
-                "text": "บริษัท หรือนายหน้าจัดหางานรับหรือส่งคนไปทำงานต่างประเทศ",
-                "image_url": ""
-              }
-            },
-            "condition": "<_occupation.type>=='05'"
-          },
-          {
-            "value": "9999",
-            "label": {
-              "en": {
-                "text": "Other",
-                "image_url": ""
-              },
-              "th": {
-                "text": "อื่นๆ",
-                "image_url": ""
-              }
-            },
-            "condition": "(<_occupation.type>=='09')||(<_occupation.type>=='9999')"
+        "verification_method_name": "summary.master",
+        "current_owner": "",
+        "current_owner_info": {
+          "id": 0,
+          "username": "",
+          "email": "",
+          "first_name": "",
+          "last_name": ""
+        },
+        "claimable": true,
+        "rejected_by": "",
+        "reason": "",
+        "comment": "",
+        "priority": ""
+      },
+      {
+        "task_id": "b5f067aa-4a17-4f76-b731-44f3a04fc096",
+        "status": "available",
+        "label": {
+          "en": "status.autoRejected",
+          "th": "status.autoRejected"
+        },
+        "verification_method_name": "status.autoRejected",
+        "current_owner": "",
+        "current_owner_info": {
+          "id": 0,
+          "username": "",
+          "email": "",
+          "first_name": "",
+          "last_name": ""
+        },
+        "claimable": true,
+        "rejected_by": "",
+        "reason": "",
+        "comment": "",
+        "priority": ""
+      }
+    ],
+    "traversal_path": [
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1007,
+        "field_name": "_customerInfo.nationalIdNumber",
+        "value": "1000000000007",
+        "subtree": null,
+        "alias": "_customerInfo.nationalIdNumber"
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1008,
+        "field_name": "_customerInfo.cifNumber",
+        "value": "1000000000007",
+        "subtree": null,
+        "alias": "_customerInfo.cifNumber",
+        "dependent_fields": [
+          "_customerInfo.nationalIdNumber"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1451,
+        "field_name": "",
+        "value": "",
+        "subtree": [
+          {
+            "tree_name": "_loan.loanPurposeMdd",
+            "node_id": 1260,
+            "field_name": "ISNULL.thinker.loanPurposeMdd",
+            "value": "true",
+            "subtree": null,
+            "alias": "",
+            "dependent_fields": [
+              "thinker.loanPurposeMdd"
+            ]
+          },
+          {
+            "tree_name": "_loan.loanPurposeMdd",
+            "node_id": 1261,
+            "field_name": "_occupation.employType",
+            "value": "EMPLOYEE",
+            "subtree": null,
+            "alias": ""
+          },
+          {
+            "tree_name": "_loan.loanPurposeMdd",
+            "node_id": 1262,
+            "field_name": "_loan.loanPurposeMdd",
+            "value": "1",
+            "subtree": null,
+            "alias": ""
           }
         ],
-        "is_choice_hierarchy": false,
-        "parent_choice_name": "",
-        "choice_condition_field_names": null,
-        "direct_mapping": null,
-        "created_at": 0,
-        "updated_at": 1712287598,
-        "deleted_at": 0
+        "alias": ""
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 854,
+        "field_name": "",
+        "value": "",
+        "subtree": [
+          {
+            "tree_name": "_loan.subLoanTypeTree",
+            "node_id": 1633,
+            "field_name": "",
+            "value": "",
+            "subtree": [
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1260,
+                "field_name": "ISNULL.thinker.loanPurposeMdd",
+                "value": "true",
+                "subtree": null,
+                "alias": "",
+                "dependent_fields": [
+                  "thinker.loanPurposeMdd"
+                ]
+              },
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1261,
+                "field_name": "_occupation.employType",
+                "value": "EMPLOYEE",
+                "subtree": null,
+                "alias": ""
+              },
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1262,
+                "field_name": "_loan.loanPurposeMdd",
+                "value": "1",
+                "subtree": null,
+                "alias": ""
+              }
+            ],
+            "alias": ""
+          },
+          {
+            "tree_name": "_loan.subLoanTypeTree",
+            "node_id": 321,
+            "field_name": "_loan.subLoanType",
+            "value": "20001",
+            "subtree": null,
+            "alias": ""
+          }
+        ],
+        "alias": ""
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 855,
+        "field_name": "",
+        "value": "",
+        "subtree": [
+          {
+            "tree_name": "_loan.loanPurposeBot",
+            "node_id": 1634,
+            "field_name": "",
+            "value": "",
+            "subtree": [
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1260,
+                "field_name": "ISNULL.thinker.loanPurposeMdd",
+                "value": "true",
+                "subtree": null,
+                "alias": "",
+                "dependent_fields": [
+                  "thinker.loanPurposeMdd"
+                ]
+              },
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1261,
+                "field_name": "_occupation.employType",
+                "value": "EMPLOYEE",
+                "subtree": null,
+                "alias": ""
+              },
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1262,
+                "field_name": "_loan.loanPurposeMdd",
+                "value": "1",
+                "subtree": null,
+                "alias": ""
+              }
+            ],
+            "alias": ""
+          },
+          {
+            "tree_name": "_loan.loanPurposeBot",
+            "node_id": 832,
+            "field_name": "_loan.loanPurposeBot",
+            "value": "15001",
+            "subtree": null,
+            "alias": ""
+          }
+        ],
+        "alias": ""
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 856,
+        "field_name": "",
+        "value": "",
+        "subtree": [
+          {
+            "tree_name": "_loan.loanPeriodInMonth",
+            "node_id": 956,
+            "field_name": "scheduleSettings.repaymentInstallments",
+            "value": "24",
+            "subtree": null,
+            "alias": ""
+          },
+          {
+            "tree_name": "_loan.loanPeriodInMonth",
+            "node_id": 811,
+            "field_name": "_loan.loanPeriodInMonth",
+            "value": "24M",
+            "subtree": null,
+            "alias": ""
+          }
+        ],
+        "alias": ""
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 862,
+        "field_name": "",
+        "value": "",
+        "subtree": [
+          {
+            "tree_name": "_loan.loanType",
+            "node_id": 1635,
+            "field_name": "",
+            "value": "",
+            "subtree": [
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1260,
+                "field_name": "ISNULL.thinker.loanPurposeMdd",
+                "value": "true",
+                "subtree": null,
+                "alias": "",
+                "dependent_fields": [
+                  "thinker.loanPurposeMdd"
+                ]
+              },
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1261,
+                "field_name": "_occupation.employType",
+                "value": "EMPLOYEE",
+                "subtree": null,
+                "alias": ""
+              },
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1262,
+                "field_name": "_loan.loanPurposeMdd",
+                "value": "1",
+                "subtree": null,
+                "alias": ""
+              }
+            ],
+            "alias": ""
+          },
+          {
+            "tree_name": "_loan.loanType",
+            "node_id": 861,
+            "field_name": "_loan.loanType",
+            "value": "7200",
+            "subtree": null,
+            "alias": ""
+          }
+        ],
+        "alias": ""
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 867,
+        "field_name": "",
+        "value": "",
+        "subtree": [
+          {
+            "tree_name": "_loan.loanPurpose",
+            "node_id": 1636,
+            "field_name": "",
+            "value": "",
+            "subtree": [
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1260,
+                "field_name": "ISNULL.thinker.loanPurposeMdd",
+                "value": "true",
+                "subtree": null,
+                "alias": "",
+                "dependent_fields": [
+                  "thinker.loanPurposeMdd"
+                ]
+              },
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1261,
+                "field_name": "_occupation.employType",
+                "value": "EMPLOYEE",
+                "subtree": null,
+                "alias": ""
+              },
+              {
+                "tree_name": "_loan.loanPurposeMdd",
+                "node_id": 1262,
+                "field_name": "_loan.loanPurposeMdd",
+                "value": "1",
+                "subtree": null,
+                "alias": ""
+              }
+            ],
+            "alias": ""
+          },
+          {
+            "tree_name": "_loan.loanPurpose",
+            "node_id": 866,
+            "field_name": "_loan.loanPurpose",
+            "value": "12001",
+            "subtree": null,
+            "alias": ""
+          }
+        ],
+        "alias": ""
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1199,
+        "field_name": "_customerInfo.residencePeriod",
+        "value": "25",
+        "subtree": null,
+        "alias": "_customerInfo.residencePeriod",
+        "dependent_fields": [
+          "_customerInfo.residencePeriodYear",
+          "_customerInfo.residencePeriodMonth"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1784,
+        "field_name": "",
+        "value": "",
+        "subtree": [
+          {
+            "tree_name": "authenticationType.tree",
+            "node_id": 1774,
+            "field_name": "check.authenticationIsEKyc",
+            "value": "false",
+            "subtree": null,
+            "alias": "",
+            "dependent_fields": [
+              "_customerInfo.authenticationType"
+            ]
+          },
+          {
+            "tree_name": "authenticationType.tree",
+            "node_id": 1780,
+            "field_name": "check.ncbConsentAcceptTrue",
+            "value": "true",
+            "subtree": null,
+            "alias": "",
+            "dependent_fields": [
+              "_credit.isNcbConsentAccept"
+            ]
+          },
+          {
+            "tree_name": "authenticationType.tree",
+            "node_id": 1781,
+            "field_name": "thinker.authenticationTypeResult",
+            "value": "A01",
+            "subtree": null,
+            "alias": ""
+          }
+        ],
+        "alias": ""
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 234,
+        "field_name": "",
+        "value": "",
+        "subtree": [
+          {
+            "tree_name": "pLoan.occupationTree",
+            "node_id": 215,
+            "field_name": "_occupation.employType",
+            "value": "EMPLOYEE",
+            "subtree": null,
+            "alias": ""
+          },
+          {
+            "tree_name": "pLoan.occupationTree",
+            "node_id": 319,
+            "field_name": "_occupation.period",
+            "value": "13",
+            "subtree": null,
+            "alias": "",
+            "dependent_fields": [
+              "_occupation.periodYear",
+              "_occupation.periodMonth"
+            ]
+          },
+          {
+            "tree_name": "pLoan.occupationTree",
+            "node_id": 484,
+            "field_name": "_occupation.totalPeriod",
+            "value": "13",
+            "subtree": null,
+            "alias": "",
+            "dependent_fields": [
+              "_occupation.totalPeriodYear",
+              "_occupation.totalPeriodMonth"
+            ]
+          },
+          {
+            "tree_name": "pLoan.occupationTree",
+            "node_id": 1682,
+            "field_name": "",
+            "value": "",
+            "subtree": [
+              {
+                "tree_name": "riskIncomeTree",
+                "node_id": 1681,
+                "field_name": "_occupation.incomeAmount",
+                "value": "9000",
+                "subtree": null,
+                "alias": ""
+              },
+              {
+                "tree_name": "riskIncomeTree",
+                "node_id": 1679,
+                "field_name": "_occupation.isRiskIncomeAmount",
+                "value": "false",
+                "subtree": null,
+                "alias": ""
+              }
+            ],
+            "alias": ""
+          },
+          {
+            "tree_name": "pLoan.occupationTree",
+            "node_id": 1243,
+            "field_name": "_occupation.netSalaryAmount",
+            "value": "9000",
+            "subtree": null,
+            "alias": "",
+            "dependent_fields": [
+              "_occupation.incomeAmount"
+            ]
+          },
+          {
+            "tree_name": "pLoan.occupationTree",
+            "node_id": 530,
+            "field_name": "",
+            "value": "",
+            "subtree": [
+              {
+                "tree_name": "occupation.subTypeAscore",
+                "node_id": 795,
+                "field_name": "_occupation.type",
+                "value": "01",
+                "subtree": null,
+                "alias": ""
+              },
+              {
+                "tree_name": "occupation.subTypeAscore",
+                "node_id": 493,
+                "field_name": "_occupation.subType",
+                "value": "01",
+                "subtree": null,
+                "alias": ""
+              },
+              {
+                "tree_name": "occupation.subTypeAscore",
+                "node_id": 494,
+                "field_name": "_occupation.subTypeAscore",
+                "value": "01",
+                "subtree": null,
+                "alias": ""
+              }
+            ],
+            "alias": ""
+          },
+          {
+            "tree_name": "pLoan.occupationTree",
+            "node_id": 1427,
+            "field_name": "",
+            "value": "",
+            "subtree": [
+              {
+                "tree_name": "riskBusinessType",
+                "node_id": 1423,
+                "field_name": "check.riskBusinessType",
+                "value": "false",
+                "subtree": null,
+                "alias": "",
+                "dependent_fields": [
+                  "_occupation.subType"
+                ]
+              },
+              {
+                "tree_name": "riskBusinessType",
+                "node_id": 1425,
+                "field_name": "_occupation.isRiskBusinessType",
+                "value": "false",
+                "subtree": null,
+                "alias": ""
+              }
+            ],
+            "alias": ""
+          },
+          {
+            "tree_name": "pLoan.occupationTree",
+            "node_id": 218,
+            "field_name": "thinker.occupationResult",
+            "value": "APPROVE",
+            "subtree": null,
+            "alias": ""
+          }
+        ],
+        "alias": ""
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1001,
+        "field_name": "_credit.totalIncomeToRevernueRatio",
+        "value": "66.66666666666667",
+        "subtree": null,
+        "alias": "_credit.totalIncomeToRevernueRatio",
+        "dependent_fields": [
+          "_occupation.incomeAmount",
+          "_credit.expenseAmount"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1002,
+        "field_name": "_credit.expenseToRevernueRatio",
+        "value": "33.33333333333333",
+        "subtree": null,
+        "alias": "_credit.expenseToRevernueRatio",
+        "dependent_fields": [
+          "_credit.expenseAmount",
+          "_occupation.incomeAmount"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 467,
+        "field_name": "_customerInfo.agePolicy",
+        "value": "29",
+        "subtree": null,
+        "alias": "_customerInfo.agePolicy",
+        "dependent_fields": [
+          "birthDate"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1053,
+        "field_name": "_customerInfo.ageYears",
+        "value": "29",
+        "subtree": null,
+        "alias": "_customerInfo.ageYears",
+        "dependent_fields": [
+          "birthDate"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1245,
+        "field_name": "",
+        "value": "",
+        "subtree": [
+          {
+            "tree_name": "_customerInfo.ageMonths",
+            "node_id": 1209,
+            "field_name": "check.datedif",
+            "value": "-4",
+            "subtree": null,
+            "alias": "",
+            "dependent_fields": [
+              "birthDate"
+            ]
+          },
+          {
+            "tree_name": "_customerInfo.ageMonths",
+            "node_id": 1210,
+            "field_name": "_customerInfo.ageMonths",
+            "value": "1",
+            "subtree": null,
+            "alias": ""
+          }
+        ],
+        "alias": ""
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1055,
+        "field_name": "_customerInfo.ageDays",
+        "value": "26",
+        "subtree": null,
+        "alias": "_customerInfo.ageDays",
+        "dependent_fields": [
+          "birthDate",
+          "_customerInfo.ageMonths"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1230,
+        "field_name": "check._loan.loanRequest",
+        "value": "true",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "_loan.loanRequest",
+          "_loan.minPLoanPolicyLimit"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1421,
+        "field_name": "",
+        "value": "",
+        "subtree": [
+          {
+            "tree_name": "isRiskCity",
+            "node_id": 1387,
+            "field_name": "check.isRiskCity",
+            "value": "false",
+            "subtree": null,
+            "alias": "",
+            "dependent_fields": [
+              "_addresses.2.city",
+              "_addresses.1.city",
+              "_addresses.3.city"
+            ]
+          },
+          {
+            "tree_name": "isRiskCity",
+            "node_id": 1389,
+            "field_name": "_customerInfo.isRiskCity",
+            "value": "false",
+            "subtree": null,
+            "alias": ""
+          }
+        ],
+        "alias": ""
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 533,
+        "field_name": "check.isCustomerLoanReject",
+        "value": "false",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "_customerInfo.foundLoanRequestReject"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 537,
+        "field_name": "check.isFoundAmlo",
+        "value": "false",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "_credit.foundInAmlo"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 540,
+        "field_name": "check.isFoundInGsbBlacklist",
+        "value": "false",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "_gsb.foundInGsbBlacklist"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1640,
+        "field_name": "checkIsnull.thinker.compliancePepsDecision",
+        "value": "true",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "thinker.compliancePepsDecision"
+        ]
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 1756,
+        "field_name": "",
+        "value": "",
+        "subtree": [
+          {
+            "tree_name": "ncb.decisionTree",
+            "node_id": 1736,
+            "field_name": "_credit.ncbValidPeriod",
+            "value": "265",
+            "subtree": null,
+            "alias": "",
+            "dependent_fields": [
+              "_credit.ncbIssueDate"
+            ]
+          },
+          {
+            "tree_name": "ncb.decisionTree",
+            "node_id": 1758,
+            "field_name": "",
+            "value": "",
+            "subtree": [
+              {
+                "tree_name": "ncbIsValid",
+                "node_id": 1393,
+                "field_name": "check.ncbIsValid",
+                "value": "false",
+                "subtree": null,
+                "alias": "",
+                "dependent_fields": [
+                  "_credit.ncbIdNumber",
+                  "_customerInfo.nationalIdNumber"
+                ]
+              },
+              {
+                "tree_name": "ncbIsValid",
+                "node_id": 1395,
+                "field_name": "_credit.ncbIsValid",
+                "value": "false",
+                "subtree": null,
+                "alias": ""
+              }
+            ],
+            "alias": ""
+          },
+          {
+            "tree_name": "ncb.decisionTree",
+            "node_id": 1751,
+            "field_name": "thinker.ncb.result",
+            "value": "R01",
+            "subtree": null,
+            "alias": ""
+          }
+        ],
+        "alias": ""
+      },
+      {
+        "tree_name": "pLoan.mainTreeUpdate",
+        "node_id": 543,
+        "field_name": "thinker.loanResult",
+        "value": "R01",
+        "subtree": null,
+        "alias": "thinker.loanResult"
+      },
+      {
+        "tree_name": "thinker.isPepsFound.Tree",
+        "node_id": 1663,
+        "field_name": "checkIsnull.thinker.compliancePepsDecision",
+        "value": "true",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "thinker.compliancePepsDecision"
+        ]
+      },
+      {
+        "tree_name": "thinker.isPepsFound.Tree",
+        "node_id": 1653,
+        "field_name": "check.thinker.isPepsFound",
+        "value": "false",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "thinker.isPepsFound"
+        ]
+      },
+      {
+        "tree_name": "thinker.isPepsFound.Tree",
+        "node_id": 1655,
+        "field_name": "_credit.isPepsFound",
+        "value": "NOT_FOUND",
+        "subtree": null,
+        "alias": "_credit.isPepsFound"
+      },
+      {
+        "tree_name": "thinker.loanStatusTree",
+        "node_id": 1385,
+        "field_name": "check.ISNULL.thinker.caVerifying",
+        "value": "true",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "thinker.caVerifying"
+        ]
+      },
+      {
+        "tree_name": "thinker.loanStatusTree",
+        "node_id": 1191,
+        "field_name": "ISNULL.thinker.loanResultAndNotVerifying",
+        "value": "false",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "thinker.caVerifying",
+          "thinker.loanResult"
+        ]
+      },
+      {
+        "tree_name": "thinker.loanStatusTree",
+        "node_id": 1456,
+        "field_name": "check.caDocumentRequest",
+        "value": "false",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "thinker.caDocumentsRequestNumber",
+          "thinker.isCaDocumentsRequest"
+        ]
+      },
+      {
+        "tree_name": "thinker.loanStatusTree",
+        "node_id": 1222,
+        "field_name": "check.isNcbNeedVerify",
+        "value": "false",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "_credit.ncbGrade",
+          "_documents.15.content",
+          "thinker.loanResult",
+          "_credit.isNcbTrustSourceTads",
+          "_credit.isNcbPassValidTads",
+          "_credit.isNcbServicePassTads",
+          "_credit.isNcbManualTads"
+        ]
+      },
+      {
+        "tree_name": "thinker.loanStatusTree",
+        "node_id": 1196,
+        "field_name": "ISNULL.thinker.loanResult",
+        "value": "false",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "thinker.loanResult"
+        ]
+      },
+      {
+        "tree_name": "thinker.loanStatusTree",
+        "node_id": 1065,
+        "field_name": "checkR.thinker.loanResult",
+        "value": "true",
+        "subtree": null,
+        "alias": "",
+        "dependent_fields": [
+          "thinker.loanResult"
+        ]
+      },
+      {
+        "tree_name": "thinker.loanStatusTree",
+        "node_id": 1063,
+        "field_name": "thinker.loanStatus",
+        "value": "REJECTED",
+        "subtree": null,
+        "alias": "thinker.loanStatus"
       }
     ]
   }
+}

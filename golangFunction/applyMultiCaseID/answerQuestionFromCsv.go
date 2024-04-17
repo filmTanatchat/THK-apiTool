@@ -119,22 +119,32 @@ func convertValue(value, header, basePath string) (string, error) {
 	return convertSingleValue(value, dataType, basePath)
 }
 
-func processRecords(jobs chan []string, wg *sync.WaitGroup, mu *sync.Mutex, client *http.Client, headers map[string]string, fullApiUrl, method string, headersRow []string, csvFilePath string, statusCodes *map[int]int, allPayloads *[]map[string]interface{}) {
+func formatLogEntry(event string, details map[string]interface{}) string {
+	logEntry := map[string]interface{}{
+		"timestamp": time.Now().Format("2006-01-02T15:04:05-0700"),
+		"event":     event,
+		"details":   details,
+	}
+	entryBytes, _ := json.Marshal(logEntry)
+	return string(entryBytes)
+}
+
+func processRecords(jobs chan []string, wg *sync.WaitGroup, mu *sync.Mutex, client *http.Client, headers map[string]string, fullApiUrl, method string, headersRow []string, csvFilePath string, statusCodes *map[int]int, _ *[]map[string]interface{}, logFilePath string) {
 	defer wg.Done()
 	for record := range jobs {
 		jsonPayload, convertErr := convertRecordToJSON(record, headersRow, csvFilePath)
 		if convertErr != nil {
-			fmt.Printf("Error converting record to JSON: %v\n", convertErr)
+			logDetails := map[string]interface{}{"error": convertErr.Error(), "record": record}
+			logEntry := formatLogEntry("conversion_error", logDetails)
+			WriteLogToFile(logFilePath, logEntry)
 			continue
 		}
 
-		mu.Lock()
-		*allPayloads = append(*allPayloads, jsonPayload)
-		mu.Unlock()
-
 		response, sendErr := types.MakeRequest(client, method, fullApiUrl, headers, jsonPayload)
 		if sendErr != nil {
-			fmt.Printf("Error sending request: %v\n", sendErr)
+			logDetails := map[string]interface{}{"error": sendErr.Error(), "payload": jsonPayload}
+			logEntry := formatLogEntry("request_error", logDetails)
+			WriteLogToFile(logFilePath, logEntry)
 			continue
 		}
 
@@ -144,16 +154,16 @@ func processRecords(jobs chan []string, wg *sync.WaitGroup, mu *sync.Mutex, clie
 		(*statusCodes)[statusCode]++
 		mu.Unlock()
 
-		// Read response body for error debugging
-		if statusCode != http.StatusOK && statusCode != http.StatusCreated {
-			bodyBytes, err := io.ReadAll(response.Body)
-			if err != nil {
-				fmt.Printf("Error reading response body: %v\n", err)
-			} else {
-				fmt.Printf("Response Status Code %d: %s\n", statusCode, string(bodyBytes))
-			}
-		}
+		// Read response body for logging
+		bodyBytes, err := io.ReadAll(response.Body)
 		response.Body.Close() // Close response body immediately after use
+		logDetails := map[string]interface{}{
+			"statusCode":       statusCode,
+			"responseBody":     string(bodyBytes),
+			"errorReadingBody": err != nil,
+		}
+		logEntry := formatLogEntry("response_received", logDetails)
+		WriteLogToFile(logFilePath, logEntry)
 	}
 }
 
@@ -165,24 +175,32 @@ func ProcessAnswerQuestionFromCSVData(env models.Environment, concurrentRequests
 		return fmt.Errorf("authentication error: %w", authErr)
 	}
 
+	logFilePath := filepath.Join(basePath, "2. log", "answerViaCsv.log")
 	csvPath := filepath.Join(basePath, "4. answerAndQuestion")
 	files, err := os.ReadDir(csvPath)
 	if err != nil {
 		return fmt.Errorf("error reading directory: %w", err)
 	}
 
-	// Load and select an API endpoint
+	// Load endpoints from the configuration file
 	endpointsPath := filepath.Join(basePath, "config", "config.yaml")
 	endpoints, err := models.LoadEndpoints(endpointsPath)
 	if err != nil {
 		return fmt.Errorf("error loading endpoints: %w", err)
 	}
 
-	selectedEndpoint, selectedMethod, err := models.SelectEndpoint(endpoints)
-	if err != nil {
-		return fmt.Errorf("error selecting endpoint: %w", err)
+	// Automatically select the "Answer Question" endpoint
+	var fullApiUrl, selectedMethod string
+	for _, config := range endpoints.Configs {
+		if config.Name == "Answer Question" {
+			fullApiUrl = env.BaseURL + config.Endpoint
+			selectedMethod = config.Method
+			break
+		}
 	}
-	fullApiUrl := env.BaseURL + selectedEndpoint
+	if fullApiUrl == "" || selectedMethod == "" {
+		return fmt.Errorf("answer Question endpoint not found in config")
+	}
 
 	// Display CSV files with a running number
 	var csvFiles []string
@@ -241,7 +259,7 @@ func ProcessAnswerQuestionFromCSVData(env models.Environment, concurrentRequests
 
 	for w := 0; w < concurrentRequests; w++ {
 		wg.Add(1)
-		go processRecords(jobs, &wg, &mu, client, headers, fullApiUrl, selectedMethod, records[0], env.CSVFilePath, &statusCodes, &allPayloads) // Pass reference to allPayloads
+		go processRecords(jobs, &wg, &mu, client, headers, fullApiUrl, selectedMethod, records[0], env.CSVFilePath, &statusCodes, &allPayloads, logFilePath)
 	}
 
 	// Sending jobs to the channel

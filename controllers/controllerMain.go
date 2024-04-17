@@ -9,7 +9,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	formAddField "thinkerTools/golangFunction/addFieldToForm"
+	formAddField "thinkerTools/golangFunction/additionalForm"
 	applyProductMultiCaseId "thinkerTools/golangFunction/applyMultiCaseID"
 	"thinkerTools/golangFunction/fieldOperations"
 	roleAssignment "thinkerTools/golangFunction/roleAssignment"
@@ -38,7 +38,7 @@ func NewMainController(config models.Config) *MainController {
 			{"Form Add Field", AddFieldsFromCSV},
 			{"Apply Product", ApplyProductMultiCaseId},
 			{"Assign Role", AssignRoleModel},
-			{"Send API JSON ", MultiAnswerQuestionJson},
+			{"Call API By JSON File", CallApiByFile},
 			{"Get All Field", GetAllField},
 			{"Answer Question Via CSV", ProcessAnswerQuestionFromCSVData},
 		},
@@ -140,14 +140,14 @@ func AssignRoleModel(env models.Environment) error {
 }
 
 // Wrapper function for multiAnswerQuestionJson.AnswerMultiCaseId
-func MultiAnswerQuestionJson(env models.Environment) error {
+func CallApiByFile(env models.Environment) error {
 	basePath, err := os.Getwd()
 	if err != nil {
 		fmt.Printf("Error getting working directory: %v\n", err)
 		return err
 	}
 
-	return applyProductMultiCaseId.AnswerMultiCaseId(env, basePath)
+	return applyProductMultiCaseId.CallApiByFile(env, basePath)
 }
 
 // GetAllField wraps the fieldOperations.GetAllField function
