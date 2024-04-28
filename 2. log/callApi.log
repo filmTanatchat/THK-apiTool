@@ -163,3 +163,608 @@ Response:
 Status Code: 200
 Body: {"code":0,"message":"","data":{"case_id":"665d66ea-e7eb-4d56-9959-edab18cb5af7","product":"moneydd.pLoan","status":"verifying","verifying_field_list":[{"name":"_occupation.type","alias":"_occupation.type"},{"name":"_occupation.employType","alias":"_occupation.employType"},{"name":"_occupation.subType","alias":"_occupation.subType"},{"name":"_occupation.businessType","alias":"_occupation.businessType"},{"name":"_occupation.periodYear","alias":"_occupation.periodYear"},{"name":"_occupation.periodMonth","alias":"_occupation.periodMonth"},{"name":"_occupation.incomeAmount","alias":"_occupation.incomeAmount"},{"name":"_occupation.shareholdingPorpotion","alias":"_occupation.shareholdingPorpotion"},{"name":"_credit.ncbGrade","alias":"_credit.ncbGrade"},{"name":"_credit.expenseAmount","alias":"_credit.expenseAmount"},{"name":"_bankAccount.1.accountNumber","alias":"_bankAccount.1.accountNumber"},{"name":"_bankAccount.1.accountName","alias":"_bankAccount.1.accountName"},{"name":"_loan.interestRateAdjustment","alias":"_loan.interestRateAdjustment"},{"name":"_loan.isInterestRateAdjustment","alias":"_loan.isInterestRateAdjustment"},{"name":"_loan.revolvingMaximumCreditOverride","alias":"_loan.revolvingMaximumCreditOverride"},{"name":"_loan.isRevolvingMaximumCreditOverride","alias":"_loan.isRevolvingMaximumCreditOverride"},{"name":"_loan.maximumCreditOverride","alias":"_loan.maximumCreditOverride"},{"name":"_loan.isMaximumCreditOverride","alias":"_loan.isMaximumCreditOverride"},{"name":"_documents.1.content","alias":"_documents.1.content"},{"name":"_documents.1.password","alias":"_documents.1.password"},{"name":"_documents.3.content","alias":"_documents.3.content"},{"name":"_documents.3.password","alias":"_documents.3.password"},{"name":"_documents.4.content","alias":"_documents.4.content"},{"name":"_documents.4.password","alias":"_documents.4.password"},{"name":"_documents.5.content","alias":"_documents.5.content"},{"name":"_documents.5.password","alias":"_documents.5.password"},{"name":"_documents.6.content","alias":"_documents.6.content"},{"name":"_documents.6.password","alias":"_documents.6.password"},{"name":"_documents.7.content","alias":"_documents.7.content"},{"name":"_documents.7.password","alias":"_documents.7.password"},{"name":"_documents.8.content","alias":"_documents.8.content"},{"name":"_documents.8.password","alias":"_documents.8.password"},{"name":"_documents.9.content","alias":"_documents.9.content"},{"name":"_documents.9.password","alias":"_documents.9.password"},{"name":"_documents.15.content","alias":"_documents.15.content"},{"name":"_documents.15.password","alias":"_documents.15.password"},{"name":"_documents.16.content","alias":"_documents.16.content"},{"name":"_documents.16.password","alias":"_documents.16.password"},{"name":"firstName","alias":"firstName"},{"name":"_customerInfo.enFirstName","alias":"_customerInfo.enFirstName"},{"name":"lastName","alias":"lastName"},{"name":"_customerInfo.enLastName","alias":"_customerInfo.enLastName"},{"name":"_customerInfo.nationalIdNumber","alias":"_customerInfo.nationalIdNumber"},{"name":"_occupation.previousPeriodMonth","alias":"_occupation.previousPeriodMonth"},{"name":"_occupation.previousPeriodYear","alias":"_occupation.previousPeriodYear"},{"name":"_addresses.1.city","alias":"_addresses.1.city"},{"name":"_addresses.2.city","alias":"_addresses.2.city"},{"name":"_addresses.3.city","alias":"_addresses.3.city"},{"name":"_gsb.aScoreGrade","alias":"_gsb.aScoreGrade"},{"name":"_loan.loanApplicationNumber","alias":"_loan.loanApplicationNumber"}],"remaining_verifying_field_list":[{"name":"_occupation.type","alias":"_occupation.type"},{"name":"_occupation.employType","alias":"_occupation.employType"},{"name":"_occupation.subType","alias":"_occupation.subType"},{"name":"_occupation.businessType","alias":"_occupation.businessType"},{"name":"_occupation.periodYear","alias":"_occupation.periodYear"},{"name":"_occupation.periodMonth","alias":"_occupation.periodMonth"},{"name":"_occupation.incomeAmount","alias":"_occupation.incomeAmount"},{"name":"_occupation.shareholdingPorpotion","alias":"_occupation.shareholdingPorpotion"},{"name":"_credit.ncbGrade","alias":"_credit.ncbGrade"},{"name":"_credit.expenseAmount","alias":"_credit.expenseAmount"},{"name":"_bankAccount.1.accountNumber","alias":"_bankAccount.1.accountNumber"},{"name":"_bankAccount.1.accountName","alias":"_bankAccount.1.accountName"},{"name":"_loan.interestRateAdjustment","alias":"_loan.interestRateAdjustment"},{"name":"_loan.isInterestRateAdjustment","alias":"_loan.isInterestRateAdjustment"},{"name":"_loan.revolvingMaximumCreditOverride","alias":"_loan.revolvingMaximumCreditOverride"},{"name":"_loan.isRevolvingMaximumCreditOverride","alias":"_loan.isRevolvingMaximumCreditOverride"},{"name":"_loan.maximumCreditOverride","alias":"_loan.maximumCreditOverride"},{"name":"_loan.isMaximumCreditOverride","alias":"_loan.isMaximumCreditOverride"},{"name":"_documents.1.content","alias":"_documents.1.content"},{"name":"_documents.1.password","alias":"_documents.1.password"},{"name":"_documents.3.content","alias":"_documents.3.content"},{"name":"_documents.3.password","alias":"_documents.3.password"},{"name":"_documents.4.content","alias":"_documents.4.content"},{"name":"_documents.4.password","alias":"_documents.4.password"},{"name":"_documents.5.content","alias":"_documents.5.content"},{"name":"_documents.5.password","alias":"_documents.5.password"},{"name":"_documents.6.content","alias":"_documents.6.content"},{"name":"_documents.6.password","alias":"_documents.6.password"},{"name":"_documents.7.content","alias":"_documents.7.content"},{"name":"_documents.7.password","alias":"_documents.7.password"},{"name":"_documents.8.content","alias":"_documents.8.content"},{"name":"_documents.8.password","alias":"_documents.8.password"},{"name":"_documents.9.content","alias":"_documents.9.content"},{"name":"_documents.9.password","alias":"_documents.9.password"},{"name":"_documents.15.content","alias":"_documents.15.content"},{"name":"_documents.15.password","alias":"_documents.15.password"},{"name":"_documents.16.content","alias":"_documents.16.content"},{"name":"_documents.16.password","alias":"_documents.16.password"},{"name":"firstName","alias":"firstName"},{"name":"_customerInfo.enFirstName","alias":"_customerInfo.enFirstName"},{"name":"lastName","alias":"lastName"},{"name":"_customerInfo.enLastName","alias":"_customerInfo.enLastName"},{"name":"_customerInfo.nationalIdNumber","alias":"_customerInfo.nationalIdNumber"},{"name":"_occupation.previousPeriodMonth","alias":"_occupation.previousPeriodMonth"},{"name":"_occupation.previousPeriodYear","alias":"_occupation.previousPeriodYear"},{"name":"_addresses.1.city","alias":"_addresses.1.city"},{"name":"_addresses.2.city","alias":"_addresses.2.city"},{"name":"_addresses.3.city","alias":"_addresses.3.city"},{"name":"_gsb.aScoreGrade","alias":"_gsb.aScoreGrade"},{"name":"_loan.loanApplicationNumber","alias":"_loan.loanApplicationNumber"}],"customer_data":[{"field_name":"_loan.subCollateralType","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.subCollateralType"},{"field_name":"_credit.isNcbServicePassTads","value":"PASS","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.isNcbServicePassTads"},{"field_name":"_occupation.previousPeriodMonth","value":"0","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":true,"updated_at":1712811681,"alias":"_occupation.previousPeriodMonth"},{"field_name":"_occupation.businessAddressPropertyRight","value":"2","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_occupation.businessAddressPropertyRight"},{"field_name":"_documents.1.password","value":"[\"-\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_documents.1.password"},{"field_name":"_customerInfo.agePolicy","value":"29","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"ROUNDDOWN((DATEDIF(DATENOW(), \u003cbirthDate\u003e, d)-(ROUNDDOWN(DATEDIF(DATENOW(), \u003cbirthDate\u003e, m)/12)/4))/(365))","compute_expression_with_value":"ROUNDDOWN((DATEDIF(DATENOW(), 792720000, d)-(ROUNDDOWN(DATEDIF(DATENOW(), 792720000, m)/12)/4))/(365))","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.agePolicy"},{"field_name":"_documents.4.password","value":"[\"-\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_documents.4.password"},{"field_name":"_bankAccount.1.accountName","value":"ลูกค้าหนึ่ง","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_bankAccount.1.accountName"},{"field_name":"_customerInfo.childNotWorkedAmount","value":"0","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.childNotWorkedAmount"},{"field_name":"thinker.gracePeriod","value":"3","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"thinker.gracePeriod"},{"field_name":"_loan.isInterestRateAdjustment","value":"false","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811547,"alias":"_loan.isInterestRateAdjustment"},{"field_name":"_gsb.aScoreDescription","value":"ความเสี่ยงค่อนข้างสูง","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813098,"alias":"_gsb.aScoreDescription"},{"field_name":"_occupation.subType","value":"01","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_occupation.subType"},{"field_name":"_documents.9.content","value":"[\"665d66ea-e7eb-4d56-9959-edab18cb5af7/_documents.9.content/6/1\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"file","verification_need":true,"updated_at":1712811681,"alias":"_documents.9.content"},{"field_name":"thinker.escalateReason","value":"[\"-\"]","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"thinker.escalateReason"},{"field_name":"_loan.loanAccountType","value":"LN","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_loan.loanAccountType"},{"field_name":"_customerInfo.residencePeriod","value":"25","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"(\u003c_customerInfo.residencePeriodYear\u003e*12)+(\u003c_customerInfo.residencePeriodMonth\u003e)","compute_expression_with_value":"(2*12)+(1)","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.residencePeriod"},{"field_name":"_customerInfo.ageDays","value":"26","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"DATEDIF(DATENOW(),DATEADD(DATEADD(\u003cbirthDate\u003e,(ROUNDDOWN((DATEDIF(DATENOW(), \u003cbirthDate\u003e, d)-(ROUNDDOWN(DATEDIF(DATENOW(), \u003cbirthDate\u003e, m)/12)/4))/(365))),y), \u003c_customerInfo.ageMonths\u003e*30,d),d)","compute_expression_with_value":"DATEDIF(DATENOW(),DATEADD(DATEADD(792720000,(ROUNDDOWN((DATEDIF(DATENOW(), 792720000, d)-(ROUNDDOWN(DATEDIF(DATENOW(), 792720000, m)/12)/4))/(365))),y), 1*30,d),d)","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.ageDays"},{"field_name":"_occupation.periodYear","value":"1","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":true,"updated_at":1712811681,"alias":"_occupation.periodYear"},{"field_name":"_bankAccount.1.isDefault","value":"true","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_bankAccount.1.isDefault"},{"field_name":"_customerInfo.residenceStatus","value":"01","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.residenceStatus"},{"field_name":"_occupation.netBusinessIncome","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_occupation.netBusinessIncome"},{"field_name":"_loan.loanPurposeBot","value":"15001","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"15001","compute_expression_with_value":"15001","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_loan.loanPurposeBot"},{"field_name":"_occupation.shareholdingPorpotion","value":"0","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":true,"updated_at":1712811681,"alias":"_occupation.shareholdingPorpotion"},{"field_name":"_refPersons.1.relationship","value":"01","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_refPersons.1.relationship"},{"field_name":"_documents.7.password","value":"[\"-\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_documents.7.password"},{"field_name":"_customerInfo.foundSuccessLoan","value":"NOT_FOUND","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.foundSuccessLoan"},{"field_name":"_credit.ncbIssueDate","value":"1689858052","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"date","verification_need":false,"updated_at":1712813094,"alias":"_credit.ncbIssueDate"},{"field_name":"_occupation.totalPeriodGsb","value":"395","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"(\u003c_occupation.totalPeriodYear\u003e*365)+(\u003c_occupation.totalPeriodMonth\u003e*30)","compute_expression_with_value":"(1*365)+(1*30)","data_type":"number","verification_need":false,"updated_at":1712813094,"alias":"_occupation.totalPeriodGsb"},{"field_name":"_bankAccount.1.isValid","value":"true","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_bankAccount.1.isValid"},{"field_name":"_occupation.companyName","value":"บริษัท เงินดีดี จำกัด (มหาชน)","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_occupation.companyName"},{"field_name":"_loan.minPLoanPolicyLimit","value":"10000","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.minPLoanPolicyLimit"},{"field_name":"birthDate","value":"792720000","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"date","verification_need":false,"updated_at":1712811681,"alias":"birthDate"},{"field_name":"_refPersons.2.mobilePhone","value":"0859948765","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_refPersons.2.mobilePhone"},{"field_name":"_documents.5.password","value":"[\"-\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_documents.5.password"},{"field_name":"_loan.interestRateAdjustment","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":true,"updated_at":1712811547,"alias":"_loan.interestRateAdjustment"},{"field_name":"_customerInfo.isRiskCity","value":"false","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"false","compute_expression_with_value":"false","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.isRiskCity"},{"field_name":"_credit.tadsResult.ncbDebtInstallment","value":"[\"815.2\",\"0\",\"0\",\"0\",\"0\",\"0\",\"1111.8\",\"0\",\"0\",\"1900\",\"0\",\"3600\",\"0\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712813094,"alias":"_credit.tadsResult.ncbDebtInstallment"},{"field_name":"_occupation.otherBusinessIncome","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_occupation.otherBusinessIncome"},{"field_name":"_loan.8.range","value":"48","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.8.range"},{"field_name":"_addresses.1.city","value":"10","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_addresses.1.city"},{"field_name":"_documents.1.content","value":"[\"665d66ea-e7eb-4d56-9959-edab18cb5af7/_documents.1.content/6/1\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"file","verification_need":true,"updated_at":1712811681,"alias":"_documents.1.content"},{"field_name":"_documents.3.name","value":"[\"Pay slip.pdf\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_documents.3.name"},{"field_name":"_documents.7.content","value":"[\"665d66ea-e7eb-4d56-9959-edab18cb5af7/_documents.7.content/6/1\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"file","verification_need":true,"updated_at":1712811681,"alias":"_documents.7.content"},{"field_name":"thinker.caComments","value":"[\"CA : \"]","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"thinker.caComments"},{"field_name":"scheduleSettings.gracePeriod","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"scheduleSettings.gracePeriod"},{"field_name":"_loan.collateralId","value":"99","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.collateralId"},{"field_name":"_customerInfo.customerStatus","value":"1","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_customerInfo.customerStatus"},{"field_name":"_loan.isMaximumCreditOverride","value":"false","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811547,"alias":"_loan.isMaximumCreditOverride"},{"field_name":"_customerInfo.nationalIdNumber","value":"1000000000008","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_customerInfo.nationalIdNumber"},{"field_name":"_loan.loanPurpose","value":"12001","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"12001","compute_expression_with_value":"12001","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_loan.loanPurpose"},{"field_name":"_occupation.netSalaryAmount","value":"20000","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"\u003c_occupation.incomeAmount\u003e+0","compute_expression_with_value":"20000+0","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_occupation.netSalaryAmount"},{"field_name":"_credit.ncbValidPeriod","value":"265","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"DATEDIF(DATENOW(), \u003c_credit.ncbIssueDate\u003e, d)","compute_expression_with_value":"DATEDIF(DATENOW(), 1689858052, d)","data_type":"number","verification_need":false,"updated_at":1712813094,"alias":"_credit.ncbValidPeriod"},{"field_name":"_customerInfo.enLastName","value":"Sakunnueng","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_customerInfo.enLastName"},{"field_name":"_documents.5.content","value":"[\"665d66ea-e7eb-4d56-9959-edab18cb5af7/_documents.5.content/6/1\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"file","verification_need":true,"updated_at":1712811681,"alias":"_documents.5.content"},{"field_name":"_loan.branchId","value":"8888","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_loan.branchId"},{"field_name":"_credit.isTriggeringMambuLoanSuccess","value":"null","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_credit.isTriggeringMambuLoanSuccess"},{"field_name":"_credit.expenseBusinessOperation","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_credit.expenseBusinessOperation"},{"field_name":"thinker.isLoanApprove","value":"true","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"thinker.isLoanApprove"},{"field_name":"_occupation.businessType","value":"0","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_occupation.businessType"},{"field_name":"scheduleSettings.repaymentInstallments","value":"24","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"scheduleSettings.repaymentInstallments"},{"field_name":"_documents.16.content","value":"[\"665d66ea-e7eb-4d56-9959-edab18cb5af7/_documents.16.content/6/1\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"file","verification_need":true,"updated_at":1712811681,"alias":"_documents.16.content"},{"field_name":"_credit.ncbIdNumber","value":"1579900122309","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.ncbIdNumber"},{"field_name":"_gsb.aScoreModelVersion","value":"V1.0","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813098,"alias":"_gsb.aScoreModelVersion"},{"field_name":"_gsb.aScoreModel","value":"Personal","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813098,"alias":"_gsb.aScoreModel"},{"field_name":"_loan.7.range","value":"42","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.7.range"},{"field_name":"thinker.occupationResult","value":"APPROVE","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"APPROVE","compute_expression_with_value":"APPROVE","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"thinker.occupationResult"},{"field_name":"_occupation.previousPeriodYear","value":"0","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":true,"updated_at":1712811681,"alias":"_occupation.previousPeriodYear"},{"field_name":"_bankAccount.1.bankId","value":"30","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_bankAccount.1.bankId"},{"field_name":"lastName","value":"สกุลหนึ่ง","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"lastName"},{"field_name":"_loan.requestDate","value":"1733097600","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"date","verification_need":false,"updated_at":1712811681,"alias":"_loan.requestDate"},{"field_name":"_documents.8.password","value":"[\"-\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_documents.8.password"},{"field_name":"_loan.2.range","value":"12","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.2.range"},{"field_name":"_occupation.isRiskIncomeAmount","value":"false","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"false","compute_expression_with_value":"false","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_occupation.isRiskIncomeAmount"},{"field_name":"_credit.foundInAmlo","value":"NOT_FOUND","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.foundInAmlo"},{"field_name":"_credit.isSubmitCaseSuccess","value":"true","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.isSubmitCaseSuccess"},{"field_name":"_customerInfo.mailingAddressIndex","value":"1","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.mailingAddressIndex"},{"field_name":"_loan.loanApplicationNumber","value":"MDD231028-00001","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_loan.loanApplicationNumber"},{"field_name":"_loan.nanoLoanMaximumInterest","value":"33","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.nanoLoanMaximumInterest"},{"field_name":"_occupation.subTypeAscore","value":"01","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"01","compute_expression_with_value":"01","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_occupation.subTypeAscore"},{"field_name":"_loan.loanPeriodInMonth","value":"24M","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"24M","compute_expression_with_value":"24M","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_loan.loanPeriodInMonth"},{"field_name":"_credit.expenseToRevernueRatio","value":"15","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"(\u003c_credit.expenseAmount\u003e/\u003c_occupation.incomeAmount\u003e)*100","compute_expression_with_value":"(3000/20000)*100","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_credit.expenseToRevernueRatio"},{"field_name":"emailAddress","value":"test.email@tester.com","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"emailAddress"},{"field_name":"_loan.pLoanMaximumInterest","value":"25","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.pLoanMaximumInterest"},{"field_name":"_occupation.otherIncomeAmount","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_occupation.otherIncomeAmount"},{"field_name":"_loan.6.range","value":"36","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.6.range"},{"field_name":"_occupation.totalOtherIncome","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_occupation.totalOtherIncome"},{"field_name":"_occupation.type","value":"01","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_occupation.type"},{"field_name":"_customerInfo.maritalStatus","value":"M","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.maritalStatus"},{"field_name":"_loan.5.range","value":"30","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.5.range"},{"field_name":"_credit.tadsResult.ncbIssuerAmount","value":"[\"0\",\"1\",\"0\",\"0\",\"1\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712813094,"alias":"_credit.tadsResult.ncbIssuerAmount"},{"field_name":"_credit.tadsResult.ncbTdr","value":"[\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\",\"NOT_FOUND\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.tadsResult.ncbTdr"},{"field_name":"_credit.isNcbManualTads","value":"false","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.isNcbManualTads"},{"field_name":"_customerInfo.enFirstName","value":"Nainueng","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_customerInfo.enFirstName"},{"field_name":"_documents.6.name","value":"[\"Bank-statement-example.png\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_documents.6.name"},{"field_name":"_customerInfo.customerTypeId","value":"1010","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_customerInfo.customerTypeId"},{"field_name":"_loan.maxPLoanPolicyLimit","value":"1000000","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.maxPLoanPolicyLimit"},{"field_name":"_credit.expenseAmount","value":"3000","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":true,"updated_at":1712811681,"alias":"_credit.expenseAmount"},{"field_name":"_customerInfo.ageYears","value":"29","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"ROUNDDOWN((DATEDIF(DATENOW(), \u003cbirthDate\u003e, d)-(ROUNDDOWN(DATEDIF(DATENOW(), \u003cbirthDate\u003e, m)/12)/4))/(365))","compute_expression_with_value":"ROUNDDOWN((DATEDIF(DATENOW(), 792720000, d)-(ROUNDDOWN(DATEDIF(DATENOW(), 792720000, m)/12)/4))/(365))","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.ageYears"},{"field_name":"_occupation.totalPeriodMonth","value":"1","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_occupation.totalPeriodMonth"},{"field_name":"_credit.isNcbConsentAccept","value":"true","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_credit.isNcbConsentAccept"},{"field_name":"_customerInfo.authenticationType","value":"NDID","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.authenticationType"},{"field_name":"_documents.15.password","value":"[\"744361\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_documents.15.password"},{"field_name":"_loan.marketCode","value":"9001","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_loan.marketCode"},{"field_name":"accountHolderType","value":"CLIENT","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"accountHolderType"},{"field_name":"_documents.8.name","value":"[\"Bank-statement-example.png\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_documents.8.name"},{"field_name":"_documents.16.password","value":"[\"-\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_documents.16.password"},{"field_name":"_customerInfo.residencePeriodMonth","value":"1","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.residencePeriodMonth"},{"field_name":"_occupation.employType","value":"EMPLOYEE","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_occupation.employType"},{"field_name":"_occupation.totalPeriod","value":"13","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"(\u003c_occupation.totalPeriodMonth\u003e)+(\u003c_occupation.totalPeriodYear\u003e*12)","compute_expression_with_value":"(1)+(1*12)","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_occupation.totalPeriod"},{"field_name":"_gsb.aScoreRemark","value":"[\"SUCCESS\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813098,"alias":"_gsb.aScoreRemark"},{"field_name":"_credit.isNcbPassValidTads","value":"true","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.isNcbPassValidTads"},{"field_name":"_documents.15.content","value":"[\"665d66ea-e7eb-4d56-9959-edab18cb5af7/_documents.15.content/6/1\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"file","verification_need":true,"updated_at":1712811681,"alias":"_documents.15.content"},{"field_name":"_customerInfo.childWorkedAmount","value":"0","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.childWorkedAmount"},{"field_name":"_refPersons.2.relationship","value":"01","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_refPersons.2.relationship"},{"field_name":"_documents.3.content","value":"[\"665d66ea-e7eb-4d56-9959-edab18cb5af7/_documents.3.content/6/1\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"file","verification_need":true,"updated_at":1712811681,"alias":"_documents.3.content"},{"field_name":"_loan.maxNanoLoanPolicyLimit","value":"100000","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.maxNanoLoanPolicyLimit"},{"field_name":"_loan.minNanoLoanPolicyLimit","value":"10000","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.minNanoLoanPolicyLimit"},{"field_name":"_occupation.totalPeriodYear","value":"1","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_occupation.totalPeriodYear"},{"field_name":"_refPersons.1.lastName","value":"สกุลติดต่อหนึ่ง","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_refPersons.1.lastName"},{"field_name":"_documents.6.password","value":"[\"-\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_documents.6.password"},{"field_name":"_documents.7.name","value":"[\"Bank-statement-example.png\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_documents.7.name"},{"field_name":"_documents.9.password","value":"[\"-\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_documents.9.password"},{"field_name":"_occupation.incomeAmount","value":"20000","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":true,"updated_at":1712811681,"alias":"_occupation.incomeAmount"},{"field_name":"_documents.16.name","value":"[\"Bookbank.jpg\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_documents.16.name"},{"field_name":"thinker.isLoanApproveRevolving","value":"false","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"thinker.isLoanApproveRevolving"},{"field_name":"_loan.paymentStatus","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_loan.paymentStatus"},{"field_name":"_customerInfo.ageMonths","value":"1","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"(DATEDIF(DATENOW(),DATEADD(\u003cbirthDate\u003e,(ROUNDDOWN((DATEDIF(DATENOW(), \u003cbirthDate\u003e, d)-(ROUNDDOWN(DATEDIF(DATENOW(), \u003cbirthDate\u003e, m)/12)/4))/(365))),y),m))-1","compute_expression_with_value":"(DATEDIF(DATENOW(),DATEADD(792720000,(ROUNDDOWN((DATEDIF(DATENOW(), 792720000, d)-(ROUNDDOWN(DATEDIF(DATENOW(), 792720000, m)/12)/4))/(365))),y),m))-1","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.ageMonths"},{"field_name":"thinker.isPepsFound","value":"NOT_FOUND","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"thinker.isPepsFound"},{"field_name":"_credit.ncbDebtInstallment","value":"0","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_credit.ncbDebtInstallment"},{"field_name":"_customerInfo.titleName","value":"2101","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.titleName"},{"field_name":"_documents.4.name","value":"[\"Bank-statement-example.png\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_documents.4.name"},{"field_name":"_customerInfo.cifNumber","value":"1000000000008","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"SUBSTR(\u003c_customerInfo.nationalIdNumber\u003e,1,13)","compute_expression_with_value":"SUBSTR(1000000000008,1,13)","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.cifNumber"},{"field_name":"_credit.ncbSourceOfData","value":"EXTRACT","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.ncbSourceOfData"},{"field_name":"_credit.isPepsFound","value":"NOT_FOUND","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"NOT_FOUND","compute_expression_with_value":"NOT_FOUND","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.isPepsFound"},{"field_name":"_customerInfo.educationLevel","value":"6","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.educationLevel"},{"field_name":"_customerInfo.childAmount","value":"0","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.childAmount"},{"field_name":"_refPersons.2.lastName","value":"นามสกุลติดต่อสอง","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_refPersons.2.lastName"},{"field_name":"_loan.revolvingMaximumCreditOverride","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":true,"updated_at":1712811547,"alias":"_loan.revolvingMaximumCreditOverride"},{"field_name":"_occupation.otherIncomeEvidence","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_occupation.otherIncomeEvidence"},{"field_name":"thinker.loanStatus","value":"REJECTED","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"REJECTED","compute_expression_with_value":"REJECTED","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"thinker.loanStatus"},{"field_name":"_loan.loanPurposeMdd","value":"1","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"1","compute_expression_with_value":"1","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_loan.loanPurposeMdd"},{"field_name":"thinker.loanResult","value":"R01","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"R01","compute_expression_with_value":"R01","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"thinker.loanResult"},{"field_name":"_occupation.periodMonth","value":"1","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":true,"updated_at":1712811681,"alias":"_occupation.periodMonth"},{"field_name":"_documents.6.content","value":"[\"665d66ea-e7eb-4d56-9959-edab18cb5af7/_documents.6.content/6/1\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"file","verification_need":true,"updated_at":1712811681,"alias":"_documents.6.content"},{"field_name":"_documents.8.content","value":"[\"665d66ea-e7eb-4d56-9959-edab18cb5af7/_documents.8.content/6/1\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"file","verification_need":true,"updated_at":1712811681,"alias":"_documents.8.content"},{"field_name":"_documents.15.name","value":"[\"test1.pdf\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_documents.15.name"},{"field_name":"_loan.loanApplicationStatus","value":"1","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_loan.loanApplicationStatus"},{"field_name":"_loan.loanRequest","value":"50000","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_loan.loanRequest"},{"field_name":"_customerInfo.residenceType","value":"01","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.residenceType"},{"field_name":"_loan.4.range","value":"24","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.4.range"},{"field_name":"_occupation.totalBusinessIncome","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_occupation.totalBusinessIncome"},{"field_name":"_loan.subLoanType","value":"20001","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"20001","compute_expression_with_value":"20001","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_loan.subLoanType"},{"field_name":"_occupation.salaryAmount","value":"20000","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"\u003c_occupation.incomeAmount\u003e+0","compute_expression_with_value":"20000+0","data_type":"number","verification_need":false,"updated_at":1712813094,"alias":"_occupation.salaryAmount"},{"field_name":"_credit.debtServiceRatio","value":"0","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_credit.debtServiceRatio"},{"field_name":"firstName","value":"ลูกค้าหนึ่ง","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"firstName"},{"field_name":"scheduleSettings.fixedDaysOfMonth","value":"2","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"scheduleSettings.fixedDaysOfMonth"},{"field_name":"_occupation.isRiskBusinessType","value":"false","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"false","compute_expression_with_value":"false","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_occupation.isRiskBusinessType"},{"field_name":"_occupation.period","value":"13","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"(\u003c_occupation.periodYear\u003e*12)+(\u003c_occupation.periodMonth\u003e)","compute_expression_with_value":"(1*12)+(1)","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_occupation.period"},{"field_name":"_customerInfo.foundLoanRequestReject","value":"NOT_FOUND","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.foundLoanRequestReject"},{"field_name":"_loan.loanType","value":"7200","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"7200","compute_expression_with_value":"7200","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_loan.loanType"},{"field_name":"_credit.isNcbTrustSourceTads","value":"TRUST","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.isNcbTrustSourceTads"},{"field_name":"_addresses.2.city","value":"10","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_addresses.2.city"},{"field_name":"mobilePhone","value":"0822463953","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"mobilePhone"},{"field_name":"_refPersons.1.firstName","value":"ชื่อติดต่อหนึ่ง","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_refPersons.1.firstName"},{"field_name":"_documents.4.content","value":"[\"665d66ea-e7eb-4d56-9959-edab18cb5af7/_documents.4.content/6/1\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"file","verification_need":true,"updated_at":1712811681,"alias":"_documents.4.content"},{"field_name":"_loan.maximumCreditOverride","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":true,"updated_at":1712811547,"alias":"_loan.maximumCreditOverride"},{"field_name":"_loan.1.range","value":"6","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.1.range"},{"field_name":"_occupation.previousPeriod","value":"0","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"(\u003c_occupation.previousPeriodYear\u003e*12)+(\u003c_occupation.previousPeriodMonth\u003e)","compute_expression_with_value":"(0*12)+(0)","data_type":"number","verification_need":false,"updated_at":1712813094,"alias":"_occupation.previousPeriod"},{"field_name":"_documents.3.password","value":"[\"-\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_documents.3.password"},{"field_name":"_documents.1.name","value":"[\"ID card.pdf\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_documents.1.name"},{"field_name":"_documents.31.name","value":"approval_document.pdf","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_documents.31.name"},{"field_name":"_loan.isRevolvingMaximumCreditOverride","value":"false","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811547,"alias":"_loan.isRevolvingMaximumCreditOverride"},{"field_name":"_customerInfo.customerType","value":"0","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_customerInfo.customerType"},{"field_name":"_gsb.foundCustomer","value":"NOT_FOUND","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_gsb.foundCustomer"},{"field_name":"_addresses.3.city","value":"10","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_addresses.3.city"},{"field_name":"_refPersons.2.firstName","value":"ชื่อติดต่อสอง","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_refPersons.2.firstName"},{"field_name":"_documents.9.name","value":"[\"Bank-statement-example.png\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_documents.9.name"},{"field_name":"_customerInfo.residencePeriodYear","value":"2","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.residencePeriodYear"},{"field_name":"_credit.totalIncomeToRevernueRatio","value":"85","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"((\u003c_occupation.incomeAmount\u003e-\u003c_credit.expenseAmount\u003e)/\u003c_occupation.incomeAmount\u003e)*100","compute_expression_with_value":"((20000-3000)/20000)*100","data_type":"number","verification_need":false,"updated_at":1712811681,"alias":"_credit.totalIncomeToRevernueRatio"},{"field_name":"gender","value":"M","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"gender"},{"field_name":"_customerInfo.idExpireDate","value":"1802563200","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"date","verification_need":false,"updated_at":1712811681,"alias":"_customerInfo.idExpireDate"},{"field_name":"_bankAccount.1.accountNumber","value":"10999283877","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_bankAccount.1.accountNumber"},{"field_name":"_documents.5.name","value":"[\"Bank-statement-example.png\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"_documents.5.name"},{"field_name":"_loan.3.range","value":"18","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.3.range"},{"field_name":"thinker.isCaDocumentsRequest","value":"false","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"thinker.isCaDocumentsRequest"},{"field_name":"thinker.ncb.result","value":"R01","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"R01","compute_expression_with_value":"R01","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"thinker.ncb.result"},{"field_name":"scheduleSettings.gracePeriodType","value":"NONE","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811547,"alias":"scheduleSettings.gracePeriodType"},{"field_name":"thinker.authenticationTypeResult","value":"A01","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"A01","compute_expression_with_value":"A01","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"thinker.authenticationTypeResult"},{"field_name":"_credit.submitCaseRemark","value":"[\"success\"]","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.submitCaseRemark"},{"field_name":"_credit.ncbGrade","value":"AA","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712811681,"alias":"_credit.ncbGrade"},{"field_name":"_gsb.foundInGsbBlacklist","value":"NOT_FOUND","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_gsb.foundInGsbBlacklist"},{"field_name":"_credit.ncbIsValid","value":"false","input_source":"result_node","input_name":"","checker_id":"","compute_type":"result","compute_expression":"false","compute_expression_with_value":"false","data_type":"text","verification_need":false,"updated_at":1712813094,"alias":"_credit.ncbIsValid"},{"field_name":"_refPersons.1.mobilePhone","value":"0988746534","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":false,"updated_at":1712811681,"alias":"_refPersons.1.mobilePhone"},{"field_name":"_loan.collateralType","value":"99","input_source":"fixed_in_field","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"number","verification_need":false,"updated_at":1712811547,"alias":"_loan.collateralType"},{"field_name":"_occupation.periodGsb","value":"395","input_source":"calculation","input_name":"","checker_id":"","compute_type":"compound","compute_expression":"(\u003c_occupation.periodYear\u003e*365)+(\u003c_occupation.periodMonth\u003e*30)","compute_expression_with_value":"(1*365)+(1*30)","data_type":"number","verification_need":false,"updated_at":1712813094,"alias":"_occupation.periodGsb"},{"field_name":"_gsb.aScoreGrade","value":"C","input_source":"customer","input_name":"","checker_id":"","compute_type":"primitive","compute_expression":"","compute_expression_with_value":"","data_type":"text","verification_need":true,"updated_at":1712813098,"alias":"_gsb.aScoreGrade"}],"submitted_at":1712813095,"created_at":1712811546,"updated_at":1712829963,"tasks":[],"all_tasks":[{"task_id":"d7ac12f3-3ef0-4fc0-8d8f-a7788cb18bb2","status":"available","label":{"en":"summary.master","th":"summary.master"},"verification_method_name":"summary.master","current_owner":"","current_owner_info":{"id":0,"username":"","email":"","first_name":"","last_name":""},"claimable":true,"rejected_by":"","reason":"","comment":"","priority":""},{"task_id":"17e4c5bd-2efe-4450-88ad-9536f37d3a79","status":"available","label":{"en":"status.autoRejected","th":"status.autoRejected"},"verification_method_name":"status.autoRejected","current_owner":"","current_owner_info":{"id":0,"username":"","email":"","first_name":"","last_name":""},"claimable":true,"rejected_by":"","reason":"","comment":"","priority":""}],"traversal_path":[{"tree_name":"pLoan.mainTreeUpdate","node_id":1007,"field_name":"_customerInfo.nationalIdNumber","value":"1000000000008","subtree":null,"alias":"_customerInfo.nationalIdNumber"},{"tree_name":"pLoan.mainTreeUpdate","node_id":1008,"field_name":"_customerInfo.cifNumber","value":"1000000000008","subtree":null,"alias":"_customerInfo.cifNumber","dependent_fields":["_customerInfo.nationalIdNumber"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":1451,"field_name":"","value":"","subtree":[{"tree_name":"_loan.loanPurposeMdd","node_id":1260,"field_name":"ISNULL.thinker.loanPurposeMdd","value":"true","subtree":null,"alias":"","dependent_fields":["thinker.loanPurposeMdd"]},{"tree_name":"_loan.loanPurposeMdd","node_id":1261,"field_name":"_occupation.employType","value":"EMPLOYEE","subtree":null,"alias":""},{"tree_name":"_loan.loanPurposeMdd","node_id":1262,"field_name":"_loan.loanPurposeMdd","value":"1","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.mainTreeUpdate","node_id":854,"field_name":"","value":"","subtree":[{"tree_name":"_loan.subLoanTypeTree","node_id":1633,"field_name":"","value":"","subtree":[{"tree_name":"_loan.loanPurposeMdd","node_id":1260,"field_name":"ISNULL.thinker.loanPurposeMdd","value":"true","subtree":null,"alias":"","dependent_fields":["thinker.loanPurposeMdd"]},{"tree_name":"_loan.loanPurposeMdd","node_id":1261,"field_name":"_occupation.employType","value":"EMPLOYEE","subtree":null,"alias":""},{"tree_name":"_loan.loanPurposeMdd","node_id":1262,"field_name":"_loan.loanPurposeMdd","value":"1","subtree":null,"alias":""}],"alias":""},{"tree_name":"_loan.subLoanTypeTree","node_id":321,"field_name":"_loan.subLoanType","value":"20001","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.mainTreeUpdate","node_id":855,"field_name":"","value":"","subtree":[{"tree_name":"_loan.loanPurposeBot","node_id":1634,"field_name":"","value":"","subtree":[{"tree_name":"_loan.loanPurposeMdd","node_id":1260,"field_name":"ISNULL.thinker.loanPurposeMdd","value":"true","subtree":null,"alias":"","dependent_fields":["thinker.loanPurposeMdd"]},{"tree_name":"_loan.loanPurposeMdd","node_id":1261,"field_name":"_occupation.employType","value":"EMPLOYEE","subtree":null,"alias":""},{"tree_name":"_loan.loanPurposeMdd","node_id":1262,"field_name":"_loan.loanPurposeMdd","value":"1","subtree":null,"alias":""}],"alias":""},{"tree_name":"_loan.loanPurposeBot","node_id":832,"field_name":"_loan.loanPurposeBot","value":"15001","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.mainTreeUpdate","node_id":856,"field_name":"","value":"","subtree":[{"tree_name":"_loan.loanPeriodInMonth","node_id":956,"field_name":"scheduleSettings.repaymentInstallments","value":"24","subtree":null,"alias":""},{"tree_name":"_loan.loanPeriodInMonth","node_id":811,"field_name":"_loan.loanPeriodInMonth","value":"24M","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.mainTreeUpdate","node_id":862,"field_name":"","value":"","subtree":[{"tree_name":"_loan.loanType","node_id":1635,"field_name":"","value":"","subtree":[{"tree_name":"_loan.loanPurposeMdd","node_id":1260,"field_name":"ISNULL.thinker.loanPurposeMdd","value":"true","subtree":null,"alias":"","dependent_fields":["thinker.loanPurposeMdd"]},{"tree_name":"_loan.loanPurposeMdd","node_id":1261,"field_name":"_occupation.employType","value":"EMPLOYEE","subtree":null,"alias":""},{"tree_name":"_loan.loanPurposeMdd","node_id":1262,"field_name":"_loan.loanPurposeMdd","value":"1","subtree":null,"alias":""}],"alias":""},{"tree_name":"_loan.loanType","node_id":861,"field_name":"_loan.loanType","value":"7200","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.mainTreeUpdate","node_id":867,"field_name":"","value":"","subtree":[{"tree_name":"_loan.loanPurpose","node_id":1636,"field_name":"","value":"","subtree":[{"tree_name":"_loan.loanPurposeMdd","node_id":1260,"field_name":"ISNULL.thinker.loanPurposeMdd","value":"true","subtree":null,"alias":"","dependent_fields":["thinker.loanPurposeMdd"]},{"tree_name":"_loan.loanPurposeMdd","node_id":1261,"field_name":"_occupation.employType","value":"EMPLOYEE","subtree":null,"alias":""},{"tree_name":"_loan.loanPurposeMdd","node_id":1262,"field_name":"_loan.loanPurposeMdd","value":"1","subtree":null,"alias":""}],"alias":""},{"tree_name":"_loan.loanPurpose","node_id":866,"field_name":"_loan.loanPurpose","value":"12001","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.mainTreeUpdate","node_id":1199,"field_name":"_customerInfo.residencePeriod","value":"25","subtree":null,"alias":"_customerInfo.residencePeriod","dependent_fields":["_customerInfo.residencePeriodYear","_customerInfo.residencePeriodMonth"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":1784,"field_name":"","value":"","subtree":[{"tree_name":"authenticationType.tree","node_id":1774,"field_name":"check.authenticationIsEKyc","value":"false","subtree":null,"alias":"","dependent_fields":["_customerInfo.authenticationType"]},{"tree_name":"authenticationType.tree","node_id":1780,"field_name":"check.ncbConsentAcceptTrue","value":"true","subtree":null,"alias":"","dependent_fields":["_credit.isNcbConsentAccept"]},{"tree_name":"authenticationType.tree","node_id":1781,"field_name":"thinker.authenticationTypeResult","value":"A01","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.mainTreeUpdate","node_id":234,"field_name":"","value":"","subtree":[{"tree_name":"pLoan.occupationTree","node_id":215,"field_name":"_occupation.employType","value":"EMPLOYEE","subtree":null,"alias":""},{"tree_name":"pLoan.occupationTree","node_id":319,"field_name":"_occupation.period","value":"13","subtree":null,"alias":"","dependent_fields":["_occupation.periodYear","_occupation.periodMonth"]},{"tree_name":"pLoan.occupationTree","node_id":484,"field_name":"_occupation.totalPeriod","value":"13","subtree":null,"alias":"","dependent_fields":["_occupation.totalPeriodMonth","_occupation.totalPeriodYear"]},{"tree_name":"pLoan.occupationTree","node_id":1682,"field_name":"","value":"","subtree":[{"tree_name":"riskIncomeTree","node_id":1681,"field_name":"_occupation.incomeAmount","value":"20000","subtree":null,"alias":""},{"tree_name":"riskIncomeTree","node_id":1679,"field_name":"_occupation.isRiskIncomeAmount","value":"false","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.occupationTree","node_id":1243,"field_name":"_occupation.netSalaryAmount","value":"20000","subtree":null,"alias":"","dependent_fields":["_occupation.incomeAmount"]},{"tree_name":"pLoan.occupationTree","node_id":530,"field_name":"","value":"","subtree":[{"tree_name":"occupation.subTypeAscore","node_id":795,"field_name":"_occupation.type","value":"01","subtree":null,"alias":""},{"tree_name":"occupation.subTypeAscore","node_id":493,"field_name":"_occupation.subType","value":"01","subtree":null,"alias":""},{"tree_name":"occupation.subTypeAscore","node_id":494,"field_name":"_occupation.subTypeAscore","value":"01","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.occupationTree","node_id":1427,"field_name":"","value":"","subtree":[{"tree_name":"riskBusinessType","node_id":1423,"field_name":"check.riskBusinessType","value":"false","subtree":null,"alias":"","dependent_fields":["_occupation.subType"]},{"tree_name":"riskBusinessType","node_id":1425,"field_name":"_occupation.isRiskBusinessType","value":"false","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.occupationTree","node_id":218,"field_name":"thinker.occupationResult","value":"APPROVE","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.mainTreeUpdate","node_id":1001,"field_name":"_credit.totalIncomeToRevernueRatio","value":"85","subtree":null,"alias":"_credit.totalIncomeToRevernueRatio","dependent_fields":["_occupation.incomeAmount","_credit.expenseAmount"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":1002,"field_name":"_credit.expenseToRevernueRatio","value":"15","subtree":null,"alias":"_credit.expenseToRevernueRatio","dependent_fields":["_credit.expenseAmount","_occupation.incomeAmount"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":467,"field_name":"_customerInfo.agePolicy","value":"29","subtree":null,"alias":"_customerInfo.agePolicy","dependent_fields":["birthDate"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":1053,"field_name":"_customerInfo.ageYears","value":"29","subtree":null,"alias":"_customerInfo.ageYears","dependent_fields":["birthDate"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":1245,"field_name":"","value":"","subtree":[{"tree_name":"_customerInfo.ageMonths","node_id":1209,"field_name":"check.datedif","value":"-4","subtree":null,"alias":"","dependent_fields":["birthDate"]},{"tree_name":"_customerInfo.ageMonths","node_id":1210,"field_name":"_customerInfo.ageMonths","value":"1","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.mainTreeUpdate","node_id":1055,"field_name":"_customerInfo.ageDays","value":"26","subtree":null,"alias":"_customerInfo.ageDays","dependent_fields":["birthDate","_customerInfo.ageMonths"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":1230,"field_name":"check._loan.loanRequest","value":"true","subtree":null,"alias":"","dependent_fields":["_loan.loanRequest","_loan.minPLoanPolicyLimit"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":1421,"field_name":"","value":"","subtree":[{"tree_name":"isRiskCity","node_id":1387,"field_name":"check.isRiskCity","value":"false","subtree":null,"alias":"","dependent_fields":["_addresses.2.city","_addresses.1.city","_addresses.3.city"]},{"tree_name":"isRiskCity","node_id":1389,"field_name":"_customerInfo.isRiskCity","value":"false","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.mainTreeUpdate","node_id":533,"field_name":"check.isCustomerLoanReject","value":"false","subtree":null,"alias":"","dependent_fields":["_customerInfo.foundLoanRequestReject"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":537,"field_name":"check.isFoundAmlo","value":"false","subtree":null,"alias":"","dependent_fields":["_credit.foundInAmlo"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":540,"field_name":"check.isFoundInGsbBlacklist","value":"false","subtree":null,"alias":"","dependent_fields":["_gsb.foundInGsbBlacklist"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":1640,"field_name":"checkIsnull.thinker.compliancePepsDecision","value":"true","subtree":null,"alias":"","dependent_fields":["thinker.compliancePepsDecision"]},{"tree_name":"pLoan.mainTreeUpdate","node_id":1756,"field_name":"","value":"","subtree":[{"tree_name":"ncb.decisionTree","node_id":1736,"field_name":"_credit.ncbValidPeriod","value":"265","subtree":null,"alias":"","dependent_fields":["_credit.ncbIssueDate"]},{"tree_name":"ncb.decisionTree","node_id":1758,"field_name":"","value":"","subtree":[{"tree_name":"ncbIsValid","node_id":1393,"field_name":"check.ncbIsValid","value":"false","subtree":null,"alias":"","dependent_fields":["_credit.ncbIdNumber","_customerInfo.nationalIdNumber"]},{"tree_name":"ncbIsValid","node_id":1395,"field_name":"_credit.ncbIsValid","value":"false","subtree":null,"alias":""}],"alias":""},{"tree_name":"ncb.decisionTree","node_id":1751,"field_name":"thinker.ncb.result","value":"R01","subtree":null,"alias":""}],"alias":""},{"tree_name":"pLoan.mainTreeUpdate","node_id":543,"field_name":"thinker.loanResult","value":"R01","subtree":null,"alias":"thinker.loanResult"},{"tree_name":"thinker.isPepsFound.Tree","node_id":1663,"field_name":"checkIsnull.thinker.compliancePepsDecision","value":"true","subtree":null,"alias":"","dependent_fields":["thinker.compliancePepsDecision"]},{"tree_name":"thinker.isPepsFound.Tree","node_id":1653,"field_name":"check.thinker.isPepsFound","value":"false","subtree":null,"alias":"","dependent_fields":["thinker.isPepsFound"]},{"tree_name":"thinker.isPepsFound.Tree","node_id":1655,"field_name":"_credit.isPepsFound","value":"NOT_FOUND","subtree":null,"alias":"_credit.isPepsFound"},{"tree_name":"thinker.loanStatusTree","node_id":1385,"field_name":"check.ISNULL.thinker.caVerifying","value":"true","subtree":null,"alias":"","dependent_fields":["thinker.caVerifying"]},{"tree_name":"thinker.loanStatusTree","node_id":1191,"field_name":"ISNULL.thinker.loanResultAndNotVerifying","value":"false","subtree":null,"alias":"","dependent_fields":["thinker.loanResult","thinker.caVerifying"]},{"tree_name":"thinker.loanStatusTree","node_id":1456,"field_name":"check.caDocumentRequest","value":"false","subtree":null,"alias":"","dependent_fields":["thinker.caDocumentsRequestNumber","thinker.isCaDocumentsRequest"]},{"tree_name":"thinker.loanStatusTree","node_id":1222,"field_name":"check.isNcbNeedVerify","value":"false","subtree":null,"alias":"","dependent_fields":["_credit.isNcbServicePassTads","_credit.isNcbPassValidTads","_credit.ncbGrade","_documents.15.content","_credit.isNcbTrustSourceTads","_credit.isNcbManualTads","thinker.loanResult"]},{"tree_name":"thinker.loanStatusTree","node_id":1196,"field_name":"ISNULL.thinker.loanResult","value":"false","subtree":null,"alias":"","dependent_fields":["thinker.loanResult"]},{"tree_name":"thinker.loanStatusTree","node_id":1065,"field_name":"checkR.thinker.loanResult","value":"true","subtree":null,"alias":"","dependent_fields":["thinker.loanResult"]},{"tree_name":"thinker.loanStatusTree","node_id":1063,"field_name":"thinker.loanStatus","value":"REJECTED","subtree":null,"alias":"thinker.loanStatus"}]}}
 
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": ""
+}
+
+Response:
+Status Code: 400
+Body: {"case_id":"","data":{"_customerInfo.customerType":"NOT_FOUND","_customerInfo.customerTypeId":"NOT_FOUND","_customerInfo.nationalIdNumber":"NOT_FOUND","_customerInfo.titleName":"NOT_FOUND","_loan.loanApplicationNumber":"NOT_FOUND","_loan.loanRequest":"NOT_FOUND","_loan.loanType":"NOT_FOUND","_loan.marketCode":"NOT_FOUND","_loan.requestDate":"NOT_FOUND","_loan.subLoanType":"NOT_FOUND","firstName":"NOT_FOUND"},"message":"Validation failed for one or more fields"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": ""
+}
+
+Response:
+Status Code: 400
+Body: {"case_id":"","data":{"_customerInfo.customerType":"NOT_FOUND","_customerInfo.customerTypeId":"NOT_FOUND","_customerInfo.nationalIdNumber":"NOT_FOUND","_customerInfo.titleName":"NOT_FOUND","_loan.loanApplicationNumber":"NOT_FOUND","_loan.loanRequest":"NOT_FOUND","_loan.loanType":"NOT_FOUND","_loan.marketCode":"NOT_FOUND","_loan.requestDate":"NOT_FOUND","_loan.subLoanType":"NOT_FOUND","firstName":"NOT_FOUND"},"message":"Validation failed for one or more fields"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": ""
+}
+
+Response:
+Status Code: 400
+Body: {"case_id":"","data":{"_customerInfo.customerType":"NOT_FOUND","_customerInfo.customerTypeId":"NOT_FOUND","_customerInfo.nationalIdNumber":"NOT_FOUND","_customerInfo.titleName":"NOT_FOUND","_loan.loanApplicationNumber":"NOT_FOUND","_loan.loanRequest":"NOT_FOUND","_loan.loanType":"NOT_FOUND","_loan.marketCode":"NOT_FOUND","_loan.requestDate":"NOT_FOUND","_loan.subLoanType":"NOT_FOUND","firstName":"NOT_FOUND"},"message":"Validation failed for one or more fields"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": ""
+}
+
+Response:
+Status Code: 400
+Body: {"case_id":"","data":{"_customerInfo.customerType":"NOT_FOUND","_customerInfo.customerTypeId":"NOT_FOUND","_customerInfo.nationalIdNumber":"NOT_FOUND","_customerInfo.titleName":"NOT_FOUND","_loan.loanApplicationNumber":"NOT_FOUND","_loan.loanRequest":"NOT_FOUND","_loan.loanType":"NOT_FOUND","_loan.marketCode":"NOT_FOUND","_loan.requestDate":"NOT_FOUND","_loan.subLoanType":"NOT_FOUND","firstName":"NOT_FOUND"},"message":"Validation failed for one or more fields"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "4104f31e-7e89-4a0a-926d-940fd9831862"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"4104f31e-7e89-4a0a-926d-940fd9831862","case_submission_id":1316,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": ""
+}
+
+Response:
+Status Code: 400
+Body: {"case_id":"","data":{"_customerInfo.customerType":"NOT_FOUND","_customerInfo.customerTypeId":"NOT_FOUND","_customerInfo.nationalIdNumber":"NOT_FOUND","_customerInfo.titleName":"NOT_FOUND","_loan.loanApplicationNumber":"NOT_FOUND","_loan.loanRequest":"NOT_FOUND","_loan.loanType":"NOT_FOUND","_loan.marketCode":"NOT_FOUND","_loan.requestDate":"NOT_FOUND","_loan.subLoanType":"NOT_FOUND","firstName":"NOT_FOUND"},"message":"Validation failed for one or more fields"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": ""
+}
+
+Response:
+Status Code: 400
+Body: {"case_id":"","data":{"_customerInfo.customerType":"NOT_FOUND","_customerInfo.customerTypeId":"NOT_FOUND","_customerInfo.nationalIdNumber":"NOT_FOUND","_customerInfo.titleName":"NOT_FOUND","_loan.loanApplicationNumber":"NOT_FOUND","_loan.loanRequest":"NOT_FOUND","_loan.loanType":"NOT_FOUND","_loan.marketCode":"NOT_FOUND","_loan.requestDate":"NOT_FOUND","_loan.subLoanType":"NOT_FOUND","firstName":"NOT_FOUND"},"message":"Validation failed for one or more fields"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": ""
+}
+
+Response:
+Status Code: 400
+Body: {"case_id":"","data":{"_customerInfo.customerType":"NOT_FOUND","_customerInfo.customerTypeId":"NOT_FOUND","_customerInfo.nationalIdNumber":"NOT_FOUND","_customerInfo.titleName":"NOT_FOUND","_loan.loanApplicationNumber":"NOT_FOUND","_loan.loanRequest":"NOT_FOUND","_loan.loanType":"NOT_FOUND","_loan.marketCode":"NOT_FOUND","_loan.requestDate":"NOT_FOUND","_loan.subLoanType":"NOT_FOUND","firstName":"NOT_FOUND"},"message":"Validation failed for one or more fields"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "341febcc-c60f-4241-9920-459cba8eb719"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"341febcc-c60f-4241-9920-459cba8eb719","case_submission_id":1317,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "b5f9503c-84ec-4060-9cdf-d3621f400cbc"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"b5f9503c-84ec-4060-9cdf-d3621f400cbc","case_submission_id":1318,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "bbd05f26-5adc-4aac-8840-8c80e1523d79"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"bbd05f26-5adc-4aac-8840-8c80e1523d79","case_submission_id":1320,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "c73985aa-148a-4643-9a10-f3108f7f7000"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"c73985aa-148a-4643-9a10-f3108f7f7000","case_submission_id":1319,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "34035340-fd4c-48a5-b88a-7bc55a01f50e"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"34035340-fd4c-48a5-b88a-7bc55a01f50e","case_submission_id":1321,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "dc8768a1-b203-4c16-80ca-7a6c3b5b4f36"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"dc8768a1-b203-4c16-80ca-7a6c3b5b4f36","case_submission_id":1322,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "0fd3d4ad-d23d-412e-a4b3-ca4d1b10fc92"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"0fd3d4ad-d23d-412e-a4b3-ca4d1b10fc92","case_submission_id":1323,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "f6dd5838-5c12-4d29-9270-5927b139ab99"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"f6dd5838-5c12-4d29-9270-5927b139ab99","case_submission_id":1334,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "4c08ab56-8c2f-40a9-b589-cbece5e5699f"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"4c08ab56-8c2f-40a9-b589-cbece5e5699f","case_submission_id":1336,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "173cc0d6-9191-4d84-8ade-598a02b3faab"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"173cc0d6-9191-4d84-8ade-598a02b3faab","case_submission_id":1335,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "0fc1dad0-4552-43f3-b4ff-b31349529634"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"0fc1dad0-4552-43f3-b4ff-b31349529634","case_submission_id":1337,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "562e3ed6-73df-48fa-aa6e-2acb563f7538"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"562e3ed6-73df-48fa-aa6e-2acb563f7538","case_submission_id":1338,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "970c3027-4879-4e24-8fab-eec363b67d18"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"970c3027-4879-4e24-8fab-eec363b67d18","case_submission_id":1339,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "6e07a233-0e55-4d44-819b-e602304def5d"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"6e07a233-0e55-4d44-819b-e602304def5d","case_submission_id":1340,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "28e71aa8-49ca-4bb4-8313-1899c76e801a"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"28e71aa8-49ca-4bb4-8313-1899c76e801a","case_submission_id":1341,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "e7e2699c-56d0-42c0-a2bb-5483cd7eab19"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"e7e2699c-56d0-42c0-a2bb-5483cd7eab19","case_submission_id":1345,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "bee6ebfb-398c-4f11-8a01-e0bcec897c40"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"bee6ebfb-398c-4f11-8a01-e0bcec897c40","case_submission_id":1347,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "2aee373c-805b-4e34-ae6c-3973edc76dfc"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"2aee373c-805b-4e34-ae6c-3973edc76dfc","case_submission_id":1342,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "a81511ed-1155-4aa6-8f14-1bdbda93d315"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"a81511ed-1155-4aa6-8f14-1bdbda93d315","case_submission_id":1348,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "7a72896d-8766-4e18-a236-db27f9c6b7b2"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"7a72896d-8766-4e18-a236-db27f9c6b7b2","case_submission_id":1346,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "78863e35-d5ee-4d7d-96da-8832a741a5b3"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"78863e35-d5ee-4d7d-96da-8832a741a5b3","case_submission_id":1344,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "a2c9fcc4-ae2d-4497-8421-dfbdf5d32b0c"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"a2c9fcc4-ae2d-4497-8421-dfbdf5d32b0c","case_submission_id":1343,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "c90b2ebd-a24b-49e4-8690-b328470eb1dd"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"c90b2ebd-a24b-49e4-8690-b328470eb1dd","case_submission_id":1350,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "f6800091-6af7-4daf-8606-6418317a94fc"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"f6800091-6af7-4daf-8606-6418317a94fc","case_submission_id":1349,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "9345f69b-0d64-480a-af7b-9e9747f7daf8"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"9345f69b-0d64-480a-af7b-9e9747f7daf8","case_submission_id":1351,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "1f9b9d7f-8865-4c9d-b826-4e62a5d86642"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"1f9b9d7f-8865-4c9d-b826-4e62a5d86642","case_submission_id":1353,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "168934a6-16e5-49cb-838e-c1d2de620c2c"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"168934a6-16e5-49cb-838e-c1d2de620c2c","case_submission_id":1352,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "1f9b9d7f-8865-4c9d-b826-4e62a5d86642"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"1f9b9d7f-8865-4c9d-b826-4e62a5d86642","case_submission_id":1355,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "2aee373c-805b-4e34-ae6c-3973edc76dfc"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"2aee373c-805b-4e34-ae6c-3973edc76dfc","case_submission_id":1356,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "a2c9fcc4-ae2d-4497-8421-dfbdf5d32b0c"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"a2c9fcc4-ae2d-4497-8421-dfbdf5d32b0c","case_submission_id":1357,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "7a72896d-8766-4e18-a236-db27f9c6b7b2"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"7a72896d-8766-4e18-a236-db27f9c6b7b2","case_submission_id":1358,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "c90b2ebd-a24b-49e4-8690-b328470eb1dd"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"c90b2ebd-a24b-49e4-8690-b328470eb1dd","case_submission_id":1359,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "168934a6-16e5-49cb-838e-c1d2de620c2c"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"168934a6-16e5-49cb-838e-c1d2de620c2c","case_submission_id":1360,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "e7e2699c-56d0-42c0-a2bb-5483cd7eab19"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"e7e2699c-56d0-42c0-a2bb-5483cd7eab19","case_submission_id":1361,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "f6dd5838-5c12-4d29-9270-5927b139ab99"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"f6dd5838-5c12-4d29-9270-5927b139ab99","case_submission_id":1362,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "562e3ed6-73df-48fa-aa6e-2acb563f7538"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"562e3ed6-73df-48fa-aa6e-2acb563f7538","case_submission_id":1366,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "970c3027-4879-4e24-8fab-eec363b67d18"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"970c3027-4879-4e24-8fab-eec363b67d18","case_submission_id":1364,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "78863e35-d5ee-4d7d-96da-8832a741a5b3"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"78863e35-d5ee-4d7d-96da-8832a741a5b3","case_submission_id":1365,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "4c08ab56-8c2f-40a9-b589-cbece5e5699f"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"4c08ab56-8c2f-40a9-b589-cbece5e5699f","case_submission_id":1363,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "6e07a233-0e55-4d44-819b-e602304def5d"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"6e07a233-0e55-4d44-819b-e602304def5d","case_submission_id":1368,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "bee6ebfb-398c-4f11-8a01-e0bcec897c40"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"bee6ebfb-398c-4f11-8a01-e0bcec897c40","case_submission_id":1367,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "0fc1dad0-4552-43f3-b4ff-b31349529634"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"0fc1dad0-4552-43f3-b4ff-b31349529634","case_submission_id":1371,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "173cc0d6-9191-4d84-8ade-598a02b3faab"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"173cc0d6-9191-4d84-8ade-598a02b3faab","case_submission_id":1373,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "28e71aa8-49ca-4bb4-8313-1899c76e801a"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"28e71aa8-49ca-4bb4-8313-1899c76e801a","case_submission_id":1370,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "a81511ed-1155-4aa6-8f14-1bdbda93d315"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"a81511ed-1155-4aa6-8f14-1bdbda93d315","case_submission_id":1372,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "f6800091-6af7-4daf-8606-6418317a94fc"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"f6800091-6af7-4daf-8606-6418317a94fc","case_submission_id":1374,"message":"processing"}
+
+Sending Request:
+Method: POST
+URL: https://moneydd-uat.thinkerfint.com/case-datasources/api/v1/cases/submit
+Payload: {
+    "case_id": "9345f69b-0d64-480a-af7b-9e9747f7daf8"
+}
+
+Response:
+Status Code: 200
+Body: {"case_id":"9345f69b-0d64-480a-af7b-9e9747f7daf8","case_submission_id":1369,"message":"processing"}
+
