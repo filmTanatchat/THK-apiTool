@@ -31,8 +31,17 @@ endpoints-config:
   - name: "Submit Case"
     endpoint: "/case-datasources/api/v1/cases/submit"
     method: "POST"
+  - name: "A-Score"
+    endpoint: "/ascore-service/api/v1/ascore"
+    method: "POST"
   - name: "Get Case Detail"
     endpoint: "/question-taskpool/api/v1/get-case-detail-all-task"
+    method: "POST"
+  - name: "Create Field"
+    endpoint: "/universe/api/v1/create_field"
+    method: "POST"
+  - name: "Update Field"
+    endpoint: "/universe/api/v1/update_field"
     method: "POST"
 
 products:

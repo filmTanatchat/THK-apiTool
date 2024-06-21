@@ -7,8 +7,10 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 	"sync"
+	"time"
 
 	"thinkerTools/models"
 	"thinkerTools/types"
@@ -43,9 +45,10 @@ func WriteLogToFile(logFilePath, logMessage string) error {
 }
 
 // SendRequest sends the request with the modified JSON payload and logs the entire process.
-func SendRequest(client *http.Client, method, apiURL, token, payload, logFilePath string, statusCodes *map[int]int) error {
+func SendRequest(client *http.Client, method, apiURL, token, payload, logFilePath string, statusCodes *map[int]int, mu *sync.Mutex) error {
 	// Log the request
 	requestLogEntry := fmt.Sprintf("Sending Request:\nMethod: %s\nURL: %s\nPayload: %s\n", method, apiURL, payload)
+	fmt.Println(requestLogEntry) // Print the request details
 
 	// Create and send the request
 	req, err := http.NewRequest(method, apiURL, bytes.NewBufferString(payload))
@@ -67,44 +70,50 @@ func SendRequest(client *http.Client, method, apiURL, token, payload, logFilePat
 		return fmt.Errorf("error reading response body: %w", err)
 	}
 
-	// Append the response to the request log entry
-	requestLogEntry += fmt.Sprintf("\nResponse:\nStatus Code: %d\nBody: %s\n", resp.StatusCode, string(body))
+	// Log and print the response
+	responseLogEntry := fmt.Sprintf("\nResponse:\nStatus Code: %d\nBody: %s\n", resp.StatusCode, string(body))
+	fmt.Println(responseLogEntry) // Print the response details
 
 	// Write the combined log entry to file
-	if err := WriteLogToFile(logFilePath, requestLogEntry); err != nil {
+	mu.Lock()
+	if err := WriteLogToFile(logFilePath, requestLogEntry+responseLogEntry); err != nil {
 		fmt.Printf("Error logging request and response to file: %v\n", err)
 	}
+	mu.Unlock()
 
 	statusCode := resp.StatusCode
+	mu.Lock()
 	(*statusCodes)[statusCode]++
+	mu.Unlock()
 
 	return nil
 }
 
-// ListJSONFiles lists JSON files in the directory.
-func ListJSONFiles(dirPath string) ([]string, error) {
+// ListFiles lists files with the specified extension in the directory.
+func ListFiles(dirPath, extension string) ([]string, error) {
 	files, err := os.ReadDir(dirPath)
 	if err != nil {
 		return nil, fmt.Errorf("error reading directory: %w", err)
 	}
 
-	var jsonFiles []string
+	var fileList []string
 	for _, file := range files {
-		if file.Type().IsRegular() && strings.HasSuffix(file.Name(), ".json") {
-			jsonFiles = append(jsonFiles, file.Name())
+		if file.Type().IsRegular() && strings.HasSuffix(file.Name(), extension) {
+			fileList = append(fileList, file.Name())
 		}
 	}
-	return jsonFiles, nil
+	sort.Strings(fileList)
+	return fileList, nil
 }
 
-// ChooseJSONTemplate allows the user to choose a JSON template file.
-func ChooseJSONTemplate(dirPath string) (string, error) {
-	files, err := ListJSONFiles(dirPath)
+// ChooseFile allows the user to choose a file from the list.
+func ChooseFile(dirPath, extension string) (string, error) {
+	files, err := ListFiles(dirPath, extension)
 	if err != nil {
 		return "", err
 	}
 
-	fmt.Println("Select a JSON template file:")
+	fmt.Printf("Select a %s file:\n", extension)
 	for i, file := range files {
 		fmt.Printf("%d: %s\n", i+1, file)
 	}
@@ -118,7 +127,7 @@ func ChooseJSONTemplate(dirPath string) (string, error) {
 	return filepath.Join(dirPath, files[choice-1]), nil
 }
 
-// AnswerMultiCaseId processes each case ID with the provided JSON template.
+// CallApiByFile processes each case ID with the provided JSON template.
 func CallApiByFile(env models.Environment, basePath string) error {
 	client := &http.Client{}
 
@@ -152,7 +161,7 @@ func CallApiByFile(env models.Environment, basePath string) error {
 	apiURL := env.BaseURL + selectedEndpoint
 
 	jsonDirPath := filepath.Join(basePath, "5. jsonTemplate")
-	jsonTemplatePath, err := ChooseJSONTemplate(jsonDirPath)
+	jsonTemplatePath, err := ChooseFile(jsonDirPath, ".json")
 	if err != nil {
 		return err
 	}
@@ -162,8 +171,13 @@ func CallApiByFile(env models.Environment, basePath string) error {
 		return err
 	}
 
-	// Read case data from CSV
-	csvPath := filepath.Join(basePath, "3. dataSource", "multiCaseId.csv")
+	// List and choose CSV file
+	csvDirPath := filepath.Join(basePath, "3. dataSource")
+	csvPath, err := ChooseFile(csvDirPath, ".csv")
+	if err != nil {
+		return err
+	}
+
 	// Use ReadCaseDataFromCSV from models package
 	caseData, err := models.ReadCaseDataFromCSV(csvPath)
 	if err != nil {
@@ -173,17 +187,27 @@ func CallApiByFile(env models.Environment, basePath string) error {
 	logFilePath := filepath.Join(basePath, "2. log", "callApi.log")
 
 	statusCodes := make(map[int]int)
+	var mu sync.Mutex
 
 	var wg sync.WaitGroup
+	interval := 1 * time.Second        // Set the interval between requests
+	ticker := time.NewTicker(interval) // Rate limit: one request per interval
+	defer ticker.Stop()
+
+	semaphore := make(chan struct{}, 1) // Set the maximum number of concurrent requests
+
 	for _, rowData := range caseData {
+		<-ticker.C // Wait for the ticker
 		wg.Add(1)
+		semaphore <- struct{}{} // acquire a slot
 		go func(data map[string]string) {
 			defer wg.Done()
+			defer func() { <-semaphore }() // release the slot
 
 			// Modify the payload based on the data from CSV
 			modifiedPayload := models.ModifyPayload(jsonTemplate, data)
 
-			if err := SendRequest(client, selectedMethod, apiURL, token, modifiedPayload, logFilePath, &statusCodes); err != nil {
+			if err := SendRequest(client, selectedMethod, apiURL, token, modifiedPayload, logFilePath, &statusCodes, &mu); err != nil {
 				fmt.Printf("Data Processing Error - %v\n", err)
 			}
 		}(rowData)
