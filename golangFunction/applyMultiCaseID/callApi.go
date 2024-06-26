@@ -190,11 +190,11 @@ func CallApiByFile(env models.Environment, basePath string) error {
 	var mu sync.Mutex
 
 	var wg sync.WaitGroup
-	interval := 1 * time.Second        // Set the interval between requests
+	interval := 100 * time.Millisecond // Set the interval between requests
 	ticker := time.NewTicker(interval) // Rate limit: one request per interval
 	defer ticker.Stop()
 
-	semaphore := make(chan struct{}, 1) // Set the maximum number of concurrent requests
+	semaphore := make(chan struct{}, 5) // Set the maximum number of concurrent requests
 
 	for _, rowData := range caseData {
 		<-ticker.C // Wait for the ticker

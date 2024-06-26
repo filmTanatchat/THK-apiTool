@@ -1,0 +1,1 @@
+(((<loan_amount>*(POW((1+((<interest_rate>/100)/12)),<period>)))/(((POW((1+((<interest_rate>/100)/12)),<period>))-1)/((<interest_rate>/100)/12))))

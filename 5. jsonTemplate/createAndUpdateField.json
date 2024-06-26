@@ -1,13 +1,11 @@
 {
+    "name": "{{name}}",
     "choice_name": "{{choice_name}}",
     "data_type": "{{data_type}}",
     "default_condition": "{{default_condition}}",
     "default_value": "{{default_value}}",
     "formula": "{{formula}}",
-    "is_multiple_values_allowed": {
-        {is_multiple_values_allowed
-        }
-    },
+    "is_multiple_values_allowed": {{is_multiple_values_allowed}},
     "source_of_value": "{{source_of_value}}",
     "label": {
         "en": {
@@ -19,17 +17,10 @@
             "image_url": "{{label_th_image_url}}"
         }
     },
-    "name": "{{name}}",
     "parent_hierarchy_field_names": [],
     "triggering_module_names": [],
     "validation_name": "{{validation_name}}",
-    "is_active": true,
-    "filled_when_apply_product": {
-        {filled_when_apply_product
-        }
-    },
-    "is_manual_allowed": {
-        {is_manual_allowed
-        }
-    }
+    "is_active": {{is_active}},
+    "filled_when_apply_product": {{filled_when_apply_product}},
+    "is_manual_allowed": {{is_manual_allowed}}
 }

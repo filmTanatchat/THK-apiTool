@@ -1,170 +1,40 @@
-Error in row 1: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
+Error in row 1: <nil>
+Endpoint: https://thkcore-wing-sit.blockfint.com/form/api/v1/add_field
 Payload: {
-    "field_name": "_credit.br.absoluteProtectionDate",
-    "form_name": "br.form",
+    "field_name": "incentive.1.amount",
+    "form_name": "demo.booking",
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-28 11:50:51, Duration: 238.379ms
+Time Received: 2024-06-24 22:56:52, Duration: 4.06461875s
 ----------------------------
-Error in row 2: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
+Error in row 2: <nil>
+Endpoint: https://thkcore-wing-sit.blockfint.com/form/api/v1/add_field
 Payload: {
-    "field_name": "_credit.br.absoluteProtectionGazetteDate",
-    "form_name": "br.form",
+    "field_name": "incentive.2.amount",
+    "form_name": "demo.booking",
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-28 11:50:51, Duration: 229.175334ms
+Time Received: 2024-06-24 22:56:56, Duration: 4.098312167s
 ----------------------------
-Error in row 3: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
+Error in row 3: <nil>
+Endpoint: https://thkcore-wing-sit.blockfint.com/form/api/v1/add_field
 Payload: {
-    "field_name": "_credit.br.bankruptcyCloseDate",
-    "form_name": "br.form",
+    "field_name": "incentive.1.owner",
+    "form_name": "demo.booking",
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-28 11:50:51, Duration: 224.981875ms
+Time Received: 2024-06-24 22:57:01, Duration: 4.163232459s
 ----------------------------
-Error in row 4: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
+Error in row 4: <nil>
+Endpoint: https://thkcore-wing-sit.blockfint.com/form/api/v1/add_field
 Payload: {
-    "field_name": "_credit.br.bankruptcyDischargeDate",
-    "form_name": "br.form",
+    "field_name": "incentive.2.owner",
+    "form_name": "demo.booking",
     "is_mandatory": false,
     "source": "selected"
 }
-Time Received: 2024-03-28 11:50:51, Duration: 238.676375ms
-----------------------------
-Error in row 5: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.bankruptcyDischargeGazetteDate",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:52, Duration: 250.206458ms
-----------------------------
-Error in row 6: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.bankruptcyProtectionDate",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:52, Duration: 223.155959ms
-----------------------------
-Error in row 7: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.blackCaseNo",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:52, Duration: 232.653583ms
-----------------------------
-Error in row 8: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.blackCaseYear",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:52, Duration: 219.325459ms
-----------------------------
-Error in row 9: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.courtName",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:53, Duration: 225.909541ms
-----------------------------
-Error in row 10: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.defendantId",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:53, Duration: 221.438708ms
-----------------------------
-Error in row 11: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.defendantName",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:53, Duration: 229.2565ms
-----------------------------
-Error in row 12: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.defendantNo",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:53, Duration: 221.750084ms
-----------------------------
-Error in row 13: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.plaintiffNo1",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:53, Duration: 223.715375ms
-----------------------------
-Error in row 14: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.presentClaimInBankruptcyDate",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:54, Duration: 239.628417ms
-----------------------------
-Error in row 15: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.presentClaimInBankruptcyExamDate",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:54, Duration: 234.78125ms
-----------------------------
-Error in row 16: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.redCaseNo",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:54, Duration: 226.4755ms
-----------------------------
-Error in row 17: unexpected status code: 400
-Endpoint: https://moneydd-dev.thinkerfint.com/form/api/v1/add_field
-Payload: {
-    "field_name": "_credit.br.redCaseYear",
-    "form_name": "br.form",
-    "is_mandatory": false,
-    "source": "selected"
-}
-Time Received: 2024-03-28 11:50:54, Duration: 239.983459ms
+Time Received: 2024-06-24 22:57:05, Duration: 4.155997834s
 ----------------------------

@@ -1,4 +1,9 @@
 environments:
+  - name: WING-SIT
+    BASE_URL: "https://thkcore-wing-sit.blockfint.com"
+    EMAIL: "test_email_app1@email.com"
+    PASSWORD: "test_password_app1"
+
   - name: SIT
     BASE_URL: "https://moneydd-sit.thinkerfint.com"
     EMAIL: "moneydd-sit@thinkerfint.com"

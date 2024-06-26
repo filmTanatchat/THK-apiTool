@@ -162,13 +162,23 @@ func ReadCaseDataFromCSV(filePath string) ([]map[string]string, error) {
 	}
 	defer file.Close()
 
-	var caseData []map[string]string
 	reader := csv.NewReader(file)
-	headers, err := reader.Read() // Read headers
+
+	// Read the first line to check for BOM
+	firstLine, err := reader.Read()
 	if err != nil {
-		return nil, fmt.Errorf("error reading CSV headers: %w", err)
+		return nil, fmt.Errorf("error reading CSV first line: %w", err)
 	}
 
+	// Remove BOM if present
+	if len(firstLine) > 0 && strings.HasPrefix(firstLine[0], "\ufeff") {
+		firstLine[0] = strings.TrimPrefix(firstLine[0], "\ufeff")
+	}
+
+	headers := firstLine
+	fmt.Println("CSV Headers:", headers) // Debugging line
+
+	var caseData []map[string]string
 	for {
 		record, err := reader.Read()
 		if err == io.EOF {
@@ -182,6 +192,7 @@ func ReadCaseDataFromCSV(filePath string) ([]map[string]string, error) {
 		for i, header := range headers {
 			rowData[header] = record[i]
 		}
+		fmt.Println("Row Data:", rowData) // Debugging line
 		caseData = append(caseData, rowData)
 	}
 	return caseData, nil
