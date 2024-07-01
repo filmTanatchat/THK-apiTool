@@ -10,6 +10,7 @@ import (
 	"os"
 	"path/filepath"
 	"sync"
+	"time"
 
 	"gopkg.in/yaml.v2"
 
@@ -23,7 +24,7 @@ type Result struct {
 	StatusCode   int
 }
 
-// ProductName represents the structure of products in the YAML file
+// ProductName represents the structure of products in the YAML file.
 type ProductName struct {
 	Products map[string]string `yaml:"products"`
 }
@@ -136,7 +137,7 @@ func ApplyProductMultiCaseId(env models.Environment, basePath string) error {
 	// Ask for the number of case IDs
 	var numRequests int
 	fmt.Print("How many case IDs want to apply?: ")
-	_, err = fmt.Scan(&numRequests) // Notice the change here, removed the ':'
+	_, err = fmt.Scan(&numRequests)
 	if err != nil {
 		return fmt.Errorf("error reading input: %w", err)
 	}
@@ -156,12 +157,29 @@ func ApplyProductMultiCaseId(env models.Environment, basePath string) error {
 
 	// Concurrent Requests Setup
 	var wg sync.WaitGroup
+	var mu sync.Mutex
+	statusCodes := make(map[int]int)
+	interval := 1 * time.Second        // Set the interval between requests
+	ticker := time.NewTicker(interval) // Rate limit: one request per interval
+	defer ticker.Stop()
+
+	semaphore := make(chan struct{}, 10) // Set the maximum number of concurrent requests
+
 	results := make(chan Result, numRequests)
 	wg.Add(numRequests)
 	for i := 0; i < numRequests; i++ {
+		<-ticker.C              // Wait for the ticker
+		semaphore <- struct{}{} // acquire a slot
 		go func() {
 			defer wg.Done()
+			defer func() { <-semaphore }() // release the slot
+
 			result := MakeAndProcessRequest(client, env.BaseURL+"/question-taskpool/api/v1/apply-for-product", headers, payload)
+
+			mu.Lock()
+			statusCodes[result.StatusCode]++
+			mu.Unlock()
+
 			results <- result
 		}()
 	}
@@ -240,7 +258,7 @@ func readAndModifyCSV(filePath string, caseIds []string) ([][]string, error) {
 
 	caseIdIndex, found := findCaseIDColumnIndex(data)
 	if !found {
-		data = prependCaseIDColumn(data, caseIdIndex)
+		data = prependCaseIDColumn(data)
 		caseIdIndex = 0
 	}
 
@@ -287,13 +305,13 @@ func findCaseIDColumnIndex(data [][]string) (int, bool) {
 }
 
 // prependCaseIDColumn adds a case_id column as the first column in the data.
-func prependCaseIDColumn(data [][]string, caseIdIndex int) [][]string {
+func prependCaseIDColumn(data [][]string) [][]string {
 	newData := make([][]string, len(data))
 	for i, row := range data {
 		newRow := append([]string{""}, row...)
 		newData[i] = newRow
 	}
-	newData[0][caseIdIndex] = "case_id"
+	newData[0][0] = "case_id"
 	return newData
 }
 

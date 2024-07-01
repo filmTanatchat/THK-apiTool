@@ -1,0 +1,145 @@
+{
+    "case_id": "{{caseID}}",
+    "answers": [
+        {
+            "field_name": "_loan.loanType",
+            "field_value": "{{_loan.loanType}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_loan.subLoanType",
+            "field_value": "{{_loan.subLoanType}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_loan.loanPurposeBot",
+            "field_value": "{{_loan.loanPurposeBot}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_customerInfo.titleName",
+            "field_value": "{{_customerInfo.titleName}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "gender",
+            "field_value": "{{gender}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_customerInfo.maritalStatus",
+            "field_value": "{{_customerInfo.maritalStatus}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_customerInfo.educationLevel",
+            "field_value": "{{_customerInfo.educationLevel}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_customerInfo.residenceStatus",
+            "field_value": "{{_customerInfo.residenceStatus}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_customerInfo.residenceType",
+            "field_value": "{{_customerInfo.residenceType}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_loan.loanPurpose",
+            "field_value": "{{_loan.loanPurpose}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_loan.loanRequest",
+            "field_value": "{{_loan.loanRequest}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_occupation.incomeAmount",
+            "field_value": "{{_occupation.incomeAmount}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_credit.expenseAmount",
+            "field_value": "{{_credit.expenseAmount}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_customerInfo.childAmount",
+            "field_value": "{{_customerInfo.childAmount}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_customerInfo.childWorkedAmount",
+            "field_value": "{{_customerInfo.childWorkedAmount}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_occupation.periodMonth",
+            "field_value": "{{_occupation.periodMonth}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_customerInfo.residencePeriodMonth",
+            "field_value": "{{_customerInfo.residencePeriodMonth}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "scheduleSettings.repaymentInstallments",
+            "field_value": "{{scheduleSettings.repaymentInstallments}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_customerInfo.nationalIdNumber",
+            "field_value": "{{_customerInfo.nationalIdNumber}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_occupation.periodYear",
+            "field_value": "{{_occupation.periodYear}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_occupation.employType",
+            "field_value": "{{_occupation.employType}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_occupation.type",
+            "field_value": "{{_occupation.type}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_occupation.subType",
+            "field_value": "{{_occupation.subType}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "birthDate",
+            "field_value": "{{birthDate}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "firstName",
+            "field_value": "{{firstName}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "lastName",
+            "field_value": "{{lastName}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_loan.requestDate",
+            "field_value": "{{_loan.requestDate}}",
+            "source": "customer"
+        },
+        {
+            "field_name": "_loan.loanApplicationNumber",
+            "field_value": "{{_loan.loanApplicationNumber}}",
+            "source": "customer"
+        }
+    ]
+}
