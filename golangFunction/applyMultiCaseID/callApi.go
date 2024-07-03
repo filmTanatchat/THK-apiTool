@@ -190,7 +190,7 @@ func CallApiByFile(env models.Environment, basePath string) error {
 	var mu sync.Mutex
 
 	var wg sync.WaitGroup
-	interval := 100 * time.Millisecond // Set the interval between requests
+	interval := 1 * time.Second        // Set the interval between requests
 	ticker := time.NewTicker(interval) // Rate limit: one request per interval
 	defer ticker.Stop()
 

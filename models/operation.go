@@ -176,7 +176,6 @@ func ReadCaseDataFromCSV(filePath string) ([]map[string]string, error) {
 	}
 
 	headers := firstLine
-	fmt.Println("CSV Headers:", headers) // Debugging line
 
 	var caseData []map[string]string
 	for {
@@ -192,7 +191,6 @@ func ReadCaseDataFromCSV(filePath string) ([]map[string]string, error) {
 		for i, header := range headers {
 			rowData[header] = record[i]
 		}
-		fmt.Println("Row Data:", rowData) // Debugging line
 		caseData = append(caseData, rowData)
 	}
 	return caseData, nil
